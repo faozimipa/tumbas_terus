@@ -315,7 +315,8 @@ button.btn-responsive-nav {
 header div.logo {
     display: table;
     position: absolute;
-    height: 90px;
+    height: 90px !important;
+    width: 90px !important;
 }
 
 header div.logo a {

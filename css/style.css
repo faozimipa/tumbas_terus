@@ -4630,3 +4630,11 @@ section {
     margin: 0 auto;
     border-radius: 100px;
 }
+
+/*
+edited logo
+*/
+img.logo-tumbas {
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
