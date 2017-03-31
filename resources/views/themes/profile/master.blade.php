@@ -104,7 +104,7 @@
                         <a data-hash href="#home"><i class="fa fa-users"></i>Jadi Mitra</a>
                     </li>-->
                     <li>
-                        <a href='contruction.html'><i class="fa fa-shopping-cart"></i>Ayo Belanja</a>
+                        <a href='#home'><i class="fa fa-shopping-cart"></i>Ayo Belanja</a>
                     </li>
                     <!--<li class="dropdown">
                         <a class="dropdown-toggle menu-icon" href="#"><i class="fa fa-umbrella"></i>Menu <i class="fa fa-caret-down"></i></a>
@@ -188,7 +188,7 @@
                            data-elementdelay="0"
                            data-endelementdelay="0"
                            data-endspeed="300">
-                           <a href='contruction.html' class="btn v-btn v-second-light"><i class="fa fa-shopping-cart"></i>AYO BELANJA</a>
+                           <a href='#home' class="btn v-btn v-second-light"><i class="fa fa-shopping-cart"></i>AYO BELANJA</a>
                        </div>
 
                         <div class="tp-caption sfl stl"
@@ -202,11 +202,11 @@
                            data-elementdelay="0"
                            data-endelementdelay="0"
                            data-endspeed="300">
-                           <a href='contruction.html' class="btn v-btn v-second-light"><i class="fa fa-tablet"></i>DOWNLOAD APP</a>
+                           <a href='#home' class="btn v-btn v-second-light"><i class="fa fa-tablet"></i>DOWNLOAD APP</a>
                        </div>
                    -->
                     <div class="tp-caption v-caption-h1 sfl stl"
-                         data-x="600"
+                         data-x="580"
                          data-y="400"
                          data-speed="600"
                          data-start="1800"
@@ -220,7 +220,7 @@
                     </div>
 
                     <div class="tp-caption v-caption-h1 sfl stl"
-                         data-x="850"
+                         data-x="860"
                          data-y="400"
                          data-speed="600"
                          data-start="2200"
@@ -295,8 +295,9 @@
                     </p>
                     <div class="horizontal-break left"></div>
                     <p class="v-lead text-justify">
-                        Sebuah aplikasi yang bertujuan untuk memudahkan anda berbelanja di pasar tradisional. tumbas.in dapat membantu masyarakat dalam membandingkan harga-harga khususnya kebutuhan bahan pokok dari pasar satu ke pasar lainnya. Selain itu tumbas.in akan memudahkan ibu untuk untuk menyalurkan hoby memasaknya dirumah.
+                        Sebuah aplikasi yang bertujuan untuk memudahkan anda berbelanja di pasar tradisional. tumbas.in dapat membantu masyarakat dalam membandingkan harga-harga khususnya kebutuhan bahan pokok dari pasar satu ke pasar lainnya. Selain itu tumbas.in akan memudahkan ibu untuk menyalurkan hoby memasaknya dirumah.
                     </p>
+<h2> <blink> Khusus Wilayah Semarang </blink> </h2>
 
                 </div>
 
@@ -305,10 +306,10 @@
                 </div>
 
                 <div class="col-sm-12">
-                    <a href="contruction.html">
+                    <a href="#">
                         <img src="profile/img/landing/appstore.png" alt="appstore_icon">
                     </a>
-                    <a href="contruction.html">
+                    <a href="#">
                         <img src="profile/img/landing/google.png" alt="google_icon">
                     </a>
 
@@ -715,9 +716,9 @@
                             <div class="v-spacer col-sm-12 v-height-standard"></div>
 
                             <div id="intro_stores">
-                                <a href="contruction.html">
+                                <a href="#">
                                     <img src="profile/img/landing/appstore.png" alt="appstore_icon"></a>
-                                <a href="contruction.html">
+                                <a href="#">
                                     <img src="profile/img/landing/google.png" alt="google_icon"></a>
                                 <!--<a href="#">
                                     <img src="profile/img/landing/amazon.png" alt="amazon_icon"></a>-->
@@ -970,8 +971,8 @@
                             <div class="widget-heading">
                                 <h4>Lokasi</h4>
                             </div>
-                           {{-- <iframe class="set-maps" src="http://www.mapi.ie/create-google-map/map.php?width=100%&amp;height=200&amp;hl=en&amp;coord=-6.968022,110.4285541&amp;q=Semarang%2C%20Indonesia+(TUMBAS.IN)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=A&amp;output=embed" style="border:0" allowfullscreen="" frameborder="0"></iframe>
-                      --}}  </section>
+                          <iframe class="set-maps" src="http://www.mapi.ie/create-google-map/map.php?width=100%&amp;height=200&amp;hl=en&amp;coord=-6.968022,110.4285541&amp;q=Semarang%2C%20Indonesia+(TUMBAS.IN)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=A&amp;output=embed" style="border:0" allowfullscreen="" frameborder="0"></iframe>
+                       </section>
                     </div>
                 </div>
             </div>
@@ -987,7 +988,7 @@
                         <li><a data-hash href="#download">Download</a></li>
                         <li><a data-hash href="#comment">Komentar</a></li>
                         <li><a data-hash href="#contact-us">Kontak Kami</a></li>
-                        <li><a href='contruction.html'>Ayo Belanja</a></li>
+                        <li><a href='#home'>Ayo Belanja</a></li>
                     </ul>
                 </nav>
             </div>
@@ -1023,6 +1024,20 @@
 
 <!-- Sweet Alert -->
 @include('sweet::alert')
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/58d92aebf97dd14875f5a59d/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 
 </body>
 </html>
