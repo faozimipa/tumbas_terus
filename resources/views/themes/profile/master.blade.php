@@ -306,10 +306,10 @@
                 </div>
 
                 <div class="col-sm-12">
-                    <a href="#">
-                        <img src="profile/img/landing/appstore.png" alt="appstore_icon">
+                   <!-- <a href="#">
+                        <img src="profile/img/landing/appstore.png" alt="appstore_icon"> -->
                     </a>
-                    <a href="#">
+                    <a href="https://play.google.com/store/apps/details?id=com.app.tumbasin">
                         <img src="profile/img/landing/google.png" alt="google_icon">
                     </a>
 
@@ -716,9 +716,9 @@
                             <div class="v-spacer col-sm-12 v-height-standard"></div>
 
                             <div id="intro_stores">
-                                <a href="#">
-                                    <img src="profile/img/landing/appstore.png" alt="appstore_icon"></a>
-                                <a href="#">
+                                <!-- <a href="#">
+                                    <img src="profile/img/landing/appstore.png" alt="appstore_icon"></a> -->
+                                <a href="https://play.google.com/store/apps/details?id=com.app.tumbasin">
                                     <img src="profile/img/landing/google.png" alt="google_icon"></a>
                                 <!--<a href="#">
                                     <img src="profile/img/landing/amazon.png" alt="amazon_icon"></a>-->
