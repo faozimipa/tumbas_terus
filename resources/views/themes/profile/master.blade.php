@@ -312,10 +312,10 @@ mixpanel.init("bfe3a1f807b80b1f269d83b4e7a062a7");</script>
                     <img class="img-responsive phone-image v-animation" data-animation="fade-from-right" data-delay="300" src="profile/img/landing/prototype11.png" />
                 </div>
 
-                <div class="col-sm-12">
+                <div class="col-sm-12" >
                    <!-- <a href="#">
-                        <img src="profile/img/landing/appstore.png" alt="appstore_icon"> -->
-                    </a>
+                        <img src="profile/img/landing/appstore.png" alt="appstore_icon"> 
+                    </a>-->
                     <a href="https://play.google.com/store/apps/details?id=com.app.tumbasin">
                         <img src="profile/img/landing/google.png" alt="google_icon">
                     </a>
@@ -1057,6 +1057,13 @@ s0.parentNode.insertBefore(s1,s0);
 
 </script>
 <!--- End Analitic -->
+
+<script type="text/javascript">
+    mixpanel.track("Page View", {
+        "Video length": 213,
+        "id": "hY7gQr0"
+    });
+</script>
 
 </body>
 </html>
