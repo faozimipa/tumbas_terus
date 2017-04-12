@@ -72,6 +72,11 @@ mixpanel.init("bfe3a1f807b80b1f269d83b4e7a062a7");</script>
          <!--Site Logo-->
         <div class="logo" data-sticky-logo="profile/img/logo_tumbasinn.png"  data-normal-logo="profile/img/logo_tumbasinn.png">
                 <img alt="Tumbas" class="logo-tumbas" src="profile/img/logo-tumbasinn.png" data-logo-height="50">
+
+        <!--Site Logo-->
+        <div class="logo" data-sticky-logo="profile/img/logotumbas.png" data-normal-logo="profile/img/logotumbas.png">
+            <a href="/">
+                <img alt="Tumbas" class="logo-tumbas" src="profile/img/logotumbas.png" data-logo-height="50">
             </a>
         </div>
         <!--End Site Logo-->
@@ -291,7 +296,7 @@ mixpanel.init("bfe3a1f807b80b1f269d83b4e7a062a7");</script>
                          data-endelementdelay="0"
                          data-endspeed="300">
                         <!--<a href='#' class="btn v-btn v-third-light">GET IT NOW!</a>-->
-                        <img src="profile/img/logo-tumbasin2.png" width="300" />
+                        <img src="profile/img/logotumbas.png" width="300" />
                     </div>
 
 
@@ -976,7 +981,7 @@ mixpanel.init("bfe3a1f807b80b1f269d83b4e7a062a7");</script>
 
                                 <ul class="social-icons standard">
                                     <li class="twitter"><a href="https://twitter.com/tumbasin?s=08" target="_blank"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a></li>
-                                    <li class="facebook"><a href="#" target="_blank"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a></li>
+                                    <li class="facebook"><a href="https://www.facebook.com/tumbasinbelanja/" target="_blank"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a></li>
                                     <li class="instagram"><a href="https://www.instagram.com/tumbas.in/" target="_blank"><i class="fa fa-instagram"></i><i class="fa fa-instagram"></i></a></li>
                                     <!--<li class="youtube"><a href="#" target="_blank"><i class="fa fa-youtube"></i><i class="fa fa-youtube"></i></a></li>
                                     <li class="googleplus"><a href="#" target="_blank"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a></li>-->
@@ -1000,7 +1005,7 @@ mixpanel.init("bfe3a1f807b80b1f269d83b4e7a062a7");</script>
         <div class="copyright">
             <div class="container">
                 <!--<p>© Copyright 2014 by Venue. All Rights Reserved.</p>-->
-                <p>© Copyright 2017 by tumbas.in</p>
+                <p>© Copyright 2017 by tumbas.in  All Rights Reserved.</p>
                 <nav class="footer-menu std-menu">
                     <ul class="menu">
                         <li><a data-hash href="#describe">Tentang</a></li>
