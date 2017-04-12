@@ -69,10 +69,9 @@ mixpanel.init("bfe3a1f807b80b1f269d83b4e7a062a7");</script>
 <header class="semi-transparent-header" data-bg-color="rgba(249, 252, 249, 0.36)" data-font-color="#fff">
     <div class="container">
 
-        <!--Site Logo-->
-        <div class="logo" data-sticky-logo="profile/img/logo-tumbasin2.png" data-normal-logo="profile/img/logo-tumbasin2.png">
-            <a href="index.html">
-                <img alt="Tumbas" class="logo-tumbas" src="profile/img/logo-tumbasin2.png" data-logo-height="50">
+         <!--Site Logo-->
+        <div class="logo" data-sticky-logo="profile/img/logo_tumbasinn.png"  data-normal-logo="profile/img/logo_tumbasinn.png">
+                <img alt="Tumbas" class="logo-tumbas" src="profile/img/logo-tumbasinn.png" data-logo-height="50">
             </a>
         </div>
         <!--End Site Logo-->
