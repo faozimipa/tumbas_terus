@@ -70,9 +70,9 @@ mixpanel.init("bfe3a1f807b80b1f269d83b4e7a062a7");</script>
     <div class="container">
 
         <!--Site Logo-->
-        <div class="logo" data-sticky-logo="profile/img/logo-tumbasin2.png" data-normal-logo="profile/img/logo-tumbasin2.png">
-            <a href="index.html">
-                <img alt="Tumbas" class="logo-tumbas" src="profile/img/logo-tumbasin2.png" data-logo-height="50">
+        <div class="logo" data-sticky-logo="profile/img/logotumbas.png" data-normal-logo="profile/img/logotumbas.png">
+            <a href="/">
+                <img alt="Tumbas" class="logo-tumbas" src="profile/img/logotumbas.png" data-logo-height="50">
             </a>
         </div>
         <!--End Site Logo-->
@@ -977,7 +977,7 @@ mixpanel.init("bfe3a1f807b80b1f269d83b4e7a062a7");</script>
 
                                 <ul class="social-icons standard">
                                     <li class="twitter"><a href="https://twitter.com/tumbasin?s=08" target="_blank"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a></li>
-                                    <li class="facebook"><a href="#" target="_blank"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a></li>
+                                    <li class="facebook"><a href="https://www.facebook.com/tumbasinbelanja/" target="_blank"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a></li>
                                     <li class="instagram"><a href="https://www.instagram.com/tumbas.in/" target="_blank"><i class="fa fa-instagram"></i><i class="fa fa-instagram"></i></a></li>
                                     <!--<li class="youtube"><a href="#" target="_blank"><i class="fa fa-youtube"></i><i class="fa fa-youtube"></i></a></li>
                                     <li class="googleplus"><a href="#" target="_blank"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a></li>-->
@@ -1001,7 +1001,7 @@ mixpanel.init("bfe3a1f807b80b1f269d83b4e7a062a7");</script>
         <div class="copyright">
             <div class="container">
                 <!--<p>© Copyright 2014 by Venue. All Rights Reserved.</p>-->
-                <p>© Copyright 2017 by tumbas.in</p>
+                <p>© Copyright 2017 by tumbas.in  All Rights Reserved.</p>
                 <nav class="footer-menu std-menu">
                     <ul class="menu">
                         <li><a data-hash href="#describe">Tentang</a></li>
