@@ -292,7 +292,7 @@ mixpanel.init("bfe3a1f807b80b1f269d83b4e7a062a7");</script>
                          data-endelementdelay="0"
                          data-endspeed="300">
                         <!--<a href='#' class="btn v-btn v-third-light">GET IT NOW!</a>-->
-                        <img src="profile/img/logo-tumbasin2.png" width="300" />
+                        <img src="profile/img/logotumbas.png" width="300" />
                     </div>
 
 
