@@ -318,7 +318,7 @@
 }
 
 .v-bg-stylish.v-bg-stylish-v10 {
-    background-color: #25CBF5;
+    background-color: #ff8f00;
 }
 
 .v-bg-stylish.v-bg-stylish-v10,
@@ -339,8 +339,8 @@
 }
 
 .v-bg-stylish-v10.v-full-width-text:after {
-    border-color: #25CBF5;
-    background-color: #25CBF5;
+    border-color: #ff8f00;
+    background-color: #ff8f00;
 }
 
 .v-bg-stylish-v10 h4.v-text-heading,
@@ -383,7 +383,7 @@
 }
 
 .v-parallax .v-bg-overlay.overlay-colored {
-    background-color: #25CBF5;
+    background-color: #ff8f00;
     opacity: 0.6;
 }
 

@@ -210,7 +210,7 @@ div.center {
 }
 
 ::selection, ::-moz-selection {
-    background-color: #25CBF5;
+    background-color: #ff8f00;
     color: #fff;
 }
 
@@ -237,7 +237,7 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: #25CBF5;
+    color: #ff8f00;
 }
 
 a:active {
@@ -366,7 +366,7 @@ ul ul, ul ol, ol ol, ol ul {
 
 a.text-link {
     border-bottom: 1px dotted #e3e3e3;
-    border-color: #25CBF5;
+    border-color: #ff8f00;
 }
 
 .no-js-alert {
@@ -556,14 +556,14 @@ div.white-color {
 
 .v-color,
 div.v-color {
-    color: #25CBF5;
+    color: #ff8f00;
 }
 
 .v-link {
-    color:#25CBF5;
+    color:#ff8f00;
 }
 .v-link:hover {
-    border-bottom:1px dotted #25CBF5;
+    border-bottom:1px dotted #ff8f00;
 }
 .v-bg-color {
     background-color: #f7f7f7 !important;
@@ -723,7 +723,7 @@ figure.animated-overlay figcaption .thumb-info i.fa-angle-right:before {
 }
 
 figure:hover .overlay {
-    box-shadow: inset 0 0 0 500px #25CBF5;
+    box-shadow: inset 0 0 0 500px #ff8f00;
 }
 
 figcaption .thumb-info {
@@ -998,8 +998,8 @@ ul.bar-styling li > .comments-likes:hover,
 ul.page-numbers li > a:hover,
 ul.page-numbers li > span.current {
     color: #ffffff !important;
-    background: #25CBF5;
-    border-color: #25CBF5;
+    background: #ff8f00;
+    border-color: #ff8f00;
 }
 
 ul.bar-styling li > .comments-likes:hover * {
@@ -1358,7 +1358,7 @@ ul.bar-styling li.pinterest > a:hover {
 }
 
 .carousel-wrap > a:hover {
-    color: #25CBF5 !important;
+    color: #ff8f00 !important;
 }
 
 .carousel-wrap a.prev {
@@ -1852,7 +1852,7 @@ body.boxed-layout #container {
 }
 
 #back-to-top:hover {
-    color: #25CBF5;
+    color: #ff8f00;
 }
 
 #back-to-top i.fa {
@@ -2099,13 +2099,13 @@ h4.v-line-heading:before {
     margin: 0 0 -2px 0;
     padding-bottom: 7px;
     display: inline-block;
-    border-bottom: 2px solid #25CBF5;
+    border-bottom: 2px solid #ff8f00;
 }
 
 .v-heading-v2 span {
     margin-left: 8px;
     font-size: 10px;
-    background-color: #25CBF5;
+    background-color: #ff8f00;
     padding: 2px 4px;
     border-radius: 50%;
     font-weight: 600;
@@ -2314,7 +2314,7 @@ h4.v-line-heading:before {
 }
 
 .v-pagination a:hover {
-    color: #25CBF5;
+    color: #ff8f00;
 }
 
 .v-pagination a, .search-pagination a {
@@ -2337,8 +2337,8 @@ h4.v-line-heading:before {
 .pagination > .active > span:hover,
 .pagination > .active > a:focus,
 .pagination > .active > span:focus {
-    background-color: #25CBF5;
-    border-color: #25CBF5;
+    background-color: #ff8f00;
+    border-color: #ff8f00;
 }
 
 .pagination > li > a, 
@@ -2351,8 +2351,8 @@ h4.v-line-heading:before {
 .pagination > li:not(.active) > a:hover,
 .pagination > li:not(.active) > span:hover {
     color: #ffffff!important;
-    background: #25CBF5;
-    border-color: #25CBF5;
+    background: #ff8f00;
+    border-color: #ff8f00;
 }
 
 .pagination > .active > a,
@@ -2488,7 +2488,7 @@ h4.v-line-heading:before {
 .sidebar .v-archive-widget ul > li a,
 .sidebar .v-meta-data-widget ul > li a,
 .sidebar .v-recent-entry-widget ul > li {
-    color: #25CBF5;
+    color: #ff8f00;
     font-family: 'Open Sans';
     border-bottom: 1px solid #EBEBEB;
     font-size: 13px;
@@ -2504,13 +2504,13 @@ h4.v-line-heading:before {
 .v-nav-menu-widget ul > li.current-menu-item a,
 .sidebar .v-meta-data-widget ul > li a:hover,
 .sidebar .v-recent-entry-widget ul > li a:hover {
-    color: #25CBF5;
+    color: #ff8f00;
 }
 
 .list-toggle:after {
     top: 9px;
     right: 10px;
-    color: #25CBF5;
+    color: #ff8f00;
     font-size: 14px;
     content: "\f105";
     position: absolute;
@@ -2525,7 +2525,7 @@ h4.v-line-heading:before {
 }
 
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
-    border-left-color: #25CBF5;
+    border-left-color: #ff8f00;
 }
 
 .sidebar .v-nav-menu-widget ul > li a i.fa {
@@ -2567,7 +2567,7 @@ h4.v-line-heading:before {
     border-bottom: 1px solid rgb(241, 241, 241);
     border-top: 1px solid rgb(241, 241, 241);
     background: #FAFAFA;
-    border-left: 1px solid #25CBF5 !important;
+    border-left: 1px solid #ff8f00 !important;
 }
  
 .sidebar .v-nav-menu-widget ul > li a:before {
@@ -2638,7 +2638,7 @@ h4.v-line-heading:before {
 .v-right-sidebar-inner > .active > a,
 .v-right-sidebar-inner > .active > a:focus,
 .v-right-sidebar-inner > .active > a:hover {
-    color: #25CBF5;
+    color: #ff8f00;
     background-color: #fff;
 }
 
@@ -2768,7 +2768,7 @@ h4.v-line-heading:before {
 }
 
 .widget .tagcloud a:hover, .widget ul.wp-tag-cloud li:hover > a {
-    background-color: #25CBF5;
+    background-color: #ff8f00;
     color: #ffffff;
 }
 
@@ -2812,7 +2812,7 @@ h4.v-line-heading:before {
 }
 
 .sidebar .v-recent-entry-widget a {
-    color: #25CBF5;
+    color: #ff8f00;
     font-size: 14px;
 }
 
@@ -2844,7 +2844,7 @@ h4.v-line-heading:before {
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
     border-radius: 2px;
-    background-color: #25CBF5!important;
+    background-color: #ff8f00!important;
     color: #ffffff;
 }
 
@@ -2979,7 +2979,7 @@ footer {
 }
 
 footer a:hover {
-    color: #25CBF5;
+    color: #ff8f00;
 }
 
 footer, footer p {
@@ -3156,7 +3156,7 @@ footer .v-recent-entry-widget .post-date {
 }
 
 .copyright a:hover {
-    color: #25CBF5;
+    color: #ff8f00;
 }
 
 
@@ -3188,7 +3188,7 @@ footer .v-recent-entry-widget .post-date {
 
 a[rel="tooltip"] {
 	border-bottom: 1px dotted #e3e3e3;
-     border-color: #25CBF5;
+     border-color: #ff8f00;
 }
 span.tooltip {
     display: block;
@@ -3229,7 +3229,7 @@ span.tooltip .arrow {
     text-decoration: none;
     display: inline-block;
     border-bottom: 1px dotted #e3e3e3;
-    border-color: #25CBF5;
+    border-color: #ff8f00;
 }
 
 .read-more i, .read-more em {
@@ -3237,7 +3237,7 @@ span.tooltip .arrow {
 }
 
 .read-more i:before, .read-more em:before {
-    color: #25CBF5;
+    color: #ff8f00;
 }
 
 .read-more-button {
@@ -3266,7 +3266,7 @@ span.tooltip .arrow {
 }
 
 .item-link:hover {
-    color: #25CBF5;
+    color: #ff8f00;
 }
 
 .portfolio .item-link i {
@@ -3417,7 +3417,7 @@ p.v-smash-text-large-2x {
 }
 
 .v-control-right .v-smash-text-wrap {
-    border-left: 2px solid #25CBF5;
+    border-left: 2px solid #ff8f00;
     border-top-left-radius: 1px;
     border-bottom-left-radius: 1px;
 }
@@ -3661,7 +3661,7 @@ figure.lightbox {
 
 .logged-in-as a {
     border-bottom: 1px dotted #e3e3e3;
-    border-color: #25CBF5;
+    border-color: #ff8f00;
 }
 
 #comments-list {
@@ -3716,7 +3716,7 @@ figure.lightbox {
 .comment-content .comment-body p {
     margin-bottom: 10px;
     font-family: 'Open Sans';
-    color: #25CBF5;
+    color: #ff8f00;
     font-size: 14px; 
 }
 
@@ -3752,7 +3752,7 @@ figure.lightbox {
 
 .comment-meta-actions .edit-link,
 .comment-meta-actions .comment-reply {
-    border-color: #25CBF5;
+    border-color: #ff8f00;
 }
 
 #comment-area .edit-link a:hover, #comment-area .comment-reply a:hover {
@@ -4136,7 +4136,7 @@ img.media-object {
     font-weight: normal;
     color: #333333;
     border-bottom: 1px dotted #e3e3e3;
-    border-color: #25CBF5;
+    border-color: #ff8f00;
 }
 .media {
     margin-top:0px;
@@ -4361,7 +4361,7 @@ button::-moz-focus-inner {
     padding-bottom: 30px;
     border-radius: 2px;
     box-shadow: 0 2px 15px 5px rgba(0,0,0,.1);
-    border-top: 4px solid #25CBF5;
+    border-top: 4px solid #ff8f00;
 }
 
 .body-sign .checkbox-custom {
@@ -4470,7 +4470,7 @@ body .btn-gplus:focus {
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    background-color: #25CBF5 !important;
+    background-color: #ff8f00 !important;
     color: #ffffff;
 }
 
