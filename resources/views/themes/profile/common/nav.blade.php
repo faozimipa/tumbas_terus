@@ -62,9 +62,9 @@
                     <li class="dropdown">
                         <a class="dropdown-toggle menu-icon" href="#"><i class="fa fa-users"></i>GABUNG KAMI<i class="fa fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="{{route('web.profile.join.mitra')}}">SEBAGAI MITRA</a></li>
-                            <li><a href="#">SEBAGAI AGEN/SHOPPER</a></li>
-                            <li><a href="#">SEBAGAI KURIR</a></li>
+                            <!--<li><a href="#">SEBAGAI MITRA</a></li>-->
+                            <li><a href="https://goo.gl/forms/v6UyAQ0EgpoMsHxD2" target="_blank">SEBAGAI SHOPPER</a></li>
+                            <li><a href="https://goo.gl/forms/BlpAjN1zhDCqt4Fw2" target="_blank">SEBAGAI KURIR</a></li>
                             <!--<li class="dropdown-submenu">
                                 <a href="#">Blog Posts</a>
                                 <ul class="dropdown-menu">

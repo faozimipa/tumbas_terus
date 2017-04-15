@@ -17,7 +17,6 @@
 <div id="container">
 
     @yield('content')
-
     <!--Footer-Wrap-->
         @include('themes.profile.common.footer')
         @yield('_footer')
