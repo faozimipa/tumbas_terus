@@ -10,6 +10,11 @@
 
 /**
  * Utility class that can print to STDOUT or write to a file.
+<<<<<<< HEAD
+=======
+ *
+ * @since Class available since Release 2.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 class PHPUnit_Util_Printer
 {
@@ -81,6 +86,11 @@ class PHPUnit_Util_Printer
      * Do not confuse this function with the flush() function of this class,
      * since the flush() function may close the file being written to, rendering
      * the current object no longer usable.
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.3.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function incrementalFlush()
     {
@@ -119,6 +129,11 @@ class PHPUnit_Util_Printer
      * Check auto-flush mode.
      *
      * @return bool
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.3.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function getAutoFlush()
     {
@@ -132,6 +147,11 @@ class PHPUnit_Util_Printer
      * not be confused with the different effects of this class' flush() method.
      *
      * @param bool $autoFlush
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.3.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function setAutoFlush($autoFlush)
     {

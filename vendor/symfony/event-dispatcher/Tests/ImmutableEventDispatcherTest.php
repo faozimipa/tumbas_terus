@@ -11,14 +11,21 @@
 
 namespace Symfony\Component\EventDispatcher\Tests;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 use Symfony\Component\EventDispatcher\Event;
 use Symfony\Component\EventDispatcher\ImmutableEventDispatcher;
 
 /**
  * @author Bernhard Schussek <bschussek@gmail.com>
  */
+<<<<<<< HEAD
 class ImmutableEventDispatcherTest extends TestCase
+=======
+class ImmutableEventDispatcherTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     /**
      * @var \PHPUnit_Framework_MockObject_MockObject

@@ -516,6 +516,7 @@ class Arr
     {
         return array_filter($array, $callback, ARRAY_FILTER_USE_BOTH);
     }
+<<<<<<< HEAD
 
     /**
      * If the given value is not an array, wrap it in one.
@@ -527,4 +528,6 @@ class Arr
     {
         return ! is_array($value) ? [$value] : $value;
     }
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 }

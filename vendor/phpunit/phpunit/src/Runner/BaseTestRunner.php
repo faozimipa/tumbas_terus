@@ -10,6 +10,11 @@
 
 /**
  * Base class for all test runners.
+<<<<<<< HEAD
+=======
+ *
+ * @since Class available since Release 2.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 abstract class PHPUnit_Runner_BaseTestRunner
 {

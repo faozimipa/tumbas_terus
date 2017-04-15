@@ -11,11 +11,18 @@
 
 namespace Symfony\Component\Console\Tests\Formatter;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Formatter\OutputFormatter;
 use Symfony\Component\Console\Formatter\OutputFormatterStyle;
 
 class OutputFormatterTest extends TestCase
+=======
+use Symfony\Component\Console\Formatter\OutputFormatter;
+use Symfony\Component\Console\Formatter\OutputFormatterStyle;
+
+class OutputFormatterTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     public function testEmptyTag()
     {
@@ -257,9 +264,12 @@ class OutputFormatterTest extends TestCase
         $this->assertEquals(
             'some question', $formatter->format('<question>some question</question>')
         );
+<<<<<<< HEAD
         $this->assertEquals(
             'some text with inline style', $formatter->format('<fg=red>some text with inline style</>')
         );
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 
         $formatter->setDecorated(true);
 
@@ -275,9 +285,12 @@ class OutputFormatterTest extends TestCase
         $this->assertEquals(
             "\033[30;46msome question\033[39;49m", $formatter->format('<question>some question</question>')
         );
+<<<<<<< HEAD
         $this->assertEquals(
             "\033[31msome text with inline style\033[39m", $formatter->format('<fg=red>some text with inline style</>')
         );
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     }
 
     public function testContentWithLineBreaks()

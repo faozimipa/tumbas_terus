@@ -11,10 +11,16 @@
 
 namespace Symfony\Component\Finder\Tests\Comparator;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Finder\Comparator\DateComparator;
 
 class DateComparatorTest extends TestCase
+=======
+use Symfony\Component\Finder\Comparator\DateComparator;
+
+class DateComparatorTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     public function testConstructor()
     {

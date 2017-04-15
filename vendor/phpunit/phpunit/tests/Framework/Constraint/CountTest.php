@@ -8,6 +8,13 @@
  * file that was distributed with this source code.
  */
 
+<<<<<<< HEAD
+=======
+/**
+ * @since      Class available since Release 3.7.30
+ * @covers     PHPUnit_Framework_Constraint_Count
+ */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 class CountTest extends PHPUnit_Framework_TestCase
 {
     public function testCount()

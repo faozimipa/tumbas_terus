@@ -8,6 +8,13 @@
  * file that was distributed with this source code.
  */
 
+<<<<<<< HEAD
+=======
+/**
+ * @since      Class available since Release 4.3.0
+ * @covers     PHPUnit_Framework_Constraint_ExceptionMessageRegExp
+ */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 class ExceptionMessageRegExpTest extends PHPUnit_Framework_TestCase
 {
     /**
@@ -41,6 +48,10 @@ class ExceptionMessageRegExpTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @coversNothing
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException \Exception variadic
      * @expectedExceptionMessageRegExp /^A variadic \w+ message/
      */

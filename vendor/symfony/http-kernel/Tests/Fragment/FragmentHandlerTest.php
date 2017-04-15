@@ -11,7 +11,10 @@
 
 namespace Symfony\Component\HttpKernel\Tests\Fragment;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 use Symfony\Component\HttpKernel\Fragment\FragmentHandler;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -19,7 +22,11 @@ use Symfony\Component\HttpFoundation\Response;
 /**
  * @group time-sensitive
  */
+<<<<<<< HEAD
 class FragmentHandlerTest extends TestCase
+=======
+class FragmentHandlerTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     private $requestStack;
 

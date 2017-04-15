@@ -11,7 +11,10 @@
 
 namespace Symfony\Component\HttpKernel\Tests\EventListener;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 use Symfony\Component\HttpKernel\HttpKernelInterface;
 use Symfony\Component\HttpKernel\EventListener\ExceptionListener;
 use Symfony\Component\HttpKernel\Log\DebugLoggerInterface;
@@ -27,7 +30,11 @@ use Symfony\Component\HttpKernel\Tests\Logger;
  *
  * @group time-sensitive
  */
+<<<<<<< HEAD
 class ExceptionListenerTest extends TestCase
+=======
+class ExceptionListenerTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     public function testConstruct()
     {

@@ -12,7 +12,10 @@
 namespace Symfony\Component\HttpKernel\EventListener;
 
 use Symfony\Component\HttpFoundation\Cookie;
+<<<<<<< HEAD
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 use Symfony\Component\HttpKernel\KernelEvents;
 use Symfony\Component\HttpKernel\Event\FilterResponseEvent;
 use Symfony\Component\HttpKernel\Event\GetResponseEvent;

@@ -38,7 +38,11 @@ class ValidationServiceProvider extends ServiceProvider
             // The validation presence verifier is responsible for determining the existence of
             // values in a given data collection which is typically a relational database or
             // other persistent data stores. It is used to check for "uniqueness" as well.
+<<<<<<< HEAD
             if (isset($app['db'], $app['validation.presence'])) {
+=======
+            if (isset($app['db']) && isset($app['validation.presence'])) {
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
                 $validator->setPresenceVerifier($app['validation.presence']);
             }
 

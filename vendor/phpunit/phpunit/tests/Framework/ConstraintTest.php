@@ -8,8 +8,22 @@
  * file that was distributed with this source code.
  */
 
+<<<<<<< HEAD
 class Framework_ConstraintTest extends PHPUnit_Framework_TestCase
 {
+=======
+/**
+ * @since      Class available since Release 3.0.0
+ */
+class Framework_ConstraintTest extends PHPUnit_Framework_TestCase
+{
+    /**
+     * @covers PHPUnit_Framework_Constraint_ArrayHasKey
+     * @covers PHPUnit_Framework_Assert::arrayHasKey
+     * @covers PHPUnit_Framework_Constraint::count
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintArrayHasKey()
     {
         $constraint = PHPUnit_Framework_Assert::arrayHasKey(0);
@@ -35,6 +49,14 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_ArrayHasKey
+     * @covers PHPUnit_Framework_Assert::arrayHasKey
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintArrayHasKey2()
     {
         $constraint = PHPUnit_Framework_Assert::arrayHasKey(0);
@@ -57,6 +79,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_ArrayHasKey
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::arrayHasKey
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintArrayNotHasKey()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -85,6 +117,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_ArrayHasKey
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::arrayHasKey
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintArrayNotHasKey2()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -110,6 +152,15 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_IsReadable
+     * @covers PHPUnit_Framework_Assert::isReadable
+     * @covers PHPUnit_Framework_Constraint::count
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintIsReadable()
     {
         $constraint = PHPUnit_Framework_Assert::isReadable();
@@ -136,6 +187,15 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_IsWritable
+     * @covers PHPUnit_Framework_Assert::isWritable
+     * @covers PHPUnit_Framework_Constraint::count
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintIsWritable()
     {
         $constraint = PHPUnit_Framework_Assert::isWritable();
@@ -162,6 +222,15 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_DirectoryExists
+     * @covers PHPUnit_Framework_Assert::directoryExists
+     * @covers PHPUnit_Framework_Constraint::count
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintDirectoryExists()
     {
         $constraint = PHPUnit_Framework_Assert::directoryExists();
@@ -188,6 +257,15 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_FileExists
+     * @covers PHPUnit_Framework_Assert::fileExists
+     * @covers PHPUnit_Framework_Constraint::count
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintFileExists()
     {
         $constraint = PHPUnit_Framework_Assert::fileExists();
@@ -214,6 +292,14 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_FileExists
+     * @covers PHPUnit_Framework_Assert::fileExists
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintFileExists2()
     {
         $constraint = PHPUnit_Framework_Assert::fileExists();
@@ -236,6 +322,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_FileExists
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_Assert::fileExists
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintFileNotExists()
     {
         $file = dirname(__DIR__) . DIRECTORY_SEPARATOR . '_files' . DIRECTORY_SEPARATOR . 'ClassWithNonPublicAttributes.php';
@@ -266,6 +362,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_FileExists
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_Assert::fileExists
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintFileNotExists2()
     {
         $file = dirname(__DIR__) . DIRECTORY_SEPARATOR . '_files' . DIRECTORY_SEPARATOR . 'ClassWithNonPublicAttributes.php';
@@ -292,6 +398,15 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_GreaterThan
+     * @covers PHPUnit_Framework_Assert::greaterThan
+     * @covers PHPUnit_Framework_Constraint::count
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintGreaterThan()
     {
         $constraint = PHPUnit_Framework_Assert::greaterThan(1);
@@ -319,6 +434,14 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_GreaterThan
+     * @covers PHPUnit_Framework_Assert::greaterThan
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintGreaterThan2()
     {
         $constraint = PHPUnit_Framework_Assert::greaterThan(1);
@@ -342,6 +465,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_GreaterThan
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::greaterThan
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintNotGreaterThan()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -370,6 +503,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_GreaterThan
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::greaterThan
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintNotGreaterThan2()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -395,6 +538,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_IsEqual
+     * @covers PHPUnit_Framework_Constraint_GreaterThan
+     * @covers PHPUnit_Framework_Constraint_Or
+     * @covers PHPUnit_Framework_Assert::greaterThanOrEqual
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintGreaterThanOrEqual()
     {
         $constraint = PHPUnit_Framework_Assert::greaterThanOrEqual(1);
@@ -422,6 +575,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_IsEqual
+     * @covers PHPUnit_Framework_Constraint_GreaterThan
+     * @covers PHPUnit_Framework_Constraint_Or
+     * @covers PHPUnit_Framework_Assert::greaterThanOrEqual
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintGreaterThanOrEqual2()
     {
         $constraint = PHPUnit_Framework_Assert::greaterThanOrEqual(1);
@@ -445,6 +608,18 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_IsEqual
+     * @covers PHPUnit_Framework_Constraint_GreaterThan
+     * @covers PHPUnit_Framework_Constraint_Or
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::greaterThanOrEqual
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintNotGreaterThanOrEqual()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -473,6 +648,18 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_IsEqual
+     * @covers PHPUnit_Framework_Constraint_GreaterThan
+     * @covers PHPUnit_Framework_Constraint_Or
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::greaterThanOrEqual
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintNotGreaterThanOrEqual2()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -498,6 +685,15 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_IsAnything
+     * @covers PHPUnit_Framework_Assert::anything
+     * @covers PHPUnit_Framework_Constraint::count
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintIsAnything()
     {
         $constraint = PHPUnit_Framework_Assert::anything();
@@ -508,6 +704,16 @@ EOF
         $this->assertCount(0, $constraint);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_IsAnything
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::anything
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintNotIsAnything()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -536,6 +742,15 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_IsEqual
+     * @covers PHPUnit_Framework_Assert::equalTo
+     * @covers PHPUnit_Framework_Constraint::count
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintIsEqual()
     {
         $constraint = PHPUnit_Framework_Assert::equalTo(1);
@@ -826,6 +1041,12 @@ EOF
 
     /**
      * @dataProvider isEqualProvider
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Constraint_IsEqual
+     * @covers PHPUnit_Framework_Assert::equalTo
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function testConstraintIsEqual2($expected, $actual, $message)
     {
@@ -845,6 +1066,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_IsEqual
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::equalTo
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintIsNotEqual()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -874,6 +1105,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_IsEqual
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::equalTo
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintIsNotEqual2()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -899,6 +1140,15 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_IsIdentical
+     * @covers PHPUnit_Framework_Assert::identicalTo
+     * @covers PHPUnit_Framework_Constraint::count
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintIsIdentical()
     {
         $a = new stdClass;
@@ -928,6 +1178,14 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_IsIdentical
+     * @covers PHPUnit_Framework_Assert::identicalTo
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintIsIdentical2()
     {
         $a = new stdClass;
@@ -953,6 +1211,14 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_IsIdentical
+     * @covers PHPUnit_Framework_Assert::identicalTo
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintIsIdentical3()
     {
         $constraint = PHPUnit_Framework_Assert::identicalTo('a');
@@ -980,6 +1246,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_IsIdentical
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::identicalTo
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintIsNotIdentical()
     {
         $a = new stdClass;
@@ -1011,6 +1287,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_IsIdentical
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::identicalTo
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintIsNotIdentical2()
     {
         $a = new stdClass;
@@ -1037,6 +1323,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_IsIdentical
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::identicalTo
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintIsNotIdentical3()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -1061,6 +1357,15 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_IsInstanceOf
+     * @covers PHPUnit_Framework_Assert::isInstanceOf
+     * @covers PHPUnit_Framework_Constraint::count
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintIsInstanceOf()
     {
         $constraint = PHPUnit_Framework_Assert::isInstanceOf('Exception');
@@ -1093,6 +1398,14 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_IsInstanceOf
+     * @covers PHPUnit_Framework_Assert::isInstanceOf
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintIsInstanceOf2()
     {
         $constraint = PHPUnit_Framework_Assert::isInstanceOf('Exception');
@@ -1115,6 +1428,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_IsInstanceOf
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::isInstanceOf
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintIsNotInstanceOf()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -1144,6 +1467,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_IsInstanceOf
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::isInstanceOf
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintIsNotInstanceOf2()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -1168,6 +1501,15 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_IsType
+     * @covers PHPUnit_Framework_Assert::isType
+     * @covers PHPUnit_Framework_Constraint::count
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintIsType()
     {
         $constraint = PHPUnit_Framework_Assert::isType('string');
@@ -1194,6 +1536,14 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_IsType
+     * @covers PHPUnit_Framework_Assert::isType
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintIsType2()
     {
         $constraint = PHPUnit_Framework_Assert::isType('string');
@@ -1229,6 +1579,11 @@ EOF
 
     /**
      * @dataProvider resources
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Constraint_IsType
+     * @covers PHPUnit_Framework_Assert::isType
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function testConstraintIsResourceTypeEvaluatesCorrectlyWithResources($resource)
     {
@@ -1239,6 +1594,16 @@ EOF
         @fclose($resource);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_IsType
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::isType
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintIsNotType()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -1268,6 +1633,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_IsType
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::isType
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintIsNotType2()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -1292,6 +1667,15 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_IsNull
+     * @covers PHPUnit_Framework_Assert::isNull
+     * @covers PHPUnit_Framework_Constraint::count
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintIsNull()
     {
         $constraint = PHPUnit_Framework_Assert::isNull();
@@ -1318,6 +1702,14 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_IsNull
+     * @covers PHPUnit_Framework_Assert::isNull
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintIsNull2()
     {
         $constraint = PHPUnit_Framework_Assert::isNull();
@@ -1340,6 +1732,17 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_IsNull
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::isNull
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_Constraint::count
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintIsNotNull()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -1368,6 +1771,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_IsNull
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::isNull
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintIsNotNull2()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -1392,6 +1805,15 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_LessThan
+     * @covers PHPUnit_Framework_Assert::lessThan
+     * @covers PHPUnit_Framework_Constraint::count
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintLessThan()
     {
         $constraint = PHPUnit_Framework_Assert::lessThan(1);
@@ -1419,6 +1841,14 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_LessThan
+     * @covers PHPUnit_Framework_Assert::lessThan
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintLessThan2()
     {
         $constraint = PHPUnit_Framework_Assert::lessThan(1);
@@ -1442,6 +1872,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_LessThan
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::lessThan
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintNotLessThan()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -1471,6 +1911,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_LessThan
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::lessThan
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintNotLessThan2()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -1496,6 +1946,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_IsEqual
+     * @covers PHPUnit_Framework_Constraint_LessThan
+     * @covers PHPUnit_Framework_Constraint_Or
+     * @covers PHPUnit_Framework_Assert::lessThanOrEqual
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintLessThanOrEqual()
     {
         $constraint = PHPUnit_Framework_Assert::lessThanOrEqual(1);
@@ -1523,6 +1983,12 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_Callback
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintCallback()
     {
         $closureReflect = function ($parameter) {
@@ -1542,7 +2008,11 @@ EOF
 
         $callback   = [$this, 'callbackReturningTrue'];
         $constraint = PHPUnit_Framework_Assert::callback($callback);
+<<<<<<< HEAD
         $this->assertTrue($constraint->evaluate(false, '', true));
+=======
+        $this->assertTrue($constraint->evaluate(false,  '', true));
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 
         $callback   = ['Framework_ConstraintTest', 'staticCallbackReturningTrue'];
         $constraint = PHPUnit_Framework_Assert::callback($callback);
@@ -1552,6 +2022,10 @@ EOF
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Constraint_Callback
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_ExpectationFailedException
      * @expectedExceptionMessage Failed asserting that 'This fails' is accepted by specified callback.
      */
@@ -1573,6 +2047,16 @@ EOF
         return true;
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_IsEqual
+     * @covers PHPUnit_Framework_Constraint_LessThan
+     * @covers PHPUnit_Framework_Constraint_Or
+     * @covers PHPUnit_Framework_Assert::lessThanOrEqual
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintLessThanOrEqual2()
     {
         $constraint = PHPUnit_Framework_Assert::lessThanOrEqual(1);
@@ -1596,6 +2080,18 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_IsEqual
+     * @covers PHPUnit_Framework_Constraint_LessThan
+     * @covers PHPUnit_Framework_Constraint_Or
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::lessThanOrEqual
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintNotLessThanOrEqual()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -1625,6 +2121,18 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_IsEqual
+     * @covers PHPUnit_Framework_Constraint_LessThan
+     * @covers PHPUnit_Framework_Constraint_Or
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::lessThanOrEqual
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintNotLessThanOrEqual2()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -1650,6 +2158,15 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_ClassHasAttribute
+     * @covers PHPUnit_Framework_Assert::classHasAttribute
+     * @covers PHPUnit_Framework_Constraint::count
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintClassHasAttribute()
     {
         $constraint = PHPUnit_Framework_Assert::classHasAttribute('privateAttribute');
@@ -1677,6 +2194,14 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_ClassHasAttribute
+     * @covers PHPUnit_Framework_Assert::classHasAttribute
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintClassHasAttribute2()
     {
         $constraint = PHPUnit_Framework_Assert::classHasAttribute('privateAttribute');
@@ -1699,6 +2224,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_ClassHasAttribute
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::classHasAttribute
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintClassNotHasAttribute()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -1728,6 +2263,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_ClassHasAttribute
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::classHasAttribute
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintClassNotHasAttribute2()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -1752,6 +2297,15 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_ClassHasStaticAttribute
+     * @covers PHPUnit_Framework_Assert::classHasStaticAttribute
+     * @covers PHPUnit_Framework_Constraint::count
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintClassHasStaticAttribute()
     {
         $constraint = PHPUnit_Framework_Assert::classHasStaticAttribute('privateStaticAttribute');
@@ -1779,6 +2333,14 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_ClassHasStaticAttribute
+     * @covers PHPUnit_Framework_Assert::classHasStaticAttribute
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintClassHasStaticAttribute2()
     {
         $constraint = PHPUnit_Framework_Assert::classHasStaticAttribute('foo');
@@ -1801,6 +2363,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_ClassHasStaticAttribute
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::classHasStaticAttribute
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintClassNotHasStaticAttribute()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -1830,6 +2402,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_ClassHasStaticAttribute
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::classHasStaticAttribute
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintClassNotHasStaticAttribute2()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -1854,6 +2436,15 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_ObjectHasAttribute
+     * @covers PHPUnit_Framework_Assert::objectHasAttribute
+     * @covers PHPUnit_Framework_Constraint::count
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintObjectHasAttribute()
     {
         $constraint = PHPUnit_Framework_Assert::objectHasAttribute('privateAttribute');
@@ -1881,6 +2472,14 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_ObjectHasAttribute
+     * @covers PHPUnit_Framework_Assert::objectHasAttribute
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintObjectHasAttribute2()
     {
         $constraint = PHPUnit_Framework_Assert::objectHasAttribute('privateAttribute');
@@ -1903,6 +2502,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_ObjectHasAttribute
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::objectHasAttribute
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintObjectNotHasAttribute()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -1932,6 +2541,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_ObjectHasAttribute
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::objectHasAttribute
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintObjectNotHasAttribute2()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -1956,6 +2575,15 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_PCREMatch
+     * @covers PHPUnit_Framework_Assert::matchesRegularExpression
+     * @covers PHPUnit_Framework_Constraint::count
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintPCREMatch()
     {
         $constraint = PHPUnit_Framework_Assert::matchesRegularExpression('/foo/');
@@ -1983,6 +2611,14 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_PCREMatch
+     * @covers PHPUnit_Framework_Assert::matchesRegularExpression
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintPCREMatch2()
     {
         $constraint = PHPUnit_Framework_Assert::matchesRegularExpression('/foo/');
@@ -2005,6 +2641,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_PCREMatch
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::matchesRegularExpression
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintPCRENotMatch()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -2034,6 +2680,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_PCREMatch
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::matchesRegularExpression
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintPCRENotMatch2()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -2058,6 +2714,14 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_StringMatches
+     * @covers PHPUnit_Framework_Assert::matches
+     * @covers PHPUnit_Framework_Constraint::count
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintStringMatches()
     {
         $constraint = PHPUnit_Framework_Assert::matches('*%c*');
@@ -2067,6 +2731,14 @@ EOF
         $this->assertCount(1, $constraint);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_StringMatches
+     * @covers PHPUnit_Framework_Assert::matches
+     * @covers PHPUnit_Framework_Constraint::count
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintStringMatches2()
     {
         $constraint = PHPUnit_Framework_Assert::matches('*%s*');
@@ -2076,6 +2748,14 @@ EOF
         $this->assertCount(1, $constraint);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_StringMatches
+     * @covers PHPUnit_Framework_Assert::matches
+     * @covers PHPUnit_Framework_Constraint::count
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintStringMatches3()
     {
         $constraint = PHPUnit_Framework_Assert::matches('*%i*');
@@ -2085,6 +2765,14 @@ EOF
         $this->assertCount(1, $constraint);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_StringMatches
+     * @covers PHPUnit_Framework_Assert::matches
+     * @covers PHPUnit_Framework_Constraint::count
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintStringMatches4()
     {
         $constraint = PHPUnit_Framework_Assert::matches('*%d*');
@@ -2094,6 +2782,14 @@ EOF
         $this->assertCount(1, $constraint);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_StringMatches
+     * @covers PHPUnit_Framework_Assert::matches
+     * @covers PHPUnit_Framework_Constraint::count
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintStringMatches5()
     {
         $constraint = PHPUnit_Framework_Assert::matches('*%x*');
@@ -2103,6 +2799,14 @@ EOF
         $this->assertCount(1, $constraint);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_StringMatches
+     * @covers PHPUnit_Framework_Assert::matches
+     * @covers PHPUnit_Framework_Constraint::count
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintStringMatches6()
     {
         $constraint = PHPUnit_Framework_Assert::matches('*%f*');
@@ -2112,6 +2816,15 @@ EOF
         $this->assertCount(1, $constraint);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_StringStartsWith
+     * @covers PHPUnit_Framework_Assert::stringStartsWith
+     * @covers PHPUnit_Framework_Constraint::count
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintStringStartsWith()
     {
         $constraint = PHPUnit_Framework_Assert::stringStartsWith('prefix');
@@ -2139,6 +2852,14 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_StringStartsWith
+     * @covers PHPUnit_Framework_Assert::stringStartsWith
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintStringStartsWith2()
     {
         $constraint = PHPUnit_Framework_Assert::stringStartsWith('prefix');
@@ -2161,6 +2882,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_StringStartsWith
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::stringStartsWith
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintStringStartsNotWith()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -2190,6 +2921,14 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_StringStartsWith
+     * @covers PHPUnit_Framework_Assert::stringStartsWith
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintStringStartsNotWith2()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -2215,6 +2954,15 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_StringContains
+     * @covers PHPUnit_Framework_Assert::stringContains
+     * @covers PHPUnit_Framework_Constraint::count
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintStringContains()
     {
         $constraint = PHPUnit_Framework_Assert::stringContains('foo');
@@ -2242,6 +2990,15 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_StringContains
+     * @covers PHPUnit_Framework_Assert::stringContains
+     * @covers PHPUnit_Framework_Constraint::count
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintStringContainsWhenIgnoreCase()
     {
         $constraint = PHPUnit_Framework_Assert::stringContains('oryginał', true);
@@ -2270,6 +3027,15 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_StringContains
+     * @covers PHPUnit_Framework_Assert::stringContains
+     * @covers PHPUnit_Framework_Constraint::count
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintStringContainsForUtf8StringWhenNotIgnoreCase()
     {
         $constraint = PHPUnit_Framework_Assert::stringContains('oryginał', false);
@@ -2298,6 +3064,14 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_StringContains
+     * @covers PHPUnit_Framework_Assert::stringContains
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintStringContains2()
     {
         $constraint = PHPUnit_Framework_Assert::stringContains('foo');
@@ -2321,6 +3095,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_StringContains
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::stringContains
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintStringNotContains()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -2350,6 +3134,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_StringContains
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::stringContains
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintStringNotContainsWhenIgnoreCase()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -2380,6 +3174,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_StringContains
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::stringContains
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintStringNotContainsForUtf8StringWhenNotIgnoreCase()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -2410,6 +3214,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_StringContains
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::stringContains
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintStringNotContains2()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -2435,6 +3249,15 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_StringEndsWith
+     * @covers PHPUnit_Framework_Assert::stringEndsWith
+     * @covers PHPUnit_Framework_Constraint::count
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintStringEndsWith()
     {
         $constraint = PHPUnit_Framework_Assert::stringEndsWith('suffix');
@@ -2462,6 +3285,14 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_StringEndsWith
+     * @covers PHPUnit_Framework_Assert::stringEndsWith
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintStringEndsWith2()
     {
         $constraint = PHPUnit_Framework_Assert::stringEndsWith('suffix');
@@ -2485,6 +3316,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_StringEndsWith
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::stringEndsWith
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintStringEndsNotWith()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -2514,6 +3355,14 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_StringEndsWith
+     * @covers PHPUnit_Framework_Assert::stringEndsWith
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintStringEndsNotWith2()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -2539,6 +3388,12 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_TraversableContains
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintArrayContainsCheckForObjectIdentity()
     {
         // Check for primitive type.
@@ -2554,6 +3409,14 @@ EOF
         $this->assertTrue($constraint->evaluate([true], '', true));
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_TraversableContains
+     * @covers PHPUnit_Framework_Constraint::count
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintArrayContains()
     {
         $constraint = new PHPUnit_Framework_Constraint_TraversableContains('foo');
@@ -2581,6 +3444,13 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_TraversableContains
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintArrayContains2()
     {
         $constraint = new PHPUnit_Framework_Constraint_TraversableContains('foo');
@@ -2604,6 +3474,15 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_TraversableContains
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintArrayNotContains()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -2633,6 +3512,15 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_TraversableContains
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintArrayNotContains2()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -2658,6 +3546,14 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_TraversableContains
+     * @covers PHPUnit_Framework_Constraint::count
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintSplObjectStorageContains()
     {
         $object     = new StdClass;
@@ -2688,6 +3584,13 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_TraversableContains
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintSplObjectStorageContains2()
     {
         $object     = new StdClass;
@@ -2712,6 +3615,14 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::attributeEqualTo
+     * @covers PHPUnit_Framework_Constraint_Attribute
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAttributeEqualTo()
     {
         $object     = new ClassWithNonPublicAttributes;
@@ -2743,6 +3654,14 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::attributeEqualTo
+     * @covers PHPUnit_Framework_Constraint_Attribute
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAttributeEqualTo2()
     {
         $object     = new ClassWithNonPublicAttributes;
@@ -2766,6 +3685,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::attributeEqualTo
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_Constraint_Attribute
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAttributeNotEqualTo()
     {
         $object     = new ClassWithNonPublicAttributes;
@@ -2801,6 +3730,16 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::attributeEqualTo
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_Constraint_Attribute
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAttributeNotEqualTo2()
     {
         $object     = new ClassWithNonPublicAttributes;
@@ -2826,6 +3765,14 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_IsEmpty
+     * @covers PHPUnit_Framework_Constraint::count
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintIsEmpty()
     {
         $constraint = new PHPUnit_Framework_Constraint_IsEmpty;
@@ -2855,6 +3802,13 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_IsEmpty
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintIsEmpty2()
     {
         $constraint = new PHPUnit_Framework_Constraint_IsEmpty;
@@ -2877,6 +3831,12 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_Count
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintCountWithAnArray()
     {
         $constraint = new PHPUnit_Framework_Constraint_Count(5);
@@ -2885,6 +3845,12 @@ EOF
         $this->assertFalse($constraint->evaluate([1, 2, 3, 4], '', true));
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_Count
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintCountWithAnIteratorWhichDoesNotImplementCountable()
     {
         $constraint = new PHPUnit_Framework_Constraint_Count(5);
@@ -2893,6 +3859,12 @@ EOF
         $this->assertFalse($constraint->evaluate(new TestIterator([1, 2, 3, 4]), '', true));
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_Count
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintCountWithAnObjectImplementingCountable()
     {
         $constraint = new PHPUnit_Framework_Constraint_Count(5);
@@ -2901,6 +3873,13 @@ EOF
         $this->assertFalse($constraint->evaluate(new ArrayObject([1, 2, 3, 4]), '', true));
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_Count
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintCountFailing()
     {
         $constraint = new PHPUnit_Framework_Constraint_Count(5);
@@ -2923,6 +3902,15 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_Count
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintNotCountFailing()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -2947,6 +3935,12 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_SameSize
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintSameSizeWithAnArray()
     {
         $constraint = new PHPUnit_Framework_Constraint_SameSize([1, 2, 3, 4, 5]);
@@ -2955,6 +3949,12 @@ EOF
         $this->assertFalse($constraint->evaluate([1, 2, 3, 4], '', true));
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_SameSize
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintSameSizeWithAnIteratorWhichDoesNotImplementCountable()
     {
         $constraint = new PHPUnit_Framework_Constraint_SameSize(new TestIterator([1, 2, 3, 4, 5]));
@@ -2963,6 +3963,12 @@ EOF
         $this->assertFalse($constraint->evaluate(new TestIterator([1, 2, 3, 4]), '', true));
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_SameSize
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintSameSizeWithAnObjectImplementingCountable()
     {
         $constraint = new PHPUnit_Framework_Constraint_SameSize(new ArrayObject([1, 2, 3, 4, 5]));
@@ -2971,6 +3977,13 @@ EOF
         $this->assertFalse($constraint->evaluate(new ArrayObject([1, 2, 3, 4]), '', true));
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_SameSize
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintSameSizeFailing()
     {
         $constraint = new PHPUnit_Framework_Constraint_SameSize([1, 2, 3, 4, 5]);
@@ -2993,6 +4006,15 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_SameSize
+     * @covers PHPUnit_Framework_Constraint_Not
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintNotSameSizeFailing()
     {
         $constraint = PHPUnit_Framework_Assert::logicalNot(
@@ -3017,6 +4039,13 @@ EOF
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_Exception
+     * @covers PHPUnit_Framework_TestFailure::exceptionToString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testConstraintException()
     {
         $constraint = new PHPUnit_Framework_Constraint_Exception('FoobarException');

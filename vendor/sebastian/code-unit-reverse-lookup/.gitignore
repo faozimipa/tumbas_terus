@@ -1,4 +1,15 @@
+<<<<<<< HEAD
 /.idea
 /composer.lock
 /vendor
 
+=======
+.idea
+composer.lock
+composer.phar
+vendor/
+cache.properties
+build/LICENSE
+build/README.md
+build/*.tgz
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b

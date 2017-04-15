@@ -11,14 +11,21 @@
 
 namespace Symfony\Component\VarDumper\Tests\Caster;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 use Symfony\Component\VarDumper\Caster\ExceptionCaster;
 use Symfony\Component\VarDumper\Caster\FrameStub;
 use Symfony\Component\VarDumper\Cloner\VarCloner;
 use Symfony\Component\VarDumper\Dumper\HtmlDumper;
 use Symfony\Component\VarDumper\Test\VarDumperTestTrait;
 
+<<<<<<< HEAD
 class ExceptionCasterTest extends TestCase
+=======
+class ExceptionCasterTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     use VarDumperTestTrait;
 
@@ -43,9 +50,15 @@ Exception {
   #message: "foo"
   #code: 0
   #file: "%sExceptionCasterTest.php"
+<<<<<<< HEAD
   #line: 27
   -trace: {
     %sExceptionCasterTest.php:27: {
+=======
+  #line: 26
+  -trace: {
+    %sExceptionCasterTest.php:26: {
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
       : {
       :     return new \Exception(''.$msg);
       : }
@@ -72,7 +85,11 @@ EODUMP;
 
         $expectedDump = <<<'EODUMP'
 {
+<<<<<<< HEAD
   %sExceptionCasterTest.php:27: {
+=======
+  %sExceptionCasterTest.php:26: {
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     : {
     :     return new \Exception(''.$msg);
     : }
@@ -101,9 +118,15 @@ Exception {
   #message: "1"
   #code: 0
   #file: "%sExceptionCasterTest.php"
+<<<<<<< HEAD
   #line: 27
   -trace: {
     %sExceptionCasterTest.php:27: {
+=======
+  #line: 26
+  -trace: {
+    %sExceptionCasterTest.php:26: {
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
       : {
       :     return new \Exception(''.$msg);
       : }
@@ -129,9 +152,15 @@ Exception {
   #message: "1"
   #code: 0
   #file: "%sExceptionCasterTest.php"
+<<<<<<< HEAD
   #line: 27
   -trace: {
     %sExceptionCasterTest.php: 27
+=======
+  #line: 26
+  -trace: {
+    %sExceptionCasterTest.php: 26
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     %sExceptionCasterTest.php: %d
 %A
 EODUMP;
@@ -157,10 +186,17 @@ EODUMP;
   #<span class=sf-dump-protected title="Protected property">code</span>: <span class=sf-dump-num>0</span>
   #<span class=sf-dump-protected title="Protected property">file</span>: "<span class=sf-dump-str title="%sExceptionCasterTest.php
 %d characters"><span class=sf-dump-ellipsis>%sTests</span>%eCaster%eExceptionCasterTest.php</span>"
+<<<<<<< HEAD
   #<span class=sf-dump-protected title="Protected property">line</span>: <span class=sf-dump-num>27</span>
   -<span class=sf-dump-private title="Private property defined in class:&#10;`Exception`">trace</span>: {<samp>
     <span class=sf-dump-meta title="%sExceptionCasterTest.php
 Stack level %d."><span class=sf-dump-ellipsis>%sVarDumper%eTests</span>%eCaster%eExceptionCasterTest.php</span>: <span class=sf-dump-num>27</span>
+=======
+  #<span class=sf-dump-protected title="Protected property">line</span>: <span class=sf-dump-num>26</span>
+  -<span class=sf-dump-private title="Private property defined in class:&#10;`Exception`">trace</span>: {<samp>
+    <span class=sf-dump-meta title="%sExceptionCasterTest.php
+Stack level %d."><span class=sf-dump-ellipsis>%sVarDumper%eTests</span>%eCaster%eExceptionCasterTest.php</span>: <span class=sf-dump-num>26</span>
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      &hellip;%d
   </samp>}
 </samp>}

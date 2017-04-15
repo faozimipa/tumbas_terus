@@ -11,11 +11,18 @@
 
 namespace Symfony\Component\Debug\Tests;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Debug\DebugClassLoader;
 use Symfony\Component\Debug\ErrorHandler;
 
 class DebugClassLoaderTest extends TestCase
+=======
+use Symfony\Component\Debug\DebugClassLoader;
+use Symfony\Component\Debug\ErrorHandler;
+
+class DebugClassLoaderTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     /**
      * @var int Error reporting level before running tests

@@ -5,7 +5,11 @@
  * 
  * The MIT License (MIT)
  * 
+<<<<<<< HEAD
  * Copyright (c) 2015 - 2017 Paragon Initiative Enterprises
+=======
+ * Copyright (c) 2015 - 2016 Paragon Initiative Enterprises
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  * 
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal

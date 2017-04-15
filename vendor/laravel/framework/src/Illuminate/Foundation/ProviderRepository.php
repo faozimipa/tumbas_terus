@@ -2,7 +2,10 @@
 
 namespace Illuminate\Foundation;
 
+<<<<<<< HEAD
 use Exception;
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Contracts\Foundation\Application as ApplicationContract;
 
@@ -181,6 +184,7 @@ class ProviderRepository
      *
      * @param  array  $manifest
      * @return array
+<<<<<<< HEAD
      *
      * @throws \Exception
      */
@@ -190,6 +194,11 @@ class ProviderRepository
             throw new Exception('The bootstrap/cache directory must be present and writable.');
         }
 
+=======
+     */
+    public function writeManifest($manifest)
+    {
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         $this->files->put(
             $this->manifestPath, '<?php return '.var_export($manifest, true).';'
         );

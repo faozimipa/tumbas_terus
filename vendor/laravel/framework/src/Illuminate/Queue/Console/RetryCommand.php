@@ -30,6 +30,7 @@ class RetryCommand extends Command
     public function fire()
     {
         foreach ($this->getJobIds() as $id) {
+<<<<<<< HEAD
             $job = $this->laravel['queue.failer']->find($id);
 
             if (is_null($job)) {
@@ -41,6 +42,13 @@ class RetryCommand extends Command
 
                 $this->laravel['queue.failer']->forget($id);
             }
+=======
+            $this->retryJob($id);
+
+            $this->info("The failed job [{$id}] has been pushed back onto the queue!");
+
+            $this->laravel['queue.failer']->forget($id);
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         }
     }
 
@@ -61,6 +69,7 @@ class RetryCommand extends Command
     }
 
     /**
+<<<<<<< HEAD
      * Retry the queue job.
      *
      * @param  stdClass  $job
@@ -70,6 +79,23 @@ class RetryCommand extends Command
     {
         $this->laravel['queue']->connection($job->connection)->pushRaw(
             $this->resetAttempts($job->payload), $job->queue
+=======
+     * Retry the queue job with the given ID.
+     *
+     * @param  string  $id
+     * @return void
+     */
+    protected function retryJob($id)
+    {
+        if (is_null($failed = $this->laravel['queue.failer']->find($id))) {
+            return $this->error("No failed job matches the given ID [{$id}].");
+        }
+
+        $failed = (object) $failed;
+
+        $this->laravel['queue']->connection($failed->connection)->pushRaw(
+            $this->resetAttempts($failed->payload), $failed->queue
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         );
     }
 

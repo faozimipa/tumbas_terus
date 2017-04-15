@@ -138,6 +138,11 @@
  *   </php>
  * </phpunit>
  * </code>
+<<<<<<< HEAD
+=======
+ *
+ * @since Class available since Release 3.2.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 class PHPUnit_Util_Configuration
 {
@@ -159,6 +164,12 @@ class PHPUnit_Util_Configuration
         $this->xpath    = new DOMXPath($this->document);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @since Method available since Release 3.4.0
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     final private function __clone()
     {
     }
@@ -169,6 +180,11 @@ class PHPUnit_Util_Configuration
      * @param string $filename
      *
      * @return PHPUnit_Util_Configuration
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.4.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public static function getInstance($filename)
     {
@@ -194,6 +210,11 @@ class PHPUnit_Util_Configuration
      * Returns the realpath to the configuration file.
      *
      * @return string
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.6.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function getFilename()
     {
@@ -204,6 +225,11 @@ class PHPUnit_Util_Configuration
      * Returns the configuration for SUT filtering.
      *
      * @return array
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.2.1
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function getFilterConfiguration()
     {
@@ -260,6 +286,11 @@ class PHPUnit_Util_Configuration
      * Returns the configuration for groups.
      *
      * @return array
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.2.1
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function getGroupConfiguration()
     {
@@ -270,6 +301,11 @@ class PHPUnit_Util_Configuration
      * Returns the configuration for testdox groups.
      *
      * @return array
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 5.4.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function getTestdoxGroupConfiguration()
     {
@@ -303,6 +339,11 @@ class PHPUnit_Util_Configuration
      * Returns the configuration for listeners.
      *
      * @return array
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.4.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function getListenerConfiguration()
     {
@@ -417,6 +458,11 @@ class PHPUnit_Util_Configuration
      * Returns the PHP configuration.
      *
      * @return array
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.2.1
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function getPHPConfiguration()
     {
@@ -469,6 +515,11 @@ class PHPUnit_Util_Configuration
 
     /**
      * Handles the PHP configuration.
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.2.20
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function handlePHPConfiguration()
     {
@@ -532,6 +583,11 @@ class PHPUnit_Util_Configuration
      * Returns the PHPUnit configuration.
      *
      * @return array
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.2.14
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function getPHPUnitConfiguration()
     {
@@ -830,6 +886,11 @@ class PHPUnit_Util_Configuration
      * Returns the test suite configuration.
      *
      * @return PHPUnit_Framework_TestSuite
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.2.1
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function getTestSuiteConfiguration($testSuiteFilter = null)
     {
@@ -876,6 +937,11 @@ class PHPUnit_Util_Configuration
      * @param DOMElement $testSuiteNode
      *
      * @return PHPUnit_Framework_TestSuite
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.4.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     protected function getTestSuite(DOMElement $testSuiteNode, $testSuiteFilter = null)
     {
@@ -995,6 +1061,11 @@ class PHPUnit_Util_Configuration
      * @param bool   $default
      *
      * @return bool
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.2.3
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     protected function getBoolean($value, $default)
     {
@@ -1012,6 +1083,11 @@ class PHPUnit_Util_Configuration
      * @param bool   $default
      *
      * @return bool
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.6.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     protected function getInteger($value, $default)
     {
@@ -1026,6 +1102,11 @@ class PHPUnit_Util_Configuration
      * @param string $query
      *
      * @return array
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.2.3
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     protected function readFilterDirectories($query)
     {
@@ -1071,6 +1152,11 @@ class PHPUnit_Util_Configuration
      * @param string $query
      *
      * @return array
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.2.3
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     protected function readFilterFiles($query)
     {
@@ -1092,6 +1178,11 @@ class PHPUnit_Util_Configuration
      * @param bool   $useIncludePath
      *
      * @return string
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.5.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     protected function toAbsolutePath($path, $useIncludePath = false)
     {

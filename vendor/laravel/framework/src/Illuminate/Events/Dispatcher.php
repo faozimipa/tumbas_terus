@@ -450,6 +450,7 @@ class Dispatcher implements DispatcherContract
      */
     protected function queueHandler($class, $method, $arguments)
     {
+<<<<<<< HEAD
         list($listener, $job) = $this->createListenerAndJob($class, $method, $arguments);
 
         $connection = $this->resolveQueue()->connection(
@@ -493,6 +494,17 @@ class Dispatcher implements DispatcherContract
             $job->tries = isset($listener->tries) ? $listener->tries : null;
             $job->timeout = isset($listener->timeout) ? $listener->timeout : null;
         });
+=======
+        $listener = (new ReflectionClass($class))->newInstanceWithoutConstructor();
+
+        $connection = isset($listener->connection) ? $listener->connection : null;
+
+        $queue = isset($listener->queue) ? $listener->queue : null;
+
+        $this->resolveQueue()
+                ->connection($connection)
+                ->pushOn($queue, new CallQueuedListener($class, $method, $arguments));
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     }
 
     /**

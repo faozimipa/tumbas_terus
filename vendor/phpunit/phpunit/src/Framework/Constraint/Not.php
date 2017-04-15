@@ -10,6 +10,11 @@
 
 /**
  * Logical NOT.
+<<<<<<< HEAD
+=======
+ *
+ * @since Class available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 class PHPUnit_Framework_Constraint_Not extends PHPUnit_Framework_Constraint
 {
@@ -148,6 +153,11 @@ class PHPUnit_Framework_Constraint_Not extends PHPUnit_Framework_Constraint
      * Counts the number of constraint elements.
      *
      * @return int
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.4.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function count()
     {

@@ -22,6 +22,11 @@ use SebastianBergmann\Environment\Runtime;
 /**
  * A TestRunner for the Command Line Interface (CLI)
  * PHP SAPI Module.
+<<<<<<< HEAD
+=======
+ *
+ * @since Class available since Release 2.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 class PHPUnit_TextUI_TestRunner extends PHPUnit_Runner_BaseTestRunner
 {
@@ -62,6 +67,11 @@ class PHPUnit_TextUI_TestRunner extends PHPUnit_Runner_BaseTestRunner
     /**
      * @param PHPUnit_Runner_TestSuiteLoader $loader
      * @param CodeCoverageFilter             $filter
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.4.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function __construct(PHPUnit_Runner_TestSuiteLoader $loader = null, CodeCoverageFilter $filter = null)
     {
@@ -691,6 +701,11 @@ class PHPUnit_TextUI_TestRunner extends PHPUnit_Runner_BaseTestRunner
 
     /**
      * @param string $buffer
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.1.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     protected function write($buffer)
     {
@@ -709,6 +724,11 @@ class PHPUnit_TextUI_TestRunner extends PHPUnit_Runner_BaseTestRunner
      * Returns the loader to be used.
      *
      * @return PHPUnit_Runner_TestSuiteLoader
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 2.2.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function getLoader()
     {
@@ -721,6 +741,11 @@ class PHPUnit_TextUI_TestRunner extends PHPUnit_Runner_BaseTestRunner
 
     /**
      * @param array $arguments
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.2.1
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     protected function handleConfiguration(array &$arguments)
     {
@@ -1122,6 +1147,11 @@ class PHPUnit_TextUI_TestRunner extends PHPUnit_Runner_BaseTestRunner
     /**
      * @param string $type
      * @param string $message
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 5.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     private function writeMessage($type, $message)
     {

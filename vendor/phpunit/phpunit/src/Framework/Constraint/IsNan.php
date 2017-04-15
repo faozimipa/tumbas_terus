@@ -10,6 +10,11 @@
 
 /**
  * Constraint that accepts nan.
+<<<<<<< HEAD
+=======
+ *
+ * @since      Class available since Release 5.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 class PHPUnit_Framework_Constraint_IsNan extends PHPUnit_Framework_Constraint
 {

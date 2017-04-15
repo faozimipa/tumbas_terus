@@ -11,7 +11,10 @@
 
 namespace Symfony\Component\HttpFoundation\Tests\Session\Flash;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 use Symfony\Component\HttpFoundation\Session\Flash\FlashBag;
 
 /**
@@ -19,7 +22,11 @@ use Symfony\Component\HttpFoundation\Session\Flash\FlashBag;
  *
  * @author Drak <drak@zikula.org>
  */
+<<<<<<< HEAD
 class FlashBagTest extends TestCase
+=======
+class FlashBagTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     /**
      * @var \Symfony\Component\HttpFoundation\Session\Flash\FlashBagInterface

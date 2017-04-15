@@ -11,10 +11,16 @@
 
 namespace Symfony\Component\Console\Tests\Helper;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Helper\Helper;
 
 class HelperTest extends TestCase
+=======
+use Symfony\Component\Console\Helper\Helper;
+
+class HelperTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     public function formatTimeProvider()
     {

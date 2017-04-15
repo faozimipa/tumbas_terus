@@ -11,12 +11,19 @@
 
 namespace Symfony\Component\HttpKernel\Tests\DependencyInjection;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\DependencyInjection\FragmentRendererPass;
 use Symfony\Component\HttpKernel\Fragment\FragmentRendererInterface;
 
+<<<<<<< HEAD
 class FragmentRendererPassTest extends TestCase
+=======
+class FragmentRendererPassTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     /**
      * Tests that content rendering not implementing FragmentRendererInterface

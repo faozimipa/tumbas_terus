@@ -120,6 +120,13 @@ class NameResolver extends NodeVisitorAbstract
                     }
                 }
             }
+<<<<<<< HEAD
+=======
+        } elseif ($node instanceof Node\NullableType) {
+            if ($node->type instanceof Name) {
+                $node->type = $this->resolveClassName($node->type);
+            }
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         }
     }
 
@@ -168,6 +175,7 @@ class NameResolver extends NodeVisitorAbstract
     /** @param Stmt\Function_|Stmt\ClassMethod|Expr\Closure $node */
     private function resolveSignature($node) {
         foreach ($node->params as $param) {
+<<<<<<< HEAD
             $param->type = $this->resolveType($param->type);
         }
         $node->returnType = $this->resolveType($node->returnType);
@@ -182,6 +190,15 @@ class NameResolver extends NodeVisitorAbstract
             return $this->resolveClassName($node);
         }
         return $node;
+=======
+            if ($param->type instanceof Name) {
+                $param->type = $this->resolveClassName($param->type);
+            }
+        }
+        if ($node->returnType instanceof Name) {
+            $node->returnType = $this->resolveClassName($node->returnType);
+        }
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     }
 
     protected function resolveClassName(Name $name) {

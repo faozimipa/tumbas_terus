@@ -88,7 +88,11 @@ trait ManagesComponents
      */
     public function slot($name, $content = null)
     {
+<<<<<<< HEAD
         if (count(func_get_args()) == 2) {
+=======
+        if ($content !== null) {
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
             $this->slots[$this->currentComponent()][$name] = $content;
         } else {
             if (ob_start()) {

@@ -2,10 +2,18 @@
 
 _NOTICE: Formerly known as `rhumsaa/uuid`, The package and namespace names have changed to `ramsey/uuid` and `Ramsey\Uuid`, respectively._
 
+<<<<<<< HEAD
+=======
+[![Gitter Chat][badge-gitter]][gitter]
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 [![Source Code][badge-source]][source]
 [![Latest Version][badge-release]][release]
 [![Software License][badge-license]][license]
 [![Build Status][badge-build]][build]
+<<<<<<< HEAD
+=======
+[![Scrutinizer][badge-quality]][quality]
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 [![Coverage Status][badge-coverage]][coverage]
 [![Total Downloads][badge-downloads]][downloads]
 
@@ -77,7 +85,11 @@ The [latest class API documentation][apidocs] is available online.
 This project uses [ApiGen](http://apigen.org/) to generate this documentation. To generate the documentation on your own, install dev dependencies and run the following command from the root of the project:
 
 ```
+<<<<<<< HEAD
 composer build-docs
+=======
+./vendor/bin/apigen generate --source="src" --destination="build/apidocs" --title="ramsey/uuid" --template-theme="bootstrap" --deprecated --todo
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 ```
 
 This will generate documentation in the `build/apidocs/` folder.
@@ -144,16 +156,32 @@ The ramsey/uuid library is copyright © [Ben Ramsey](https://benramsey.com/) and
 [wiki-cookbook]: https://github.com/ramsey/uuid/wiki/Ramsey%5CUuid-Cookbook
 [contributing]: https://github.com/ramsey/uuid/blob/master/CONTRIBUTING.md
 
+<<<<<<< HEAD
+=======
+[badge-gitter]: https://img.shields.io/badge/gitter-join_chat-brightgreen.svg?style=flat-square
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 [badge-source]: https://img.shields.io/badge/source-ramsey/uuid-blue.svg?style=flat-square
 [badge-release]: https://img.shields.io/packagist/v/ramsey/uuid.svg?style=flat-square
 [badge-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
 [badge-build]: https://img.shields.io/travis/ramsey/uuid/master.svg?style=flat-square
+<<<<<<< HEAD
 [badge-coverage]: https://img.shields.io/coveralls/ramsey/uuid/master.svg?style=flat-square
 [badge-downloads]: https://img.shields.io/packagist/dt/ramsey/uuid.svg?style=flat-square
 
+=======
+[badge-quality]: https://img.shields.io/scrutinizer/g/ramsey/uuid/master.svg?style=flat-square
+[badge-coverage]: https://img.shields.io/coveralls/ramsey/uuid/master.svg?style=flat-square
+[badge-downloads]: https://img.shields.io/packagist/dt/ramsey/uuid.svg?style=flat-square
+
+[gitter]: https://gitter.im/ramsey/uuid
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 [source]: https://github.com/ramsey/uuid
 [release]: https://packagist.org/packages/ramsey/uuid
 [license]: https://github.com/ramsey/uuid/blob/master/LICENSE
 [build]: https://travis-ci.org/ramsey/uuid
+<<<<<<< HEAD
+=======
+[quality]: https://scrutinizer-ci.com/g/ramsey/uuid/
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 [coverage]: https://coveralls.io/r/ramsey/uuid?branch=master
 [downloads]: https://packagist.org/packages/ramsey/uuid

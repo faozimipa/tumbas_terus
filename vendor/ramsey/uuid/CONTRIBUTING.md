@@ -14,6 +14,10 @@ This project adheres to a [Contributor Code of Conduct](https://github.com/ramse
 
 You can find help and discussion in the following places:
 
+<<<<<<< HEAD
+=======
+* Gitter chat: <https://gitter.im/ramsey/uuid>
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 * GitHub Issues: <https://github.com/ramsey/uuid/issues>
 * Wiki: <https://github.com/ramsey/uuid/wiki>
 
@@ -55,7 +59,13 @@ When you do begin working on your feature, here are some guidelines to consider:
 The following tests must pass before we will accept a pull request. If any of these do not pass, it will result in a complete build failure. Before you can run these, be sure to `composer install`.
 
 ```
+<<<<<<< HEAD
 composer test
+=======
+./vendor/bin/parallel-lint src tests
+./vendor/bin/phpcs src tests --standard=psr2 -sp
+./vendor/bin/phpunit --verbose
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 ```
 
 ### Locally Test With Emulated MIPS Architecture

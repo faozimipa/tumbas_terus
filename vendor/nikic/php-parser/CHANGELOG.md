@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 Version 3.0.6-dev
+=======
+Version 3.0.5-dev
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 -----------------
 
 Nothing yet.
 
+<<<<<<< HEAD
 Version 3.0.5 (2017-03-05)
 --------------------------
 
@@ -14,6 +19,8 @@ Version 3.0.5 (2017-03-05)
   error occurred. This made some nodes larger than expected. (#359)
 * Fixed notices being thrown during error recovery in some situations. (#362)
 
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 Version 3.0.4 (2017-02-10)
 --------------------------
 

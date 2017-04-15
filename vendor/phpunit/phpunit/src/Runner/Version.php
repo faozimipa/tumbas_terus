@@ -12,6 +12,11 @@ use SebastianBergmann\Version;
 
 /**
  * This class defines the current version of PHPUnit.
+<<<<<<< HEAD
+=======
+ *
+ * @since Class available since Release 2.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 class PHPUnit_Runner_Version
 {
@@ -30,7 +35,11 @@ class PHPUnit_Runner_Version
         }
 
         if (self::$version === null) {
+<<<<<<< HEAD
             $version       = new Version('5.7.17', dirname(dirname(__DIR__)));
+=======
+            $version       = new Version('5.7.15', dirname(dirname(__DIR__)));
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
             self::$version = $version->getVersion();
         }
 
@@ -39,6 +48,11 @@ class PHPUnit_Runner_Version
 
     /**
      * @return string
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 4.8.13
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public static function series()
     {
@@ -61,6 +75,11 @@ class PHPUnit_Runner_Version
 
     /**
      * @return string
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 4.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public static function getReleaseChannel()
     {

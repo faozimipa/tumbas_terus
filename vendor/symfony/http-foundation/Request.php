@@ -1391,10 +1391,17 @@ class Request
     public function getRequestFormat($default = 'html')
     {
         if (null === $this->format) {
+<<<<<<< HEAD
             $this->format = $this->attributes->get('_format');
         }
 
         return null === $this->format ? $default : $this->format;
+=======
+            $this->format = $this->attributes->get('_format', $default);
+        }
+
+        return $this->format;
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     }
 
     /**

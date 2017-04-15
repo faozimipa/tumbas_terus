@@ -172,8 +172,11 @@ class Migrator
             return $this->pretendToRun($migration, 'up');
         }
 
+<<<<<<< HEAD
         $this->note("<comment>Migrating:</comment> {$name}");
 
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         $this->runMigration($migration, 'up');
 
         // Once we have run a migrations class, we will log that it was run in this
@@ -319,8 +322,11 @@ class Migrator
             $name = $this->getMigrationName($file)
         );
 
+<<<<<<< HEAD
         $this->note("<comment>Rolling back:</comment> {$name}");
 
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         if ($pretend) {
             return $this->pretendToRun($instance, 'down');
         }

@@ -94,18 +94,28 @@ if (! function_exists('app')) {
      * Get the available container instance.
      *
      * @param  string  $abstract
+<<<<<<< HEAD
      * @param  array   $parameters
      * @return mixed|\Illuminate\Foundation\Application
      */
     function app($abstract = null, array $parameters = [])
+=======
+     * @return mixed|\Illuminate\Foundation\Application
+     */
+    function app($abstract = null)
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     {
         if (is_null($abstract)) {
             return Container::getInstance();
         }
 
+<<<<<<< HEAD
         return empty($parameters)
             ? Container::getInstance()->make($abstract)
             : Container::getInstance()->makeWith($abstract, $parameters);
+=======
+        return Container::getInstance()->make($abstract);
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     }
 }
 

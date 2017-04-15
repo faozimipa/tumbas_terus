@@ -83,6 +83,7 @@ class Container implements ArrayAccess, ContainerContract
     protected $buildStack = [];
 
     /**
+<<<<<<< HEAD
      * The parameter override stack.
      *
      * @var array
@@ -90,6 +91,8 @@ class Container implements ArrayAccess, ContainerContract
     protected $with = [];
 
     /**
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * The contextual binding map.
      *
      * @var array
@@ -545,6 +548,7 @@ class Container implements ArrayAccess, ContainerContract
     }
 
     /**
+<<<<<<< HEAD
      * Resolve the given type with the given parameter overrides.
      *
      * @param  string  $abstract
@@ -557,6 +561,8 @@ class Container implements ArrayAccess, ContainerContract
     }
 
     /**
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * Resolve the given type from the container.
      *
      * @param  string  $abstract
@@ -564,6 +570,7 @@ class Container implements ArrayAccess, ContainerContract
      */
     public function make($abstract)
     {
+<<<<<<< HEAD
         return $this->resolve($abstract);
     }
 
@@ -579,6 +586,9 @@ class Container implements ArrayAccess, ContainerContract
         $this->with[] = $parameters;
 
         $needsContextualBuild = ! empty($parameters) || ! is_null(
+=======
+        $needsContextualBuild = ! is_null(
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
             $this->getContextualConcrete($abstract = $this->getAlias($abstract))
         );
 
@@ -616,6 +626,7 @@ class Container implements ArrayAccess, ContainerContract
 
         $this->fireResolvingCallbacks($abstract, $object);
 
+<<<<<<< HEAD
         // Before returning, we will also set the resolved flag to "true" and pop off
         // the parameter overrides for this build. After those two things are done
         // we will be ready to return back the fully constructed class instance.
@@ -623,6 +634,10 @@ class Container implements ArrayAccess, ContainerContract
 
         array_pop($this->with);
 
+=======
+        $this->resolved[$abstract] = true;
+
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         return $object;
     }
 
@@ -713,7 +728,11 @@ class Container implements ArrayAccess, ContainerContract
         // hand back the results of the functions, which allows functions to be
         // used as resolvers for more fine-tuned resolution of these objects.
         if ($concrete instanceof Closure) {
+<<<<<<< HEAD
             return $concrete($this, end($this->with));
+=======
+            return $concrete($this);
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         }
 
         $reflector = new ReflectionClass($concrete);
@@ -763,6 +782,7 @@ class Container implements ArrayAccess, ContainerContract
         $results = [];
 
         foreach ($dependencies as $dependency) {
+<<<<<<< HEAD
             // If this dependency has a override for this particular build we will use
             // that instead as the value. Otherwise, we will continue with this run
             // of resolutions and let reflection attempt to determine the result.
@@ -772,6 +792,8 @@ class Container implements ArrayAccess, ContainerContract
                 continue;
             }
 
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
             // If the class is null, it means the dependency is a string or some other
             // primitive type which we can not resolve since it is not a class and
             // we will just bomb out with an error since we have no-where to go.
@@ -784,6 +806,7 @@ class Container implements ArrayAccess, ContainerContract
     }
 
     /**
+<<<<<<< HEAD
      * Determine if the given dependency has a parameter override from makeWith.
      *
      * @param  \ReflectionParameter  $dependency
@@ -806,6 +829,8 @@ class Container implements ArrayAccess, ContainerContract
     }
 
     /**
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * Resolve a non-class hinted primitive dependency.
      *
      * @param  \ReflectionParameter  $parameter

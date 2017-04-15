@@ -11,12 +11,19 @@
 
 namespace Symfony\Component\Yaml\Tests;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Yaml\Exception\ParseException;
 use Symfony\Component\Yaml\Inline;
 use Symfony\Component\Yaml\Yaml;
 
 class InlineTest extends TestCase
+=======
+use Symfony\Component\Yaml\Inline;
+use Symfony\Component\Yaml\Yaml;
+
+class InlineTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     /**
      * @dataProvider getTestsForParse
@@ -652,6 +659,7 @@ class InlineTest extends TestCase
 
     /**
      * @dataProvider getInvalidBinaryData
+<<<<<<< HEAD
      * @expectedException \Symfony\Component\Yaml\Exception\ParseException
      */
     public function testParseInvalidBinaryData($data, $expectedMessage)
@@ -661,6 +669,12 @@ class InlineTest extends TestCase
         } else {
             $this->setExpectedExceptionRegExp(ParseException::class, $expectedMessage);
         }
+=======
+     */
+    public function testParseInvalidBinaryData($data, $expectedMessage)
+    {
+        $this->setExpectedExceptionRegExp('\Symfony\Component\Yaml\Exception\ParseException', $expectedMessage);
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 
         Inline::parse($data);
     }
@@ -693,6 +707,7 @@ class InlineTest extends TestCase
 
         $this->assertEquals($longStringWithQuotes, $arrayFromYaml['longStringWithQuotes']);
     }
+<<<<<<< HEAD
 
     public function testOmittedMappingKeyIsParsedAsColon()
     {
@@ -709,4 +724,6 @@ class InlineTest extends TestCase
     {
         $this->assertSame(array('' => 'foo'), Inline::parse('{ "": foo }'));
     }
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 }

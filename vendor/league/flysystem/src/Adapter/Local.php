@@ -164,9 +164,13 @@ class Local extends AbstractAdapter
             $this->setVisibility($path, $visibility);
         }
 
+<<<<<<< HEAD
         $type = 'file';
 
         return compact('type', 'path', 'visibility');
+=======
+        return compact('path', 'visibility');
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     }
 
     /**
@@ -177,7 +181,11 @@ class Local extends AbstractAdapter
         $location = $this->applyPathPrefix($path);
         $stream = fopen($location, 'rb');
 
+<<<<<<< HEAD
         return ['type' => 'file', 'path' => $path, 'stream' => $stream];
+=======
+        return compact('stream', 'path');
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     }
 
     /**
@@ -201,9 +209,13 @@ class Local extends AbstractAdapter
             return false;
         }
 
+<<<<<<< HEAD
         $type = 'file';
 
         return compact('type', 'path', 'size', 'contents', 'mimetype');
+=======
+        return compact('path', 'size', 'contents', 'mimetype');
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     }
 
     /**
@@ -218,7 +230,11 @@ class Local extends AbstractAdapter
             return false;
         }
 
+<<<<<<< HEAD
         return ['type' => 'file', 'path' => $path, 'contents' => $contents];
+=======
+        return compact('contents', 'path');
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     }
 
     /**
@@ -315,7 +331,11 @@ class Local extends AbstractAdapter
             $mimetype = Util\MimeType::detectByFilename($location);
         }
 
+<<<<<<< HEAD
         return ['path' => $path, 'type' => 'file', 'mimetype' => $mimetype];
+=======
+        return ['mimetype' => $mimetype];
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     }
 
     /**
@@ -336,7 +356,11 @@ class Local extends AbstractAdapter
         $permissions = octdec(substr(sprintf('%o', fileperms($location)), -4));
         $visibility = $permissions & 0044 ? AdapterInterface::VISIBILITY_PUBLIC : AdapterInterface::VISIBILITY_PRIVATE;
 
+<<<<<<< HEAD
         return compact('path', 'visibility');
+=======
+        return compact('visibility');
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     }
 
     /**
@@ -352,7 +376,11 @@ class Local extends AbstractAdapter
             return false;
         }
 
+<<<<<<< HEAD
         return compact('path', 'visibility');
+=======
+        return compact('visibility');
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     }
 
     /**

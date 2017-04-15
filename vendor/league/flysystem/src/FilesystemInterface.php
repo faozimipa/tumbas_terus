@@ -118,7 +118,11 @@ interface FilesystemInterface
      * @param resource $resource The file handle.
      * @param array    $config   An optional configuration array.
      *
+<<<<<<< HEAD
      * @throws \InvalidArgumentException If $resource is not a file handle.
+=======
+     * @throws InvalidArgumentException If $resource is not a file handle.
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @throws FileExistsException
      *
      * @return bool True on success, false on failure.
@@ -145,7 +149,11 @@ interface FilesystemInterface
      * @param resource $resource The file handle.
      * @param array    $config   An optional configuration array.
      *
+<<<<<<< HEAD
      * @throws \InvalidArgumentException If $resource is not a file handle.
+=======
+     * @throws InvalidArgumentException If $resource is not a file handle.
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @throws FileNotFoundException
      *
      * @return bool True on success, false on failure.
@@ -238,7 +246,11 @@ interface FilesystemInterface
      * @param resource $resource The file handle.
      * @param array    $config   An optional configuration array.
      *
+<<<<<<< HEAD
      * @throws \InvalidArgumentException Thrown if $resource is not a resource.
+=======
+     * @throws InvalidArgumentException Thrown if $resource is not a resource.
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      *
      * @return bool True on success, false on failure.
      */

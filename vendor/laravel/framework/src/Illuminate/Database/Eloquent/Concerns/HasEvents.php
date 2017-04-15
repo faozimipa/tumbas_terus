@@ -136,9 +136,13 @@ trait HasEvents
         // returns a result we can return that result, or we'll call the string events.
         $method = $halt ? 'until' : 'fire';
 
+<<<<<<< HEAD
         $result = $this->filterModelEventResults(
             $this->fireCustomModelEvent($event, $method)
         );
+=======
+        $result = $this->fireCustomModelEvent($event, $method);
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 
         if ($result === false) {
             return false;
@@ -170,6 +174,7 @@ trait HasEvents
     }
 
     /**
+<<<<<<< HEAD
      * Filter the model event results.
      *
      * @param  mixed  $result
@@ -187,6 +192,8 @@ trait HasEvents
     }
 
     /**
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * Register a saving model event with the dispatcher.
      *
      * @param  \Closure|string  $callback

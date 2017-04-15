@@ -11,13 +11,20 @@
 
 namespace Symfony\Component\Console\Tests\Command;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 use Symfony\Component\Console\Tester\CommandTester;
 use Symfony\Component\Console\Command\HelpCommand;
 use Symfony\Component\Console\Command\ListCommand;
 use Symfony\Component\Console\Application;
 
+<<<<<<< HEAD
 class HelpCommandTest extends TestCase
+=======
+class HelpCommandTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     public function testExecuteForCommandAlias()
     {

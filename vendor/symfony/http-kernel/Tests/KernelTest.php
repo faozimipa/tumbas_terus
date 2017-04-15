@@ -11,7 +11,10 @@
 
 namespace Symfony\Component\HttpKernel\Tests;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\BundleInterface;
 use Symfony\Component\HttpKernel\Config\EnvParametersResource;
@@ -22,7 +25,11 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Tests\Fixtures\KernelForTest;
 use Symfony\Component\HttpKernel\Tests\Fixtures\KernelForOverrideName;
 
+<<<<<<< HEAD
 class KernelTest extends TestCase
+=======
+class KernelTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     public function testConstructor()
     {
@@ -719,6 +726,7 @@ EOF;
         $kernel->terminate(Request::create('/'), new Response());
     }
 
+<<<<<<< HEAD
     public function testKernelRootDirNameStartingWithANumber()
     {
         $dir = __DIR__.'/Fixtures/123';
@@ -727,6 +735,8 @@ EOF;
         $this->assertEquals('_123', $kernel->getName());
     }
 
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     /**
      * Returns a mock for the BundleInterface.
      *

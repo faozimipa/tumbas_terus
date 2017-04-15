@@ -160,9 +160,14 @@ class Event
      */
     public function run(Container $container)
     {
+<<<<<<< HEAD
         if ($this->withoutOverlapping &&
             ! $this->cache->add($this->mutexName(), true, 1440)) {
             return;
+=======
+        if ($this->withoutOverlapping) {
+            $this->cache->put($this->mutexName(), true, 1440);
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         }
 
         $this->runInBackground
@@ -406,7 +411,11 @@ class Event
      */
     protected function emailOutput(Mailer $mailer, $addresses, $onlyIfOutputExists = false)
     {
+<<<<<<< HEAD
         $text = file_exists($this->output) ? file_get_contents($this->output) : '';
+=======
+        $text = file_get_contents($this->output);
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 
         if ($onlyIfOutputExists && empty($text)) {
             return;

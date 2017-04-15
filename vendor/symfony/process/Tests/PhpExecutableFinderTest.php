@@ -11,13 +11,20 @@
 
 namespace Symfony\Component\Process\Tests;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 use Symfony\Component\Process\PhpExecutableFinder;
 
 /**
  * @author Robert Schönthal <seroscho@googlemail.com>
  */
+<<<<<<< HEAD
 class PhpExecutableFinderTest extends TestCase
+=======
+class PhpExecutableFinderTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     /**
      * tests find() with the constant PHP_BINARY.

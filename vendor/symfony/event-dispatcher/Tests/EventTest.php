@@ -11,13 +11,20 @@
 
 namespace Symfony\Component\EventDispatcher\Tests;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 use Symfony\Component\EventDispatcher\Event;
 
 /**
  * Test class for Event.
  */
+<<<<<<< HEAD
 class EventTest extends TestCase
+=======
+class EventTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     /**
      * @var \Symfony\Component\EventDispatcher\Event

@@ -11,13 +11,20 @@
 
 namespace Symfony\Component\Console\Tests\Input;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 use Symfony\Component\Console\Input\ArgvInput;
 use Symfony\Component\Console\Input\InputDefinition;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 
+<<<<<<< HEAD
 class ArgvInputTest extends TestCase
+=======
+class ArgvInputTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     public function testConstructor()
     {
@@ -164,12 +171,16 @@ class ArgvInputTest extends TestCase
      */
     public function testInvalidInput($argv, $definition, $expectedExceptionMessage)
     {
+<<<<<<< HEAD
         if (method_exists($this, 'expectException')) {
             $this->expectException('RuntimeException');
             $this->expectExceptionMessage($expectedExceptionMessage);
         } else {
             $this->setExpectedException('RuntimeException', $expectedExceptionMessage);
         }
+=======
+        $this->setExpectedException('RuntimeException', $expectedExceptionMessage);
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 
         $input = new ArgvInput($argv);
         $input->bind($definition);

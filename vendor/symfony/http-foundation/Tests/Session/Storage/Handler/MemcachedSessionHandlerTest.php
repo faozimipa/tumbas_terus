@@ -11,14 +11,21 @@
 
 namespace Symfony\Component\HttpFoundation\Tests\Session\Storage\Handler;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 use Symfony\Component\HttpFoundation\Session\Storage\Handler\MemcachedSessionHandler;
 
 /**
  * @requires extension memcached
  * @group time-sensitive
  */
+<<<<<<< HEAD
 class MemcachedSessionHandlerTest extends TestCase
+=======
+class MemcachedSessionHandlerTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     const PREFIX = 'prefix_';
     const TTL = 1000;

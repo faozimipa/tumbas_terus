@@ -111,6 +111,7 @@ class PhpRedisConnection extends Connection
     }
 
     /**
+<<<<<<< HEAD
      * Execute commands in a pipeline.
      *
      * @param  callable  $callback
@@ -141,6 +142,8 @@ class PhpRedisConnection extends Connection
     }
 
     /**
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * Evaluate a LUA script serverside, from the SHA1 hash of the script instead of the script itself.
      *
      * @param  string  $script
@@ -212,6 +215,7 @@ class PhpRedisConnection extends Connection
     }
 
     /**
+<<<<<<< HEAD
      * Execute a raw command.
      *
      * @param  array  $parameters
@@ -223,6 +227,8 @@ class PhpRedisConnection extends Connection
     }
 
     /**
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * Disconnects from the Redis instance.
      *
      * @return void

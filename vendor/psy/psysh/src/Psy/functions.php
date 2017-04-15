@@ -16,7 +16,10 @@ use Symfony\Component\Console\Input\ArgvInput;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputDefinition;
 use Symfony\Component\Console\Input\InputOption;
+<<<<<<< HEAD
 use XdgBaseDir\Xdg;
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 
 if (!function_exists('Psy\sh')) {
     /**
@@ -53,6 +56,7 @@ if (!function_exists('Psy\info')) {
             return;
         }
 
+<<<<<<< HEAD
         $xdg = new Xdg();
         $home = rtrim(str_replace('\\', '/', $xdg->getHomeDir()), '/');
         $homePattern = '#^' . preg_quote($home, '#') . '/#';
@@ -65,6 +69,8 @@ if (!function_exists('Psy\info')) {
             }
         };
 
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         $config = $lastConfig ?: new Configuration();
 
         $core = array(
@@ -74,9 +80,15 @@ if (!function_exists('Psy\info')) {
             'require semicolons'  => $config->requireSemicolons(),
             'error logging level' => $config->errorLoggingLevel(),
             'config file'         => array(
+<<<<<<< HEAD
                 'default config file' => $prettyPath($config->getConfigFile()),
                 'local config file'   => $prettyPath($config->getLocalConfigFile()),
                 'PSYSH_CONFIG env'    => $prettyPath(getenv('PSYSH_CONFIG')),
+=======
+                'default config file' => $config->getConfigFile(),
+                'local config file'   => $config->getLocalConfigFile(),
+                'PSYSH_CONFIG env'    => getenv('PSYSH_CONFIG'),
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
             ),
             // 'config dir'  => $config->getConfigDir(),
             // 'data dir'    => $config->getDataDir(),
@@ -89,7 +101,11 @@ if (!function_exists('Psy\info')) {
             'update available'       => !$checker->isLatest(),
             'latest release version' => $checker->getLatest(),
             'update check interval'  => $config->getUpdateCheck(),
+<<<<<<< HEAD
             'update cache file'      => $prettyPath($config->getUpdateCheckCacheFile()),
+=======
+            'update cache file'      => $config->getUpdateCheckCacheFile(),
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         );
 
         if ($config->hasReadline()) {
@@ -99,6 +115,7 @@ if (!function_exists('Psy\info')) {
                 'readline available' => true,
                 'readline enabled'   => $config->useReadline(),
                 'readline service'   => get_class($config->getReadline()),
+<<<<<<< HEAD
             );
 
             if (isset($info['library_version'])) {
@@ -106,6 +123,12 @@ if (!function_exists('Psy\info')) {
             }
 
             if (isset($info['readline_name']) && $info['readline_name'] !== '') {
+=======
+                'readline library'   => $info['library_version'],
+            );
+
+            if ($info['readline_name'] !== '') {
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
                 $readline['readline name'] = $info['readline_name'];
             }
         } else {
@@ -120,13 +143,21 @@ if (!function_exists('Psy\info')) {
         );
 
         $history = array(
+<<<<<<< HEAD
             'history file'     => $prettyPath($config->getHistoryFile()),
+=======
+            'history file'     => $config->getHistoryFile(),
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
             'history size'     => $config->getHistorySize(),
             'erase duplicates' => $config->getEraseDuplicates(),
         );
 
         $docs = array(
+<<<<<<< HEAD
             'manual db file'   => $prettyPath($config->getManualDbFile()),
+=======
+            'manual db file'   => $config->getManualDbFile(),
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
             'sqlite available' => true,
         );
 

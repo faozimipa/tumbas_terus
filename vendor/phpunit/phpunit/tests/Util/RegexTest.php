@@ -8,6 +8,12 @@
  * file that was distributed with this source code.
  */
 
+<<<<<<< HEAD
+=======
+/**
+ * @since      Class available since Release 4.2.0
+ */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 class Util_RegexTest extends PHPUnit_Framework_TestCase
 {
     public function validRegexpProvider()
@@ -31,6 +37,10 @@ class Util_RegexTest extends PHPUnit_Framework_TestCase
 
     /**
      * @dataProvider validRegexpProvider
+<<<<<<< HEAD
+=======
+     * @covers       PHPUnit_Util_Regex::pregMatchSafe
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function testValidRegex($pattern, $subject, $return)
     {
@@ -39,6 +49,10 @@ class Util_RegexTest extends PHPUnit_Framework_TestCase
 
     /**
      * @dataProvider invalidRegexpProvider
+<<<<<<< HEAD
+=======
+     * @covers       PHPUnit_Util_Regex::pregMatchSafe
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function testInvalidRegex($pattern, $subject)
     {

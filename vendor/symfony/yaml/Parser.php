@@ -185,7 +185,15 @@ class Parser
                             throw new ParseException('YAML merge keys used with a scalar value instead of an array.', $this->getRealCurrentLineNb() + 1, $this->currentLine);
                         }
 
+<<<<<<< HEAD
                         $data += $refValue; // array union
+=======
+                        foreach ($refValue as $key => $value) {
+                            if (!isset($data[$key])) {
+                                $data[$key] = $value;
+                            }
+                        }
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
                     } else {
                         if (isset($values['value']) && $values['value'] !== '') {
                             $value = $values['value'];
@@ -207,12 +215,28 @@ class Parser
                                     throw new ParseException('Merge items must be arrays.', $this->getRealCurrentLineNb() + 1, $parsedItem);
                                 }
 
+<<<<<<< HEAD
                                 $data += $parsedItem; // array union
+=======
+                                foreach ($parsedItem as $key => $value) {
+                                    if (!isset($data[$key])) {
+                                        $data[$key] = $value;
+                                    }
+                                }
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
                             }
                         } else {
                             // If the value associated with the key is a single mapping node, each of its key/value pairs is inserted into the
                             // current mapping, unless the key already exists in it.
+<<<<<<< HEAD
                             $data += $parsed; // array union
+=======
+                            foreach ($parsed as $key => $value) {
+                                if (!isset($data[$key])) {
+                                    $data[$key] = $value;
+                                }
+                            }
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
                         }
                     }
                 } elseif (isset($values['value']) && preg_match('#^&(?P<ref>[^ ]+) *(?P<value>.*)#u', $values['value'], $matches)) {

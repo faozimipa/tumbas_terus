@@ -448,7 +448,11 @@ class Parsedown
             return $Block;
         }
 
+<<<<<<< HEAD
         $Block['element']['text']['text'] .= "\n".$Line['body'];
+=======
+        $Block['element']['text']['text'] .= "\n".$Line['body'];;
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 
         return $Block;
     }
@@ -1204,7 +1208,11 @@ class Parsedown
 
         $remainder = $Excerpt['text'];
 
+<<<<<<< HEAD
         if (preg_match('/\[((?:[^][]++|(?R))*+)\]/', $remainder, $matches))
+=======
+        if (preg_match('/\[((?:[^][]|(?R))*)\]/', $remainder, $matches))
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         {
             $Element['text'] = $matches[1];
 
@@ -1217,7 +1225,11 @@ class Parsedown
             return;
         }
 
+<<<<<<< HEAD
         if (preg_match('/^[(]\s*+((?:[^ ()]++|[(][^ )]+[)])++)(?:[ ]+("[^"]*"|\'[^\']*\'))?\s*[)]/', $remainder, $matches))
+=======
+        if (preg_match('/^[(]((?:[^ ()]|[(][^ )]+[)])+)(?:[ ]+("[^"]*"|\'[^\']*\'))?[)]/', $remainder, $matches))
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         {
             $Element['attributes']['href'] = $matches[1];
 
@@ -1539,10 +1551,18 @@ class Parsedown
         'b', 'em', 'big', 'cite', 'small', 'spacer', 'listing',
         'i', 'rp', 'del', 'code',          'strike', 'marquee',
         'q', 'rt', 'ins', 'font',          'strong',
+<<<<<<< HEAD
         's', 'tt', 'kbd', 'mark',
         'u', 'xm', 'sub', 'nobr',
                    'sup', 'ruby',
                    'var', 'span',
                    'wbr', 'time',
+=======
+        's', 'tt', 'sub', 'mark',
+        'u', 'xm', 'sup', 'nobr',
+                   'var', 'ruby',
+                   'wbr', 'span',
+                          'time',
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     );
 }

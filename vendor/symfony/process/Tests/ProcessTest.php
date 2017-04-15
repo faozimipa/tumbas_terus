@@ -11,7 +11,10 @@
 
 namespace Symfony\Component\Process\Tests;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 use Symfony\Component\Process\Exception\LogicException;
 use Symfony\Component\Process\Exception\ProcessTimedOutException;
 use Symfony\Component\Process\Exception\RuntimeException;
@@ -23,7 +26,11 @@ use Symfony\Component\Process\Process;
 /**
  * @author Robert Schönthal <seroscho@googlemail.com>
  */
+<<<<<<< HEAD
 class ProcessTest extends TestCase
+=======
+class ProcessTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     private static $phpBin;
     private static $process;
@@ -944,6 +951,7 @@ class ProcessTest extends TestCase
     public function testMethodsThatNeedARunningProcess($method)
     {
         $process = $this->getProcess('foo');
+<<<<<<< HEAD
 
         if (method_exists($this, 'expectException')) {
             $this->expectException('Symfony\Component\Process\Exception\LogicException');
@@ -952,6 +960,9 @@ class ProcessTest extends TestCase
             $this->setExpectedException('Symfony\Component\Process\Exception\LogicException', sprintf('Process must be started before calling %s.', $method));
         }
 
+=======
+        $this->setExpectedException('Symfony\Component\Process\Exception\LogicException', sprintf('Process must be started before calling %s.', $method));
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         $process->{$method}();
     }
 
@@ -1391,6 +1402,7 @@ class ProcessTest extends TestCase
         $this->assertSame('456', $p2->getOutput());
     }
 
+<<<<<<< HEAD
     public function testSetBadEnv()
     {
         $process = $this->getProcess('echo hello');
@@ -1403,6 +1415,8 @@ class ProcessTest extends TestCase
         $this->assertSame('', $process->getErrorOutput());
     }
 
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testInheritEnvEnabled()
     {
         $process = $this->getProcess(self::$phpBin.' -r '.escapeshellarg('echo serialize($_SERVER);'), null, array('BAR' => 'BAZ'));
@@ -1479,12 +1493,16 @@ class ProcessTest extends TestCase
             if (!$expectException) {
                 $this->markTestSkipped('PHP is compiled with --enable-sigchild.');
             } elseif (self::$notEnhancedSigchild) {
+<<<<<<< HEAD
                 if (method_exists($this, 'expectException')) {
                     $this->expectException('Symfony\Component\Process\Exception\RuntimeException');
                     $this->expectExceptionMessage('This PHP has been compiled with --enable-sigchild.');
                 } else {
                     $this->setExpectedException('Symfony\Component\Process\Exception\RuntimeException', 'This PHP has been compiled with --enable-sigchild.');
                 }
+=======
+                $this->setExpectedException('Symfony\Component\Process\Exception\RuntimeException', 'This PHP has been compiled with --enable-sigchild.');
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
             }
         }
     }

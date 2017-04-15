@@ -130,7 +130,11 @@ trait QueriesRelationships
      * @param  int       $count
      * @return \Illuminate\Database\Eloquent\Builder|static
      */
+<<<<<<< HEAD
     public function orWhereHas($relation, Closure $callback = null, $operator = '>=', $count = 1)
+=======
+    public function orWhereHas($relation, Closure $callback, $operator = '>=', $count = 1)
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     {
         return $this->has($relation, $operator, $count, 'or', $callback);
     }

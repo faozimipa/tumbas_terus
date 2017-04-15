@@ -216,12 +216,19 @@ class RavenHandler extends AbstractProcessingHandler
      */
     protected function getExtraParameters()
     {
+<<<<<<< HEAD
         return array('checksum', 'release', 'event_id');
+=======
+        return array('checksum', 'release');
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     }
 
     /**
      * @param string $value
+<<<<<<< HEAD
      * @return self
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function setRelease($value)
     {

@@ -428,8 +428,13 @@ class Mailer implements MailerContract, MailQueueContract
      */
     protected function sendSwiftMessage($message)
     {
+<<<<<<< HEAD
         if (! $this->shouldSendMessage($message)) {
             return;
+=======
+        if ($this->events) {
+            $this->events->dispatch(new Events\MessageSending($message));
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         }
 
         try {
@@ -440,6 +445,7 @@ class Mailer implements MailerContract, MailQueueContract
     }
 
     /**
+<<<<<<< HEAD
      * Determines if the message can be sent.
      *
      * @param  \Swift_Message  $message
@@ -457,6 +463,8 @@ class Mailer implements MailerContract, MailQueueContract
     }
 
     /**
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * Force the transport to re-connect.
      *
      * This will prevent errors in daemon queue situations.

@@ -8,6 +8,12 @@
  * file that was distributed with this source code.
  */
 
+<<<<<<< HEAD
+=======
+/**
+ * @since Class available since Release 3.1.0
+ */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 class PHPUnit_Framework_Constraint_Attribute extends PHPUnit_Framework_Constraint_Composite
 {
     /**

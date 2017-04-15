@@ -13,6 +13,11 @@
  * static attribute.
  *
  * The attribute name is passed in the constructor.
+<<<<<<< HEAD
+=======
+ *
+ * @since Class available since Release 3.1.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 class PHPUnit_Framework_Constraint_ClassHasStaticAttribute extends PHPUnit_Framework_Constraint_ClassHasAttribute
 {
@@ -41,6 +46,11 @@ class PHPUnit_Framework_Constraint_ClassHasStaticAttribute extends PHPUnit_Frame
      * Returns a string representation of the constraint.
      *
      * @return string
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.3.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function toString()
     {

@@ -11,12 +11,19 @@
 
 namespace Symfony\Component\Yaml\Tests;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Yaml\Exception\ParseException;
 use Symfony\Component\Yaml\Yaml;
 use Symfony\Component\Yaml\Parser;
 
 class ParserTest extends TestCase
+=======
+use Symfony\Component\Yaml\Yaml;
+use Symfony\Component\Yaml\Parser;
+
+class ParserTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     protected $parser;
 
@@ -42,11 +49,15 @@ class ParserTest extends TestCase
                 if (E_USER_DEPRECATED !== $type) {
                     restore_error_handler();
 
+<<<<<<< HEAD
                     if (class_exists('PHPUnit_Util_ErrorHandler')) {
                         return call_user_func_array('PHPUnit_Util_ErrorHandler::handleError', func_get_args());
                     }
 
                     return call_user_func_array('PHPUnit\Util\ErrorHandler::handleError', func_get_args());
+=======
+                    return call_user_func_array('PHPUnit_Util_ErrorHandler::handleError', func_get_args());
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
                 }
 
                 $deprecations[] = $msg;
@@ -1315,6 +1326,7 @@ EOT
 
     /**
      * @dataProvider getInvalidBinaryData
+<<<<<<< HEAD
      * @expectedException \Symfony\Component\Yaml\Exception\ParseException
      */
     public function testParseInvalidBinaryData($data, $expectedMessage)
@@ -1324,6 +1336,12 @@ EOT
         } else {
             $this->setExpectedExceptionRegExp(ParseException::class, $expectedMessage);
         }
+=======
+     */
+    public function testParseInvalidBinaryData($data, $expectedMessage)
+    {
+        $this->setExpectedExceptionRegExp('\Symfony\Component\Yaml\Exception\ParseException', $expectedMessage);
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 
         $this->parser->parse($data);
     }
@@ -1390,12 +1408,19 @@ EOT;
      */
     public function testParserThrowsExceptionWithCorrectLineNumber($lineNumber, $yaml)
     {
+<<<<<<< HEAD
         if (method_exists($this, 'expectException')) {
             $this->expectException('\Symfony\Component\Yaml\Exception\ParseException');
             $this->expectExceptionMessage(sprintf('Unexpected characters near "," at line %d (near "bar: "123",").', $lineNumber));
         } else {
             $this->setExpectedException('\Symfony\Component\Yaml\Exception\ParseException', sprintf('Unexpected characters near "," at line %d (near "bar: "123",").', $lineNumber));
         }
+=======
+        $this->setExpectedException(
+            '\Symfony\Component\Yaml\Exception\ParseException',
+            sprintf('Unexpected characters near "," at line %d (near "bar: "123",").', $lineNumber)
+        );
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 
         $this->parser->parse($yaml);
     }

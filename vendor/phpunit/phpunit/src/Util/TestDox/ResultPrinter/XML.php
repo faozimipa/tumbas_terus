@@ -8,6 +8,12 @@
  * file that was distributed with this source code.
  */
 
+<<<<<<< HEAD
+=======
+/**
+ * @since Class available since Release 5.4.0
+ */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 class PHPUnit_Util_TestDox_ResultPrinter_XML extends PHPUnit_Util_Printer implements PHPUnit_Framework_TestListener
 {
     /**

@@ -14,9 +14,13 @@ class MakeAuthCommand extends Command
      *
      * @var string
      */
+<<<<<<< HEAD
     protected $signature = 'make:auth
                     {--views : Only scaffold the authentication views}
                     {--force : Overwrite existing views by default}';
+=======
+    protected $signature = 'make:auth {--views : Only scaffold the authentication views}';
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 
     /**
      * The console command description.
@@ -73,12 +77,21 @@ class MakeAuthCommand extends Command
      */
     protected function createDirectories()
     {
+<<<<<<< HEAD
         if (! is_dir(resource_path('views/layouts'))) {
             mkdir(resource_path('views/layouts'), 0755, true);
         }
 
         if (! is_dir(resource_path('views/auth/passwords'))) {
             mkdir(resource_path('views/auth/passwords'), 0755, true);
+=======
+        if (! is_dir(base_path('resources/views/layouts'))) {
+            mkdir(base_path('resources/views/layouts'), 0755, true);
+        }
+
+        if (! is_dir(base_path('resources/views/auth/passwords'))) {
+            mkdir(base_path('resources/views/auth/passwords'), 0755, true);
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         }
     }
 
@@ -90,6 +103,7 @@ class MakeAuthCommand extends Command
     protected function exportViews()
     {
         foreach ($this->views as $key => $value) {
+<<<<<<< HEAD
             if (file_exists(resource_path('views/'.$value)) && ! $this->option('force')) {
                 if (! $this->confirm("The [{$value}] view already exists. Do you want to replace it?")) {
                     continue;
@@ -99,6 +113,11 @@ class MakeAuthCommand extends Command
             copy(
                 __DIR__.'/stubs/make/views/'.$key,
                 resource_path('views/'.$value)
+=======
+            copy(
+                __DIR__.'/stubs/make/views/'.$key,
+                base_path('resources/views/'.$value)
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
             );
         }
     }

@@ -4,7 +4,10 @@ namespace Illuminate\Foundation\Testing\Concerns;
 
 use PHPUnit_Framework_Constraint_Not as ReverseConstraint;
 use Illuminate\Foundation\Testing\Constraints\HasInDatabase;
+<<<<<<< HEAD
 use Illuminate\Foundation\Testing\Constraints\SoftDeletedInDatabase;
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 
 trait InteractsWithDatabase
 {
@@ -45,6 +48,7 @@ trait InteractsWithDatabase
     }
 
     /**
+<<<<<<< HEAD
      * Assert the given record has been deleted.
      *
      * @param  string  $table
@@ -62,6 +66,8 @@ trait InteractsWithDatabase
     }
 
     /**
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * Get the database connection.
      *
      * @param  string|null  $connection

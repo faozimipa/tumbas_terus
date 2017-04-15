@@ -15,7 +15,11 @@ interface Job
      * Release the job back into the queue.
      *
      * @param  int   $delay
+<<<<<<< HEAD
      * @return mixed
+=======
+     * @return void
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function release($delay = 0);
 

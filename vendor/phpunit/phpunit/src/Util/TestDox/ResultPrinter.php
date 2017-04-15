@@ -10,6 +10,11 @@
 
 /**
  * Base class for printers of TestDox documentation.
+<<<<<<< HEAD
+=======
+ *
+ * @since Class available since Release 2.1.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 abstract class PHPUnit_Util_TestDox_ResultPrinter extends PHPUnit_Util_Printer implements PHPUnit_Framework_TestListener
 {
@@ -133,6 +138,11 @@ abstract class PHPUnit_Util_TestDox_ResultPrinter extends PHPUnit_Util_Printer i
      * @param PHPUnit_Framework_Test    $test
      * @param PHPUnit_Framework_Warning $e
      * @param float                     $time
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 5.1.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function addWarning(PHPUnit_Framework_Test $test, PHPUnit_Framework_Warning $e, $time)
     {
@@ -184,6 +194,11 @@ abstract class PHPUnit_Util_TestDox_ResultPrinter extends PHPUnit_Util_Printer i
      * @param PHPUnit_Framework_Test $test
      * @param Exception              $e
      * @param float                  $time
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 4.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function addRiskyTest(PHPUnit_Framework_Test $test, Exception $e, $time)
     {
@@ -201,6 +216,11 @@ abstract class PHPUnit_Util_TestDox_ResultPrinter extends PHPUnit_Util_Printer i
      * @param PHPUnit_Framework_Test $test
      * @param Exception              $e
      * @param float                  $time
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function addSkippedTest(PHPUnit_Framework_Test $test, Exception $e, $time)
     {
@@ -216,6 +236,11 @@ abstract class PHPUnit_Util_TestDox_ResultPrinter extends PHPUnit_Util_Printer i
      * A testsuite started.
      *
      * @param PHPUnit_Framework_TestSuite $suite
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 2.2.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function startTestSuite(PHPUnit_Framework_TestSuite $suite)
     {
@@ -225,6 +250,11 @@ abstract class PHPUnit_Util_TestDox_ResultPrinter extends PHPUnit_Util_Printer i
      * A testsuite ended.
      *
      * @param PHPUnit_Framework_TestSuite $suite
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 2.2.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function endTestSuite(PHPUnit_Framework_TestSuite $suite)
     {
@@ -308,6 +338,12 @@ abstract class PHPUnit_Util_TestDox_ResultPrinter extends PHPUnit_Util_Printer i
         $this->currentTestMethodPrettified = null;
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @since Method available since Release 2.3.0
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     protected function doEndClass()
     {
         foreach ($this->tests as $name => $data) {

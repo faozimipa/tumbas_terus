@@ -11,11 +11,18 @@
 
 namespace Symfony\Component\Translation\Tests\Dumper;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Translation\MessageCatalogue;
 use Symfony\Component\Translation\Dumper\PoFileDumper;
 
 class PoFileDumperTest extends TestCase
+=======
+use Symfony\Component\Translation\MessageCatalogue;
+use Symfony\Component\Translation\Dumper\PoFileDumper;
+
+class PoFileDumperTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     public function testFormatCatalogue()
     {

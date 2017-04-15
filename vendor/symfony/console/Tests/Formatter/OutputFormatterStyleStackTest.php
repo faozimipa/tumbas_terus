@@ -11,11 +11,18 @@
 
 namespace Symfony\Component\Console\Tests\Formatter;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Formatter\OutputFormatterStyleStack;
 use Symfony\Component\Console\Formatter\OutputFormatterStyle;
 
 class OutputFormatterStyleStackTest extends TestCase
+=======
+use Symfony\Component\Console\Formatter\OutputFormatterStyleStack;
+use Symfony\Component\Console\Formatter\OutputFormatterStyle;
+
+class OutputFormatterStyleStackTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     public function testPush()
     {

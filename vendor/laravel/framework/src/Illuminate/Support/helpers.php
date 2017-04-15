@@ -311,7 +311,11 @@ if (! function_exists('array_wrap')) {
      */
     function array_wrap($value)
     {
+<<<<<<< HEAD
         return Arr::wrap($value);
+=======
+        return ! is_array($value) ? [$value] : $value;
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     }
 }
 

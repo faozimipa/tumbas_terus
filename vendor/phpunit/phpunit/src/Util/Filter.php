@@ -10,6 +10,11 @@
 
 /**
  * Utility class for code filtering.
+<<<<<<< HEAD
+=======
+ *
+ * @since Class available since Release 2.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 class PHPUnit_Util_Filter
 {
@@ -88,6 +93,11 @@ class PHPUnit_Util_Filter
      * @param int    $line
      *
      * @return bool
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.3.2
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     private static function frameExists(array $trace, $file, $line)
     {

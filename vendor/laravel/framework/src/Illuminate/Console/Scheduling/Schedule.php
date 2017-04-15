@@ -67,6 +67,7 @@ class Schedule
     }
 
     /**
+<<<<<<< HEAD
      * Add a new job callback event to the schedule.
      *
      * @param  object|string  $job
@@ -80,6 +81,8 @@ class Schedule
     }
 
     /**
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * Add a new command event to the schedule.
      *
      * @param  string  $command

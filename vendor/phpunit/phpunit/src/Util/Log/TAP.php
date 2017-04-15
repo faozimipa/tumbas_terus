@@ -11,6 +11,11 @@
 /**
  * A TestListener that generates a logfile of the
  * test execution using the Test Anything Protocol (TAP).
+<<<<<<< HEAD
+=======
+ *
+ * @since Class available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 class PHPUnit_Util_Log_TAP extends PHPUnit_Util_Printer implements PHPUnit_Framework_TestListener
 {
@@ -35,6 +40,11 @@ class PHPUnit_Util_Log_TAP extends PHPUnit_Util_Printer implements PHPUnit_Frame
      * @param mixed $out
      *
      * @throws PHPUnit_Framework_Exception
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.3.4
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function __construct($out = null)
     {
@@ -60,6 +70,11 @@ class PHPUnit_Util_Log_TAP extends PHPUnit_Util_Printer implements PHPUnit_Frame
      * @param PHPUnit_Framework_Test    $test
      * @param PHPUnit_Framework_Warning $e
      * @param float                     $time
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 5.1.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function addWarning(PHPUnit_Framework_Test $test, PHPUnit_Framework_Warning $e, $time)
     {
@@ -126,6 +141,11 @@ class PHPUnit_Util_Log_TAP extends PHPUnit_Util_Printer implements PHPUnit_Frame
      * @param PHPUnit_Framework_Test $test
      * @param Exception              $e
      * @param float                  $time
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 4.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function addRiskyTest(PHPUnit_Framework_Test $test, Exception $e, $time)
     {
@@ -146,6 +166,11 @@ class PHPUnit_Util_Log_TAP extends PHPUnit_Util_Printer implements PHPUnit_Frame
      * @param PHPUnit_Framework_Test $test
      * @param Exception              $e
      * @param float                  $time
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function addSkippedTest(PHPUnit_Framework_Test $test, Exception $e, $time)
     {

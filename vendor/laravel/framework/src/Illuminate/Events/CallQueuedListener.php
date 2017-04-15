@@ -33,6 +33,7 @@ class CallQueuedListener implements ShouldQueue
     public $data;
 
     /**
+<<<<<<< HEAD
      * The number of times the job may be attempted.
      *
      * @var int
@@ -47,6 +48,8 @@ class CallQueuedListener implements ShouldQueue
     public $timeout;
 
     /**
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * Create a new job instance.
      *
      * @param  string  $class

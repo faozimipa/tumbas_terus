@@ -10,6 +10,11 @@
 
 /**
  * XML helpers.
+<<<<<<< HEAD
+=======
+ *
+ * @since Class available since Release 3.2.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 class PHPUnit_Util_XML
 {
@@ -34,6 +39,11 @@ class PHPUnit_Util_XML
      * @param bool               $strict
      *
      * @return DOMDocument
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.3.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public static function load($actual, $isHtml = false, $filename = '', $xinclude = false, $strict = false)
     {
@@ -117,6 +127,11 @@ class PHPUnit_Util_XML
      * @param bool   $strict
      *
      * @return DOMDocument
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.3.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public static function loadFile($filename, $isHtml = false, $xinclude = false, $strict = false)
     {
@@ -138,6 +153,11 @@ class PHPUnit_Util_XML
 
     /**
      * @param DOMNode $node
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.3.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public static function removeCharacterDataNodes(DOMNode $node)
     {
@@ -159,6 +179,11 @@ class PHPUnit_Util_XML
      * @param string $string
      *
      * @return string
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.4.6
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public static function prepareString($string)
     {
@@ -179,6 +204,11 @@ class PHPUnit_Util_XML
      * @param DOMElement $element
      *
      * @return mixed
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.4.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public static function xmlToVariable(DOMElement $element)
     {

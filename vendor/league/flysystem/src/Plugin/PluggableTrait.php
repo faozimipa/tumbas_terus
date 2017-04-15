@@ -19,16 +19,22 @@ trait PluggableTrait
      *
      * @param PluginInterface $plugin
      *
+<<<<<<< HEAD
      * @throws LogicException
      *
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @return $this
      */
     public function addPlugin(PluginInterface $plugin)
     {
+<<<<<<< HEAD
         if ( ! method_exists($plugin, 'handle')) {
             throw new LogicException(get_class($plugin) . ' does not have a handle method.');
         }
 
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         $this->plugins[$plugin->getMethod()] = $plugin;
 
         return $this;
@@ -39,9 +45,15 @@ trait PluggableTrait
      *
      * @param string $method
      *
+<<<<<<< HEAD
      * @throws PluginNotFoundException
      *
      * @return PluginInterface
+=======
+     * @throws LogicException
+     *
+     * @return PluginInterface $plugin
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     protected function findPlugin($method)
     {
@@ -49,18 +61,32 @@ trait PluggableTrait
             throw new PluginNotFoundException('Plugin not found for method: ' . $method);
         }
 
+<<<<<<< HEAD
+=======
+        if ( ! method_exists($this->plugins[$method], 'handle')) {
+            throw new LogicException(get_class($this->plugins[$method]) . ' does not have a handle method.');
+        }
+
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         return $this->plugins[$method];
     }
 
     /**
      * Invoke a plugin by method name.
      *
+<<<<<<< HEAD
      * @param string              $method
      * @param array               $arguments
      * @param FilesystemInterface $filesystem
      *
      * @throws PluginNotFoundException
      *
+=======
+     * @param string $method
+     * @param array  $arguments
+     * @param FilesystemInterface $filesystem
+     *
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @return mixed
      */
     protected function invokePlugin($method, array $arguments, FilesystemInterface $filesystem)

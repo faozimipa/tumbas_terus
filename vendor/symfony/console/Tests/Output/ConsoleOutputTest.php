@@ -11,12 +11,19 @@
 
 namespace Symfony\Component\Console\Tests\Output;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 use Symfony\Component\Console\Formatter\OutputFormatter;
 use Symfony\Component\Console\Output\ConsoleOutput;
 use Symfony\Component\Console\Output\Output;
 
+<<<<<<< HEAD
 class ConsoleOutputTest extends TestCase
+=======
+class ConsoleOutputTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     public function testConstructor()
     {

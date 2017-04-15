@@ -1,5 +1,6 @@
 # ramsey/uuid Changelog
 
+<<<<<<< HEAD
 ## 3.6.1
 
 _Released: 2017-03-26_
@@ -14,6 +15,8 @@ _Released: 2017-03-18_
   * Improve memory usage when generating large quantities of UUIDs (use `str_pad()` and `dechex()` instead of `sprintf()`) [#160](https://github.com/ramsey/uuid/pull/160)
   * Minor test and documentation updates
 
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 ## 3.5.2
 
 _Released: 2016-11-22_

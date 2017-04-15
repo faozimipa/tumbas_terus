@@ -9,11 +9,16 @@ class SweetAlertNotifierTest extends PHPUnit_Framework_TestCase
     /** @test */
     public function it_flashes_config_for_a_basic_alert()
     {
+<<<<<<< HEAD
         $session = m::spy(SessionStore::class);
         $notifier = new SweetAlertNotifier($session);
 
         $notifier->basic('Basic Alert!', 'Alert');
 
+=======
+        $session = m::mock(SessionStore::class);
+        $notifier = new SweetAlertNotifier($session);
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         $expectedConfig = [
             'timer'             => 1800,
             'title'             => 'Alert',
@@ -21,11 +26,22 @@ class SweetAlertNotifierTest extends PHPUnit_Framework_TestCase
             'showConfirmButton' => false,
         ];
         $expectedJsonConfig = json_encode($expectedConfig);
+<<<<<<< HEAD
         $session->shouldHaveReceived('flash')->with('sweet_alert.timer', $expectedConfig['timer'])->once();
         $session->shouldHaveReceived('flash')->with('sweet_alert.title', $expectedConfig['title'])->once();
         $session->shouldHaveReceived('flash')->with('sweet_alert.text', $expectedConfig['text'])->once();
         $session->shouldHaveReceived('flash')->with('sweet_alert.showConfirmButton', $expectedConfig['showConfirmButton'])->once();
         $session->shouldHaveReceived('flash')->with('sweet_alert.alert', $expectedJsonConfig)->once();
+=======
+        $session->shouldReceive('flash')->with('sweet_alert.timer', $expectedConfig['timer']);
+        $session->shouldReceive('flash')->with('sweet_alert.title', $expectedConfig['title']);
+        $session->shouldReceive('flash')->with('sweet_alert.text', $expectedConfig['text']);
+        $session->shouldReceive('flash')->with('sweet_alert.showConfirmButton', $expectedConfig['showConfirmButton']);
+        $session->shouldReceive('flash')->with('sweet_alert.alert', $expectedJsonConfig);
+
+        $notifier->basic('Basic Alert!', 'Alert');
+
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         $this->assertEquals($expectedConfig, $notifier->getConfig());
         $this->assertEquals($expectedJsonConfig, $notifier->getJsonConfig());
     }
@@ -237,11 +253,19 @@ class SweetAlertNotifierTest extends PHPUnit_Framework_TestCase
         $session->shouldReceive('flash')->atLeast(1);
         $notifier = new SweetAlertNotifier($session);
         $expectedConfig = [
+<<<<<<< HEAD
             'title'              => 'Alert',
             'text'               => 'Basic Alert!',
             'showConfirmButton'  => true,
             'confirmButtonText'  => 'ok!',
             'allowOutsideClick'  => false,
+=======
+            'title'             => 'Alert',
+            'text'              => 'Basic Alert!',
+            'showConfirmButton' => true,
+            'confirmButtonText'  => 'ok!',
+            'allowOutsideClick' => false,
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         ];
         $expectedJsonConfig = json_encode($expectedConfig);
 
@@ -254,11 +278,17 @@ class SweetAlertNotifierTest extends PHPUnit_Framework_TestCase
     /** @test */
     public function it_show_a_cancel_button_with_custom_text()
     {
+<<<<<<< HEAD
         $session = m::spy(SessionStore::class);
         $notifier = new SweetAlertNotifier($session);
 
         $notifier->basic('Basic Alert!', 'Alert')->cancelButton('Cancel!');
 
+=======
+        $session = m::mock(SessionStore::class);
+        $session->shouldReceive('flash')->atLeast(1);
+        $notifier = new SweetAlertNotifier($session);
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         $expectedConfig = [
             'title'             => 'Alert',
             'text'              => 'Basic Alert!',
@@ -268,7 +298,13 @@ class SweetAlertNotifierTest extends PHPUnit_Framework_TestCase
             'allowOutsideClick' => false,
         ];
         $expectedJsonConfig = json_encode($expectedConfig);
+<<<<<<< HEAD
         $session->shouldHaveReceived('flash')->with('sweet_alert.title', $expectedConfig['title']);
+=======
+
+        $notifier->basic('Basic Alert!', 'Alert')->cancelButton('Cancel!');
+
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         $this->assertEquals($expectedConfig, $notifier->getConfig());
         $this->assertEquals($expectedJsonConfig, $notifier->getJsonConfig());
     }

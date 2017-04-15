@@ -354,8 +354,11 @@
         </exec>
 
         <chmod file="${basedir}/build/phpunit-${_version}.phar" perm="ugo+rx"/>
+<<<<<<< HEAD
 
         <delete dir="${basedir}/build/phar"/>
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     </target>
 
     <target name="-phar-determine-version">
@@ -376,6 +379,7 @@
         </exec>
     </target>
 
+<<<<<<< HEAD
     <target name="phpcs">
         <exec executable="${basedir}/build/tools/phpcs" taskname="phpcs">
             <arg value="--standard=PSR2"/>
@@ -388,17 +392,23 @@
         </exec>
     </target>
 
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     <target name="-phpcs" depends="prepare">
         <exec executable="${basedir}/build/tools/phpcs" output="/dev/null" taskname="phpcs">
             <arg value="--report=checkstyle"/>
             <arg value="--report-file=${basedir}/build/logfiles/checkstyle.xml"/>
             <arg value="--standard=PSR2"/>
             <arg value="--extensions=php"/>
+<<<<<<< HEAD
             <arg value="--exclude=Generic.Files.LineLength"/>
             <arg path="${basedir}/src"/>
             <arg path="${basedir}/tests/Framework"/>
             <arg path="${basedir}/tests/Runner"/>
             <arg path="${basedir}/tests/Util"/>
+=======
+            <arg path="${basedir}/src"/>
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         </exec>
     </target>
 

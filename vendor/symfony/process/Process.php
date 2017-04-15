@@ -169,6 +169,10 @@ class Process implements \IteratorAggregate
         $this->setTimeout($timeout);
         $this->useFileHandles = '\\' === DIRECTORY_SEPARATOR;
         $this->pty = false;
+<<<<<<< HEAD
+=======
+        $this->enhanceWindowsCompatibility = true;
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         $this->enhanceSigchildCompatibility = '\\' !== DIRECTORY_SEPARATOR && $this->isSigchildEnabled();
         $this->options = array_replace(array('suppress_errors' => true, 'binary_pipes' => true), $options);
     }
@@ -265,6 +269,7 @@ class Process implements \IteratorAggregate
         $this->callback = $this->buildCallback($callback);
         $this->hasCallback = null !== $callback;
         $descriptors = $this->getDescriptors();
+<<<<<<< HEAD
         $inheritEnv = $this->inheritEnv;
 
         $commandline = $this->commandline;
@@ -284,6 +289,26 @@ class Process implements \IteratorAggregate
         }
         if ('\\' === DIRECTORY_SEPARATOR && $this->enhanceWindowsCompatibility) {
             $commandline = 'cmd /V:ON /E:ON /D /C "('.$commandline.')';
+=======
+
+        $commandline = $this->commandline;
+        $envline = '';
+
+        if (null !== $this->env && $this->inheritEnv) {
+            if ('\\' === DIRECTORY_SEPARATOR && !empty($this->options['bypass_shell']) && !$this->enhanceWindowsCompatibility) {
+                throw new LogicException('The "bypass_shell" option must be false to inherit environment variables while enhanced Windows compatibility is off');
+            }
+            $env = '\\' === DIRECTORY_SEPARATOR ? '(SET %s)&&' : 'export %s;';
+            foreach ($this->env as $k => $v) {
+                $envline .= sprintf($env, ProcessUtils::escapeArgument("$k=$v"));
+            }
+            $env = null;
+        } else {
+            $env = $this->env;
+        }
+        if ('\\' === DIRECTORY_SEPARATOR && $this->enhanceWindowsCompatibility) {
+            $commandline = 'cmd /V:ON /E:ON /D /C "('.$envline.$commandline.')';
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
             foreach ($this->processPipes->getFiles() as $offset => $filename) {
                 $commandline .= ' '.$offset.'>'.ProcessUtils::escapeArgument($filename);
             }
@@ -297,20 +322,32 @@ class Process implements \IteratorAggregate
             $descriptors[3] = array('pipe', 'w');
 
             // See https://unix.stackexchange.com/questions/71205/background-process-pipe-input
+<<<<<<< HEAD
             $commandline = '{ ('.$this->commandline.') <&3 3<&- 3>/dev/null & } 3<&0;';
+=======
+            $commandline = $envline.'{ ('.$this->commandline.') <&3 3<&- 3>/dev/null & } 3<&0;';
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
             $commandline .= 'pid=$!; echo $pid >&3; wait $pid; code=$?; echo $code >&3; exit $code';
 
             // Workaround for the bug, when PTS functionality is enabled.
             // @see : https://bugs.php.net/69442
             $ptsWorkaround = fopen(__FILE__, 'r');
+<<<<<<< HEAD
+=======
+        } elseif ('' !== $envline) {
+            $commandline = $envline.$commandline;
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         }
 
         $this->process = proc_open($commandline, $descriptors, $this->processPipes->pipes, $this->cwd, $env, $this->options);
 
+<<<<<<< HEAD
         foreach ($envBackup as $k => $v) {
             putenv(false === $v ? $k : "$k=$v");
         }
 
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         if (!is_resource($this->process)) {
             throw new RuntimeException('Unable to launch a new process.');
         }
@@ -379,7 +416,11 @@ class Process implements \IteratorAggregate
         if (null !== $callback) {
             if (!$this->processPipes->haveReadSupport()) {
                 $this->stop(0);
+<<<<<<< HEAD
                 throw new \LogicException('Pass the callback to the Process::start method or enableOutput to use a callback with Process::wait');
+=======
+                throw new \LogicException('Pass the callback to the Process:start method or enableOutput to use a callback with Process::wait');
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
             }
             $this->callback = $this->buildCallback($callback);
         }
@@ -1106,7 +1147,14 @@ class Process implements \IteratorAggregate
             return !is_array($value);
         });
 
+<<<<<<< HEAD
         $this->env = $env;
+=======
+        $this->env = array();
+        foreach ($env as $key => $value) {
+            $this->env[$key] = (string) $value;
+        }
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 
         return $this;
     }

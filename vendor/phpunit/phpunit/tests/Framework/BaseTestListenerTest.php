@@ -8,6 +8,12 @@
  * file that was distributed with this source code.
  */
 
+<<<<<<< HEAD
+=======
+/**
+ * @since      Class available since Release 4.0.0
+ */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 class Framework_BaseTestListenerTest extends PHPUnit_Framework_TestCase
 {
     /**
@@ -15,6 +21,12 @@ class Framework_BaseTestListenerTest extends PHPUnit_Framework_TestCase
      */
     private $result;
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_TestResult
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testEndEventsAreCounted()
     {
         $this->result = new PHPUnit_Framework_TestResult;

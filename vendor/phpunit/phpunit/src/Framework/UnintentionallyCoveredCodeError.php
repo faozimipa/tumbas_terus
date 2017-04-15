@@ -11,6 +11,11 @@
 /**
  * Extension to PHPUnit_Framework_AssertionFailedError to mark the special
  * case of a test that unintentionally covers code.
+<<<<<<< HEAD
+=======
+ *
+ * @since Class available since Release 4.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 class PHPUnit_Framework_UnintentionallyCoveredCodeError extends PHPUnit_Framework_RiskyTestError
 {

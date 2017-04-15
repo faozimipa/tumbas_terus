@@ -13,11 +13,20 @@
  *
  * Uses array_replace_recursive() to check if a key value subset is part of the
  * subject array.
+<<<<<<< HEAD
+=======
+ *
+ * @since Class available since Release 4.4.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 class PHPUnit_Framework_Constraint_ArraySubset extends PHPUnit_Framework_Constraint
 {
     /**
+<<<<<<< HEAD
      * @var array|Traversable
+=======
+     * @var array|ArrayAccess
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     protected $subset;
 
@@ -27,7 +36,11 @@ class PHPUnit_Framework_Constraint_ArraySubset extends PHPUnit_Framework_Constra
     protected $strict;
 
     /**
+<<<<<<< HEAD
      * @param array|Traversable $subset
+=======
+     * @param array|ArrayAccess $subset
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @param bool              $strict Check for object identity
      */
     public function __construct($subset, $strict = false)
@@ -41,7 +54,11 @@ class PHPUnit_Framework_Constraint_ArraySubset extends PHPUnit_Framework_Constra
      * Evaluates the constraint for parameter $other. Returns true if the
      * constraint is met, false otherwise.
      *
+<<<<<<< HEAD
      * @param array|Traversable $other Array or Traversable object to evaluate.
+=======
+     * @param array|ArrayAccess $other Array or ArrayAccess object to evaluate.
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      *
      * @return bool
      */
@@ -49,8 +66,18 @@ class PHPUnit_Framework_Constraint_ArraySubset extends PHPUnit_Framework_Constra
     {
         //type cast $other & $this->subset as an array to allow
         //support in standard array functions.
+<<<<<<< HEAD
         $other        = $this->toArray($other);
         $this->subset = $this->toArray($this->subset);
+=======
+        if ($other instanceof ArrayAccess) {
+            $other = (array) $other;
+        }
+
+        if ($this->subset instanceof ArrayAccess) {
+            $this->subset = (array) $this->subset;
+        }
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 
         $patched = array_replace_recursive($other, $this->subset);
 
@@ -85,6 +112,7 @@ class PHPUnit_Framework_Constraint_ArraySubset extends PHPUnit_Framework_Constra
     {
         return 'an array ' . $this->toString();
     }
+<<<<<<< HEAD
 
     /**
      * @param array|Traversable $other
@@ -104,4 +132,6 @@ class PHPUnit_Framework_Constraint_ArraySubset extends PHPUnit_Framework_Constra
         // Keep BC even if we know that array would not be the expected one
         return (array) $other;
     }
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 }

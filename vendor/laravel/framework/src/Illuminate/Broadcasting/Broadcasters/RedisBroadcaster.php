@@ -72,7 +72,11 @@ class RedisBroadcaster extends Broadcaster
         }
 
         return json_encode(['channel_data' => [
+<<<<<<< HEAD
             'user_id' => $request->user()->getAuthIdentifier(),
+=======
+            'user_id' => $request->user()->getKey(),
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
             'user_info' => $result,
         ]]);
     }

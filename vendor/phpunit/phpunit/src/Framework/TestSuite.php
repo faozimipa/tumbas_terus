@@ -10,6 +10,11 @@
 
 /**
  * A TestSuite is a composite of Tests. It runs a collection of test cases.
+<<<<<<< HEAD
+=======
+ *
+ * @since Class available since Release 2.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 class PHPUnit_Framework_TestSuite implements PHPUnit_Framework_Test, PHPUnit_Framework_SelfDescribing, IteratorAggregate
 {
@@ -289,6 +294,11 @@ class PHPUnit_Framework_TestSuite implements PHPUnit_Framework_Test, PHPUnit_Fra
      * @param string $filename
      *
      * @throws PHPUnit_Framework_Exception
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 2.3.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function addTestFile($filename)
     {
@@ -367,6 +377,11 @@ class PHPUnit_Framework_TestSuite implements PHPUnit_Framework_Test, PHPUnit_Fra
      * @param array|Iterator $filenames
      *
      * @throws PHPUnit_Framework_Exception
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 2.3.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function addTestFiles($filenames)
     {
@@ -612,6 +627,11 @@ class PHPUnit_Framework_TestSuite implements PHPUnit_Framework_Test, PHPUnit_Fra
      * Returns the test groups of the suite.
      *
      * @return array
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.2.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function getGroups()
     {
@@ -627,6 +647,11 @@ class PHPUnit_Framework_TestSuite implements PHPUnit_Framework_Test, PHPUnit_Fra
      * Set tests groups of the test case
      *
      * @param array $groups
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 4.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function setGroupDetails(array $groups)
     {
@@ -735,6 +760,11 @@ class PHPUnit_Framework_TestSuite implements PHPUnit_Framework_Test, PHPUnit_Fra
      * @param bool $runTestInSeparateProcess
      *
      * @throws PHPUnit_Framework_Exception
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.7.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function setRunTestInSeparateProcess($runTestInSeparateProcess)
     {
@@ -798,6 +828,11 @@ class PHPUnit_Framework_TestSuite implements PHPUnit_Framework_Test, PHPUnit_Fra
      * Set tests of the test suite
      *
      * @param array $tests
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 4.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function setTests(array $tests)
     {
@@ -810,6 +845,11 @@ class PHPUnit_Framework_TestSuite implements PHPUnit_Framework_Test, PHPUnit_Fra
      * @param string $message
      *
      * @throws PHPUnit_Framework_SkippedTestSuiteError
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function markTestSuiteSkipped($message = '')
     {
@@ -892,6 +932,11 @@ class PHPUnit_Framework_TestSuite implements PHPUnit_Framework_Test, PHPUnit_Fra
      * @param string $message
      *
      * @return PHPUnit_Framework_SkippedTestCase
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 4.3.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     protected static function skipTest($class, $methodName, $message)
     {
@@ -904,6 +949,11 @@ class PHPUnit_Framework_TestSuite implements PHPUnit_Framework_Test, PHPUnit_Fra
      * @param string $message
      *
      * @return PHPUnit_Framework_IncompleteTestCase
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 4.3.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     protected static function incompleteTest($class, $methodName, $message)
     {
@@ -912,6 +962,11 @@ class PHPUnit_Framework_TestSuite implements PHPUnit_Framework_Test, PHPUnit_Fra
 
     /**
      * @param bool $beStrictAboutChangesToGlobalState
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 4.6.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function setbeStrictAboutChangesToGlobalState($beStrictAboutChangesToGlobalState)
     {
@@ -922,6 +977,11 @@ class PHPUnit_Framework_TestSuite implements PHPUnit_Framework_Test, PHPUnit_Fra
 
     /**
      * @param bool $backupGlobals
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.3.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function setBackupGlobals($backupGlobals)
     {
@@ -932,6 +992,11 @@ class PHPUnit_Framework_TestSuite implements PHPUnit_Framework_Test, PHPUnit_Fra
 
     /**
      * @param bool $backupStaticAttributes
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.4.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function setBackupStaticAttributes($backupStaticAttributes)
     {
@@ -945,6 +1010,11 @@ class PHPUnit_Framework_TestSuite implements PHPUnit_Framework_Test, PHPUnit_Fra
      * Returns an iterator for this test suite.
      *
      * @return RecursiveIteratorIterator
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.1.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function getIterator()
     {
@@ -970,6 +1040,11 @@ class PHPUnit_Framework_TestSuite implements PHPUnit_Framework_Test, PHPUnit_Fra
     /**
      * Template Method that is called before the tests
      * of this test suite are run.
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.1.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     protected function setUp()
     {
@@ -978,6 +1053,11 @@ class PHPUnit_Framework_TestSuite implements PHPUnit_Framework_Test, PHPUnit_Fra
     /**
      * Template Method that is called after the tests
      * of this test suite have finished running.
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.1.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     protected function tearDown()
     {

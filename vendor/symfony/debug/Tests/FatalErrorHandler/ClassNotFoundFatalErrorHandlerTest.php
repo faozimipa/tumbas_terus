@@ -11,14 +11,21 @@
 
 namespace Symfony\Component\Debug\Tests\FatalErrorHandler;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 use Symfony\Component\Debug\Exception\FatalErrorException;
 use Symfony\Component\ClassLoader\ClassLoader as SymfonyClassLoader;
 use Symfony\Component\Debug\FatalErrorHandler\ClassNotFoundFatalErrorHandler;
 use Symfony\Component\Debug\DebugClassLoader;
 use Composer\Autoload\ClassLoader as ComposerClassLoader;
 
+<<<<<<< HEAD
 class ClassNotFoundFatalErrorHandlerTest extends TestCase
+=======
+class ClassNotFoundFatalErrorHandlerTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     public static function setUpBeforeClass()
     {

@@ -11,13 +11,20 @@
 
 namespace Symfony\Component\Console\Tests\Input;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Input\InputDefinition;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 
+<<<<<<< HEAD
 class ArrayInputTest extends TestCase
+=======
+class ArrayInputTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     public function testGetFirstArgument()
     {
@@ -121,12 +128,16 @@ class ArrayInputTest extends TestCase
      */
     public function testParseInvalidInput($parameters, $definition, $expectedExceptionMessage)
     {
+<<<<<<< HEAD
         if (method_exists($this, 'expectException')) {
             $this->expectException('InvalidArgumentException');
             $this->expectExceptionMessage($expectedExceptionMessage);
         } else {
             $this->setExpectedException('InvalidArgumentException', $expectedExceptionMessage);
         }
+=======
+        $this->setExpectedException('InvalidArgumentException', $expectedExceptionMessage);
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 
         new ArrayInput($parameters, $definition);
     }

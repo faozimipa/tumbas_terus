@@ -11,6 +11,11 @@
 /**
  * Constraint that asserts that the value it is evaluated for is less than
  * a given value.
+<<<<<<< HEAD
+=======
+ *
+ * @since Class available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 class PHPUnit_Framework_Constraint_LessThan extends PHPUnit_Framework_Constraint
 {

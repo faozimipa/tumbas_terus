@@ -11,10 +11,16 @@
 
 namespace Symfony\Component\HttpKernel\Tests\CacheClearer;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\HttpKernel\CacheClearer\ChainCacheClearer;
 
 class ChainCacheClearerTest extends TestCase
+=======
+use Symfony\Component\HttpKernel\CacheClearer\ChainCacheClearer;
+
+class ChainCacheClearerTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     protected static $cacheDir;
 

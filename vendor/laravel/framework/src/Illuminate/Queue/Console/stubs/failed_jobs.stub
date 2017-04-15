@@ -14,7 +14,11 @@ class Create{{tableClassName}}Table extends Migration
     public function up()
     {
         Schema::create('{{table}}', function (Blueprint $table) {
+<<<<<<< HEAD
             $table->bigIncrements('id');
+=======
+            $table->increments('id');
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
             $table->text('connection');
             $table->text('queue');
             $table->longText('payload');

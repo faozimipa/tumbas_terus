@@ -20,9 +20,20 @@ require TEST_FILES_PATH . 'CoverageNamespacedFunctionTest.php';
 require TEST_FILES_PATH . 'NamespaceCoveredFunction.php';
 require TEST_FILES_PATH . 'MultipleDataProviderTest.php';
 
+<<<<<<< HEAD
 class Util_TestTest extends PHPUnit_Framework_TestCase
 {
     /**
+=======
+/**
+ * @since      Class available since Release 3.3.6
+ */
+class Util_TestTest extends PHPUnit_Framework_TestCase
+{
+    /**
+     * @covers PHPUnit_Util_Test::getExpectedException
+     *
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @todo   Split up in separate tests
      */
     public function testGetExpectedException()
@@ -94,6 +105,12 @@ class Util_TestTest extends PHPUnit_Framework_TestCase
         );
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Util_Test::getExpectedException
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testGetExpectedRegExp()
     {
         $this->assertArraySubset(
@@ -113,6 +130,10 @@ class Util_TestTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers       PHPUnit_Util_Test::getRequirements
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @dataProvider requirementsProvider
      */
     public function testGetRequirements($test, $result)
@@ -314,6 +335,12 @@ class Util_TestTest extends PHPUnit_Framework_TestCase
         ];
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Util_Test::getRequirements
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testGetRequirementsMergesClassAndMethodDocBlocks()
     {
         $expectedAnnotations = [
@@ -337,6 +364,10 @@ class Util_TestTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers       PHPUnit_Util_Test::getMissingRequirements
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @dataProvider missingRequirementsProvider
      */
     public function testGetMissingRequirements($test, $result)
@@ -391,6 +422,11 @@ class Util_TestTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @coversNothing
+     *
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @todo   This test does not really test functionality of PHPUnit_Util_Test
      */
     public function testGetProvidedDataRegEx()
@@ -418,6 +454,11 @@ class Util_TestTest extends PHPUnit_Framework_TestCase
 
     /**
      * Check if all data providers are being merged.
+<<<<<<< HEAD
+=======
+     *
+     * @covers PHPUnit_Util_Test::getDataFromDataProviderAnnotation
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function testMultipleDataProviders()
     {
@@ -442,6 +483,11 @@ class Util_TestTest extends PHPUnit_Framework_TestCase
 
     /**
      * Check with a multiple yield / iterator data providers.
+<<<<<<< HEAD
+=======
+     *
+     * @covers PHPUnit_Util_Test::getDataFromDataProviderAnnotation
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function testMultipleYieldIteratorDataProviders()
     {
@@ -464,12 +510,24 @@ class Util_TestTest extends PHPUnit_Framework_TestCase
         $this->assertEquals(3, $cCount);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Util_Test::getDataFromTestWithAnnotation
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testTestWithEmptyAnnotation()
     {
         $result = PHPUnit_Util_Test::getDataFromTestWithAnnotation("/**\n * @anotherAnnotation\n */");
         $this->assertNull($result);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Util_Test::getDataFromTestWithAnnotation
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testTestWithSimpleCase()
     {
         $result = PHPUnit_Util_Test::getDataFromTestWithAnnotation('/**
@@ -478,6 +536,12 @@ class Util_TestTest extends PHPUnit_Framework_TestCase
         $this->assertEquals([[1]], $result);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Util_Test::getDataFromTestWithAnnotation
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testTestWithMultiLineMultiParameterCase()
     {
         $result = PHPUnit_Util_Test::getDataFromTestWithAnnotation('/**
@@ -487,6 +551,12 @@ class Util_TestTest extends PHPUnit_Framework_TestCase
         $this->assertEquals([[1, 2], [3, 4]], $result);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Util_Test::getDataFromTestWithAnnotation
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testTestWithVariousTypes()
     {
         $result = PHPUnit_Util_Test::getDataFromTestWithAnnotation('/**
@@ -497,6 +567,12 @@ class Util_TestTest extends PHPUnit_Framework_TestCase
         $this->assertEquals([['ab'], [true], [null]], $result);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Util_Test::getDataFromTestWithAnnotation
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testTestWithAnnotationAfter()
     {
         $result = PHPUnit_Util_Test::getDataFromTestWithAnnotation('/**
@@ -507,6 +583,12 @@ class Util_TestTest extends PHPUnit_Framework_TestCase
         $this->assertEquals([[1], [2]], $result);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Util_Test::getDataFromTestWithAnnotation
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testTestWithSimpleTextAfter()
     {
         $result = PHPUnit_Util_Test::getDataFromTestWithAnnotation('/**
@@ -517,6 +599,12 @@ class Util_TestTest extends PHPUnit_Framework_TestCase
         $this->assertEquals([[1], [2]], $result);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Util_Test::getDataFromTestWithAnnotation
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testTestWithCharacterEscape()
     {
         $result = PHPUnit_Util_Test::getDataFromTestWithAnnotation('/**
@@ -525,6 +613,12 @@ class Util_TestTest extends PHPUnit_Framework_TestCase
         $this->assertEquals([['"', '"']], $result);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Util_Test::getDataFromTestWithAnnotation
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testTestWithThrowsProperExceptionIfDatasetCannotBeParsed()
     {
         $this->expectException(PHPUnit_Framework_Exception::class);
@@ -547,6 +641,11 @@ class Util_TestTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Util_Test::getDependencies
+     *
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @todo   Not sure what this test tests (name is misleading at least)
      */
     public function testParseAnnotation()
@@ -567,6 +666,12 @@ class Util_TestTest extends PHPUnit_Framework_TestCase
     {
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Util_Test::getDependencies
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testParseAnnotationThatIsOnlyOneLine()
     {
         $this->assertEquals(
@@ -582,6 +687,12 @@ class Util_TestTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers       PHPUnit_Util_Test::getLinesToBeCovered
+     * @covers       PHPUnit_Util_Test::getLinesToBeCoveredOrUsed
+     * @covers       PHPUnit_Util_Test::resolveElementToReflectionObjects
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @dataProvider getLinesToBeCoveredProvider
      */
     public function testGetLinesToBeCovered($test, $lines)
@@ -611,6 +722,12 @@ class Util_TestTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Util_Test::getLinesToBeCovered
+     * @covers            PHPUnit_Util_Test::getLinesToBeCoveredOrUsed
+     * @covers            PHPUnit_Util_Test::resolveElementToReflectionObjects
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_CodeCoverageException
      */
     public function testGetLinesToBeCovered2()
@@ -621,6 +738,12 @@ class Util_TestTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Util_Test::getLinesToBeCovered
+     * @covers            PHPUnit_Util_Test::getLinesToBeCoveredOrUsed
+     * @covers            PHPUnit_Util_Test::resolveElementToReflectionObjects
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_CodeCoverageException
      */
     public function testGetLinesToBeCovered3()
@@ -631,6 +754,12 @@ class Util_TestTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Util_Test::getLinesToBeCovered
+     * @covers            PHPUnit_Util_Test::getLinesToBeCoveredOrUsed
+     * @covers            PHPUnit_Util_Test::resolveElementToReflectionObjects
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_CodeCoverageException
      */
     public function testGetLinesToBeCovered4()
@@ -640,6 +769,13 @@ class Util_TestTest extends PHPUnit_Framework_TestCase
         );
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Util_Test::getLinesToBeCovered
+     * @covers PHPUnit_Util_Test::getLinesToBeCoveredOrUsed
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testGetLinesToBeCoveredSkipsNonExistentMethods()
     {
         $this->assertSame(
@@ -652,6 +788,11 @@ class Util_TestTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Util_Test::getLinesToBeCovered
+     * @covers            PHPUnit_Util_Test::getLinesToBeCoveredOrUsed
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_CodeCoverageException
      */
     public function testTwoCoversDefaultClassAnnoationsAreNotAllowed()
@@ -662,6 +803,13 @@ class Util_TestTest extends PHPUnit_Framework_TestCase
         );
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Util_Test::getLinesToBeCovered
+     * @covers PHPUnit_Util_Test::getLinesToBeCoveredOrUsed
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testFunctionParenthesesAreAllowed()
     {
         $this->assertSame(
@@ -673,6 +821,13 @@ class Util_TestTest extends PHPUnit_Framework_TestCase
         );
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Util_Test::getLinesToBeCovered
+     * @covers PHPUnit_Util_Test::getLinesToBeCoveredOrUsed
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testFunctionParenthesesAreAllowedWithWhitespace()
     {
         $this->assertSame(
@@ -684,6 +839,13 @@ class Util_TestTest extends PHPUnit_Framework_TestCase
         );
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Util_Test::getLinesToBeCovered
+     * @covers PHPUnit_Util_Test::getLinesToBeCoveredOrUsed
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testMethodParenthesesAreAllowed()
     {
         $this->assertSame(
@@ -695,6 +857,13 @@ class Util_TestTest extends PHPUnit_Framework_TestCase
         );
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Util_Test::getLinesToBeCovered
+     * @covers PHPUnit_Util_Test::getLinesToBeCoveredOrUsed
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testMethodParenthesesAreAllowedWithWhitespace()
     {
         $this->assertSame(
@@ -706,6 +875,13 @@ class Util_TestTest extends PHPUnit_Framework_TestCase
         );
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Util_Test::getLinesToBeCovered
+     * @covers PHPUnit_Util_Test::getLinesToBeCoveredOrUsed
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testNamespacedFunctionCanBeCoveredOrUsed()
     {
         $this->assertEquals(

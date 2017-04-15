@@ -11,12 +11,19 @@
 
 namespace Symfony\Component\Translation\Tests\DataCollector;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 use Symfony\Component\Translation\DataCollectorTranslator;
 use Symfony\Component\Translation\DataCollector\TranslationDataCollector;
 use Symfony\Component\VarDumper\Cloner\VarCloner;
 
+<<<<<<< HEAD
 class TranslationDataCollectorTest extends TestCase
+=======
+class TranslationDataCollectorTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     protected function setUp()
     {

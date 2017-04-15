@@ -11,7 +11,10 @@
 
 namespace Symfony\Component\Yaml\Tests\Command;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 use Symfony\Component\Yaml\Command\LintCommand;
 use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -22,7 +25,11 @@ use Symfony\Component\Console\Tester\CommandTester;
  *
  * @author Robin Chalas <robin.chalas@gmail.com>
  */
+<<<<<<< HEAD
 class LintCommandTest extends TestCase
+=======
+class LintCommandTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     private $files;
 

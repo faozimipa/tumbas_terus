@@ -11,7 +11,10 @@
 
 namespace Symfony\Component\HttpKernel\Tests\EventListener;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 use Symfony\Component\HttpKernel\EventListener\AddRequestFormatsListener;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\KernelEvents;
@@ -21,7 +24,11 @@ use Symfony\Component\HttpKernel\KernelEvents;
  *
  * @author Gildas Quemener <gildas.quemener@gmail.com>
  */
+<<<<<<< HEAD
 class AddRequestFormatsListenerTest extends TestCase
+=======
+class AddRequestFormatsListenerTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     /**
      * @var AddRequestFormatsListener

@@ -77,6 +77,7 @@ trait CompilesConditionals
     {
         return '<?php endif; ?>';
     }
+<<<<<<< HEAD
 
     /**
      * Compile the if-isset statements into valid PHP.
@@ -98,4 +99,6 @@ trait CompilesConditionals
     {
         return '<?php endif; ?>';
     }
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 }

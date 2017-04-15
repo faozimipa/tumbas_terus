@@ -11,7 +11,10 @@
 
 namespace Symfony\Component\Console\Tests\Helper;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 use Symfony\Component\Console\Helper\ProgressBar;
 use Symfony\Component\Console\Helper\Helper;
 use Symfony\Component\Console\Output\StreamOutput;
@@ -19,7 +22,11 @@ use Symfony\Component\Console\Output\StreamOutput;
 /**
  * @group time-sensitive
  */
+<<<<<<< HEAD
 class ProgressBarTest extends TestCase
+=======
+class ProgressBarTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     public function testMultipleStart()
     {

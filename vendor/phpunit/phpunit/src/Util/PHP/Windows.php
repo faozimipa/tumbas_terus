@@ -14,6 +14,10 @@
  * Reading from STDOUT or STDERR hangs forever on Windows if the output is
  * too large.
  *
+<<<<<<< HEAD
+=======
+ * @since Class available since Release 3.5.12
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  * @see https://bugs.php.net/bug.php?id=51800
  */
 class PHPUnit_Util_PHP_Windows extends PHPUnit_Util_PHP_Default

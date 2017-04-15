@@ -11,13 +11,20 @@
 
 namespace Symfony\Component\Routing\Tests\Matcher\Dumper;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 use Symfony\Component\Routing\Route;
 use Symfony\Component\Routing\Matcher\Dumper\DumperPrefixCollection;
 use Symfony\Component\Routing\Matcher\Dumper\DumperRoute;
 use Symfony\Component\Routing\Matcher\Dumper\DumperCollection;
 
+<<<<<<< HEAD
 class DumperPrefixCollectionTest extends TestCase
+=======
+class DumperPrefixCollectionTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     public function testAddPrefixRoute()
     {

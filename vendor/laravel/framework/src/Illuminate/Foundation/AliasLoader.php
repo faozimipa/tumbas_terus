@@ -84,11 +84,21 @@ class AliasLoader
      * Load a real-time facade for the given alias.
      *
      * @param  string  $alias
+<<<<<<< HEAD
      * @return void
      */
     protected function loadFacade($alias)
     {
         require $this->ensureFacadeExists($alias);
+=======
+     * @return bool
+     */
+    protected function loadFacade($alias)
+    {
+        tap($this->ensureFacadeExists($alias), function ($path) {
+            require $path;
+        });
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     }
 
     /**

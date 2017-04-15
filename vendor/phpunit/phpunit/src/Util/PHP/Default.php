@@ -10,6 +10,11 @@
 
 /**
  * Default utility for PHP sub-processes.
+<<<<<<< HEAD
+=======
+ *
+ * @since Class available since Release 3.5.12
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 class PHPUnit_Util_PHP_Default extends PHPUnit_Util_PHP
 {
@@ -193,12 +198,23 @@ class PHPUnit_Util_PHP_Default extends PHPUnit_Util_PHP
      * @param string   $job
      *
      * @throws PHPUnit_Framework_Exception
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.5.12
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     protected function process($pipe, $job)
     {
         fwrite($pipe, $job);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @since Method available since Release 3.5.12
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     protected function cleanup()
     {
         if ($this->tempFile) {

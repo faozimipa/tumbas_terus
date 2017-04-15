@@ -11,9 +11,13 @@
 
 namespace Symfony\Component\Finder\Tests\Iterator;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
 
 abstract class IteratorTestCase extends TestCase
+=======
+abstract class IteratorTestCase extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     protected function assertIterator($expected, \Traversable $iterator)
     {

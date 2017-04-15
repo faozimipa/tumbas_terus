@@ -26,7 +26,14 @@ trait ConfirmableTrait
                 return true;
             }
 
+<<<<<<< HEAD
             $this->alert($warning);
+=======
+            $this->comment(str_repeat('*', strlen($warning) + 12));
+            $this->comment('*     '.$warning.'     *');
+            $this->comment(str_repeat('*', strlen($warning) + 12));
+            $this->output->writeln('');
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 
             $confirmed = $this->confirm('Do you really wish to run this command?');
 

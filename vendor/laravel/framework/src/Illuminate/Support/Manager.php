@@ -76,11 +76,17 @@ abstract class Manager
      */
     protected function createDriver($driver)
     {
+<<<<<<< HEAD
+=======
+        $method = 'create'.Str::studly($driver).'Driver';
+
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         // We'll check to see if a creator method exists for the given driver. If not we
         // will check for a custom driver creator, which allows developers to create
         // drivers using their own customized driver creator Closure to create it.
         if (isset($this->customCreators[$driver])) {
             return $this->callCustomCreator($driver);
+<<<<<<< HEAD
         } else {
             $method = 'create'.Str::studly($driver).'Driver';
 
@@ -88,6 +94,12 @@ abstract class Manager
                 return $this->$method();
             }
         }
+=======
+        } elseif (method_exists($this, $method)) {
+            return $this->$method();
+        }
+
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         throw new InvalidArgumentException("Driver [$driver] not supported.");
     }
 

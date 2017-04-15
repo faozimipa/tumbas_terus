@@ -11,14 +11,21 @@
 
 namespace Symfony\Component\HttpKernel\Tests\Fragment;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 use Symfony\Component\HttpKernel\Controller\ControllerReference;
 use Symfony\Component\HttpKernel\Fragment\EsiFragmentRenderer;
 use Symfony\Component\HttpKernel\HttpCache\Esi;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\UriSigner;
 
+<<<<<<< HEAD
 class EsiFragmentRendererTest extends TestCase
+=======
+class EsiFragmentRendererTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     public function testRenderFallbackToInlineStrategyIfEsiNotSupported()
     {

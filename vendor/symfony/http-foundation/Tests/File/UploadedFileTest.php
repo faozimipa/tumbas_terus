@@ -11,10 +11,16 @@
 
 namespace Symfony\Component\HttpFoundation\Tests\File;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 class UploadedFileTest extends TestCase
+=======
+use Symfony\Component\HttpFoundation\File\UploadedFile;
+
+class UploadedFileTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     protected function setUp()
     {
@@ -25,7 +31,11 @@ class UploadedFileTest extends TestCase
 
     public function testConstructWhenFileNotExists()
     {
+<<<<<<< HEAD
         $this->{method_exists($this, $_ = 'expectException') ? $_ : 'setExpectedException'}('Symfony\Component\HttpFoundation\File\Exception\FileNotFoundException');
+=======
+        $this->setExpectedException('Symfony\Component\HttpFoundation\File\Exception\FileNotFoundException');
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 
         new UploadedFile(
             __DIR__.'/Fixtures/not_here',

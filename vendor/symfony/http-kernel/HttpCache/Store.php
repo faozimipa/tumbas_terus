@@ -317,6 +317,7 @@ class Store implements StoreInterface
     /**
      * Purges data for the given URL.
      *
+<<<<<<< HEAD
      * This method purges both the HTTP and the HTTPS version of the cache entry.
      *
      * @param string $url A URL
@@ -334,13 +335,22 @@ class Store implements StoreInterface
     /**
      * Purges data for the given URL.
      *
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @param string $url A URL
      *
      * @return bool true if the URL exists and has been purged, false otherwise
      */
+<<<<<<< HEAD
     private function doPurge($url)
     {
         $key = $this->getCacheKey(Request::create($url));
+=======
+    public function purge($url)
+    {
+        $key = $this->getCacheKey(Request::create($url));
+
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         if (isset($this->locks[$key])) {
             flock($this->locks[$key], LOCK_UN);
             fclose($this->locks[$key]);

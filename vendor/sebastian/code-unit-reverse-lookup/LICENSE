@@ -1,6 +1,10 @@
 code-unit-reverse-lookup
 
+<<<<<<< HEAD
 Copyright (c) 2016-2017, Sebastian Bergmann <sebastian@phpunit.de>.
+=======
+Copyright (c) 2016, Sebastian Bergmann <sebastian@phpunit.de>.
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without

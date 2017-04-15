@@ -10,6 +10,11 @@
 
 /**
  * A Listener for test progress.
+<<<<<<< HEAD
+=======
+ *
+ * @since Interface available since Release 2.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 interface PHPUnit_Framework_TestListener
 {
@@ -29,6 +34,11 @@ interface PHPUnit_Framework_TestListener
      * @param PHPUnit_Framework_Warning $e
      * @param float                     $time
      *
+<<<<<<< HEAD
+=======
+     * @since Method available since Release 6.0.0
+     *
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @todo  Uncomment in time for PHPUnit 6.0.0
      *
      * @see   https://github.com/sebastianbergmann/phpunit/pull/1840#issuecomment-162535997
@@ -59,6 +69,11 @@ interface PHPUnit_Framework_TestListener
      * @param PHPUnit_Framework_Test $test
      * @param Exception              $e
      * @param float                  $time
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 4.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function addRiskyTest(PHPUnit_Framework_Test $test, Exception $e, $time);
 
@@ -68,6 +83,11 @@ interface PHPUnit_Framework_TestListener
      * @param PHPUnit_Framework_Test $test
      * @param Exception              $e
      * @param float                  $time
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function addSkippedTest(PHPUnit_Framework_Test $test, Exception $e, $time);
 
@@ -75,6 +95,11 @@ interface PHPUnit_Framework_TestListener
      * A test suite started.
      *
      * @param PHPUnit_Framework_TestSuite $suite
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 2.2.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function startTestSuite(PHPUnit_Framework_TestSuite $suite);
 
@@ -82,6 +107,11 @@ interface PHPUnit_Framework_TestListener
      * A test suite ended.
      *
      * @param PHPUnit_Framework_TestSuite $suite
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 2.2.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function endTestSuite(PHPUnit_Framework_TestSuite $suite);
 

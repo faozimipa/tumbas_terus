@@ -21,3 +21,4 @@ Route::post('/post_subscribe', ['as'=>'web.profile.post.subscribe', 'uses'=>'Web
 
 Route::post('/post_message', ['as'=>'web.profile.post.message', 'uses'=>'WebProfileController@post_message']);
 
+Route::get('join/mitra', ['as'=>'web.profile.join.mitra', 'uses'=>'JoinMitraController@index']);

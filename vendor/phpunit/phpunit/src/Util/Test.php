@@ -10,6 +10,11 @@
 
 /**
  * Test helpers.
+<<<<<<< HEAD
+=======
+ *
+ * @since Class available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 class PHPUnit_Util_Test
 {
@@ -63,6 +68,11 @@ class PHPUnit_Util_Test
      * @return array|bool
      *
      * @throws PHPUnit_Framework_CodeCoverageException
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 4.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public static function getLinesToBeCovered($className, $methodName)
     {
@@ -85,6 +95,11 @@ class PHPUnit_Util_Test
      * @param string $methodName
      *
      * @return array
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 4.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public static function getLinesToBeUsed($className, $methodName)
     {
@@ -99,6 +114,11 @@ class PHPUnit_Util_Test
      * @return array
      *
      * @throws PHPUnit_Framework_CodeCoverageException
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 4.2.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     private static function getLinesToBeCoveredOrUsed($className, $methodName, $mode)
     {
@@ -160,6 +180,11 @@ class PHPUnit_Util_Test
      * @param string $methodName
      *
      * @return array
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.6.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public static function getRequirements($className, $methodName)
     {
@@ -214,6 +239,11 @@ class PHPUnit_Util_Test
      * @param string $methodName
      *
      * @return array
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 4.3.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public static function getMissingRequirements($className, $methodName)
     {
@@ -283,6 +313,11 @@ class PHPUnit_Util_Test
      * @param string $methodName
      *
      * @return array
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.3.6
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public static function getExpectedException($className, $methodName)
     {
@@ -369,6 +404,11 @@ class PHPUnit_Util_Test
      *         null  When no data provider is specified
      *
      * @throws PHPUnit_Framework_Exception
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.2.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public static function getProvidedData($className, $methodName)
     {
@@ -458,6 +498,12 @@ class PHPUnit_Util_Test
 
                 if (is_array($data)) {
                     $result = array_merge($result, $data);
+<<<<<<< HEAD
+=======
+                } elseif ($data instanceof \Iterator) {
+                    $data   = iterator_to_array($data);
+                    $result = array_merge($result, $data);
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
                 }
             }
 
@@ -511,7 +557,10 @@ class PHPUnit_Util_Test
     private static function cleanUpMultiLineAnnotation($docComment)
     {
         //removing initial '   * ' for docComment
+<<<<<<< HEAD
         $docComment = str_replace("\r\n", "\n", $docComment);
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         $docComment = preg_replace('/' . '\n' . '\s*' . '\*' . '\s?' . '/', "\n", $docComment);
         $docComment = substr($docComment, 0, -1);
         $docComment = rtrim($docComment, "\n");
@@ -526,6 +575,11 @@ class PHPUnit_Util_Test
      * @return array
      *
      * @throws ReflectionException
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.4.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public static function parseTestMethodAnnotations($className, $methodName = '')
     {
@@ -555,6 +609,11 @@ class PHPUnit_Util_Test
      * @param string $methodName
      *
      * @return array
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 5.4.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public static function getInlineAnnotations($className, $methodName)
     {
@@ -584,6 +643,11 @@ class PHPUnit_Util_Test
      * @param string $docblock
      *
      * @return array
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.4.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     private static function parseAnnotations($docblock)
     {
@@ -609,6 +673,11 @@ class PHPUnit_Util_Test
      * @param string $methodName
      *
      * @return array
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.4.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public static function getBackupSettings($className, $methodName)
     {
@@ -633,6 +702,11 @@ class PHPUnit_Util_Test
      * @param string $methodName
      *
      * @return array
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.4.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public static function getDependencies($className, $methodName)
     {
@@ -664,6 +738,11 @@ class PHPUnit_Util_Test
      * @param string $methodName
      *
      * @return bool
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.4.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public static function getErrorHandlerSettings($className, $methodName)
     {
@@ -681,6 +760,11 @@ class PHPUnit_Util_Test
      * @param string $methodName
      *
      * @return array
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.2.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public static function getGroups($className, $methodName = '')
     {
@@ -732,6 +816,11 @@ class PHPUnit_Util_Test
      * @param string $methodName
      *
      * @return int
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.6.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public static function getSize($className, $methodName)
     {
@@ -759,6 +848,11 @@ class PHPUnit_Util_Test
      * @param string $methodName
      *
      * @return array
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.4.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public static function getTickets($className, $methodName)
     {
@@ -787,6 +881,11 @@ class PHPUnit_Util_Test
      * @param string $methodName
      *
      * @return bool
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.4.1
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public static function getProcessIsolationSettings($className, $methodName)
     {
@@ -810,6 +909,11 @@ class PHPUnit_Util_Test
      * @param string $methodName
      *
      * @return bool
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.4.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public static function getPreserveGlobalStateSettings($className, $methodName)
     {
@@ -824,6 +928,11 @@ class PHPUnit_Util_Test
      * @param string $className
      *
      * @return array
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 4.0.8
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public static function getHookMethods($className)
     {
@@ -863,6 +972,11 @@ class PHPUnit_Util_Test
 
     /**
      * @return array
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 4.0.9
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     private static function emptyHookMethodsArray()
     {
@@ -880,6 +994,11 @@ class PHPUnit_Util_Test
      * @param string $settingName
      *
      * @return bool
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.4.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     private static function getBooleanAnnotationSetting($className, $methodName, $settingName)
     {
@@ -915,6 +1034,11 @@ class PHPUnit_Util_Test
      * @return array
      *
      * @throws PHPUnit_Framework_InvalidCoversTargetException
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 4.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     private static function resolveElementToReflectionObjects($element)
     {
@@ -1059,6 +1183,11 @@ class PHPUnit_Util_Test
      * @param ReflectionMethod $method
      *
      * @return bool
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 4.0.8
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     private static function isBeforeClassMethod(ReflectionMethod $method)
     {
@@ -1069,6 +1198,11 @@ class PHPUnit_Util_Test
      * @param ReflectionMethod $method
      *
      * @return bool
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 4.0.8
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     private static function isBeforeMethod(ReflectionMethod $method)
     {
@@ -1079,6 +1213,11 @@ class PHPUnit_Util_Test
      * @param ReflectionMethod $method
      *
      * @return bool
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 4.0.8
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     private static function isAfterClassMethod(ReflectionMethod $method)
     {
@@ -1089,6 +1228,11 @@ class PHPUnit_Util_Test
      * @param ReflectionMethod $method
      *
      * @return bool
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 4.0.8
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     private static function isAfterMethod(ReflectionMethod $method)
     {

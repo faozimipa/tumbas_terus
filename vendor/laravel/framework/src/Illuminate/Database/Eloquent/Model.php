@@ -1105,7 +1105,11 @@ abstract class Model implements ArrayAccess, Arrayable, Jsonable, JsonSerializab
     }
 
     /**
+<<<<<<< HEAD
      * Get the auto-incrementing key type.
+=======
+     * Get the auto incrementing key type.
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      *
      * @return string
      */
@@ -1115,6 +1119,7 @@ abstract class Model implements ArrayAccess, Arrayable, Jsonable, JsonSerializab
     }
 
     /**
+<<<<<<< HEAD
      * Set the data type for the primary key.
      *
      * @param  string  $type
@@ -1128,6 +1133,8 @@ abstract class Model implements ArrayAccess, Arrayable, Jsonable, JsonSerializab
     }
 
     /**
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * Get the value indicating whether the IDs are incrementing.
      *
      * @return bool

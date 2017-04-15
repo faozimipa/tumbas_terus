@@ -2,6 +2,7 @@
 
 All notable changes of the PHPUnit 5.7 release series are documented in this file using the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
 
+<<<<<<< HEAD
 ## [5.7.17] - 2017-03-19
 
 ### Fixed
@@ -18,6 +19,8 @@ All notable changes of the PHPUnit 5.7 release series are documented in this fil
 * Fixed [#2547](https://github.com/sebastianbergmann/phpunit/issues/2547): Code Coverage data is collected for test annotated with `@coversNothing`
 * Fixed [#2558](https://github.com/sebastianbergmann/phpunit/issues/2558): `countOf()` function is missing
 
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 ## [5.7.15] - 2017-03-02
 
 ### Fixed
@@ -142,8 +145,11 @@ All notable changes of the PHPUnit 5.7 release series are documented in this fil
 * The `--tap` and `--log-tap` commandline options have been deprecated
 * The `--self-update` and `--self-upgrade` commandline options have been deprecated (PHAR binary only)
 
+<<<<<<< HEAD
 [5.7.17]: https://github.com/sebastianbergmann/phpunit/compare/5.7.16...5.7.17
 [5.7.16]: https://github.com/sebastianbergmann/phpunit/compare/5.7.15...5.7.16
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 [5.7.15]: https://github.com/sebastianbergmann/phpunit/compare/5.7.14...5.7.15
 [5.7.14]: https://github.com/sebastianbergmann/phpunit/compare/5.7.13...5.7.14
 [5.7.13]: https://github.com/sebastianbergmann/phpunit/compare/5.7.12...5.7.13

@@ -32,10 +32,18 @@ class SlackWebhookHandlerTest extends TestCase
     public function testConstructorMinimal()
     {
         $handler = new SlackWebhookHandler(self::WEBHOOK_URL);
+<<<<<<< HEAD
         $record = $this->getRecord();
         $slackRecord = $handler->getSlackRecord();
         $this->assertInstanceOf('Monolog\Handler\Slack\SlackRecord', $slackRecord);
         $this->assertEquals(array(
+=======
+        $slackRecord = $handler->getSlackRecord();
+        $this->assertInstanceOf('Monolog\Handler\Slack\SlackRecord', $slackRecord);
+        $this->assertEquals(array(
+            'username' => 'Monolog',
+            'text' => '',
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
             'attachments' => array(
                 array(
                     'fallback' => 'test',
@@ -45,6 +53,7 @@ class SlackWebhookHandlerTest extends TestCase
                         array(
                             'title' => 'Level',
                             'value' => 'WARNING',
+<<<<<<< HEAD
                             'short' => false,
                         ),
                     ),
@@ -54,6 +63,15 @@ class SlackWebhookHandlerTest extends TestCase
                 ),
             ),
         ), $slackRecord->getSlackData($record));
+=======
+                            'short' => true,
+                        ),
+                    ),
+                    'title' => 'Message',
+                ),
+            ),
+        ), $slackRecord->getSlackData($this->getRecord()));
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     }
 
     /**

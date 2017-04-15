@@ -52,6 +52,7 @@ class ReflectionConstant implements \Reflector
      */
     public function getDeclaringClass()
     {
+<<<<<<< HEAD
         $parent = $this->class;
 
         // Since we don't have real reflection constants, we can't see where
@@ -65,6 +66,9 @@ class ReflectionConstant implements \Reflector
         } while ($parent && $parent->hasConstant($this->name) && $parent->getConstant($this->name) === $this->value);
 
         return $class;
+=======
+        return $this->class;
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     }
 
     /**

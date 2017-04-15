@@ -11,7 +11,10 @@
 
 namespace Symfony\Component\HttpKernel\Tests\DataCollector;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Tests\Fixtures\DataCollector\CloneVarDataCollector;
@@ -19,7 +22,11 @@ use Symfony\Component\VarDumper\Cloner\Stub;
 use Symfony\Component\VarDumper\Cloner\VarCloner;
 use Symfony\Component\VarDumper\Dumper\CliDumper;
 
+<<<<<<< HEAD
 class DataCollectorTest extends TestCase
+=======
+class DataCollectorTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     public function testCloneVarStringWithScheme()
     {

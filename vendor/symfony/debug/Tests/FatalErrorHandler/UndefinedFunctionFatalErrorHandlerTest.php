@@ -11,11 +11,18 @@
 
 namespace Symfony\Component\Debug\Tests\FatalErrorHandler;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Debug\Exception\FatalErrorException;
 use Symfony\Component\Debug\FatalErrorHandler\UndefinedFunctionFatalErrorHandler;
 
 class UndefinedFunctionFatalErrorHandlerTest extends TestCase
+=======
+use Symfony\Component\Debug\Exception\FatalErrorException;
+use Symfony\Component\Debug\FatalErrorHandler\UndefinedFunctionFatalErrorHandler;
+
+class UndefinedFunctionFatalErrorHandlerTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     /**
      * @dataProvider provideUndefinedFunctionData

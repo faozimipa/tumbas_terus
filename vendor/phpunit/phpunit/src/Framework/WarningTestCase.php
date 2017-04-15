@@ -10,6 +10,11 @@
 
 /**
  * A warning.
+<<<<<<< HEAD
+=======
+ *
+ * @since Class available since Release 2.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 class PHPUnit_Framework_WarningTestCase extends PHPUnit_Framework_TestCase
 {
@@ -57,6 +62,11 @@ class PHPUnit_Framework_WarningTestCase extends PHPUnit_Framework_TestCase
 
     /**
      * @return string
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function getMessage()
     {
@@ -67,6 +77,11 @@ class PHPUnit_Framework_WarningTestCase extends PHPUnit_Framework_TestCase
      * Returns a string representation of the test case.
      *
      * @return string
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.4.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function toString()
     {

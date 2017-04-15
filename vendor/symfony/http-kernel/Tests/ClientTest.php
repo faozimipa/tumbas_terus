@@ -11,7 +11,10 @@
 
 namespace Symfony\Component\HttpKernel\Tests;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 use Symfony\Component\HttpKernel\Client;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\StreamedResponse;
@@ -22,7 +25,11 @@ use Symfony\Component\HttpKernel\Tests\Fixtures\TestClient;
 /**
  * @group time-sensitive
  */
+<<<<<<< HEAD
 class ClientTest extends TestCase
+=======
+class ClientTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     public function testDoRequest()
     {
@@ -74,8 +81,11 @@ class ClientTest extends TestCase
         $domResponse = $m->invoke($client, $response);
         try {
             $this->assertEquals($expected31[0], $domResponse->getHeader('Set-Cookie'));
+<<<<<<< HEAD
         } catch (\PHPUnit\Framework\ExpectationFailedException $e) {
             $this->assertEquals($expected33[0], $domResponse->getHeader('Set-Cookie'));
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         } catch (\PHPUnit_Framework_ExpectationFailedException $e) {
             $this->assertEquals($expected33[0], $domResponse->getHeader('Set-Cookie'));
         }
@@ -86,15 +96,21 @@ class ClientTest extends TestCase
         $domResponse = $m->invoke($client, $response);
         try {
             $this->assertEquals($expected31[0], $domResponse->getHeader('Set-Cookie'));
+<<<<<<< HEAD
         } catch (\PHPUnit\Framework\ExpectationFailedException $e) {
             $this->assertEquals($expected33[0], $domResponse->getHeader('Set-Cookie'));
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         } catch (\PHPUnit_Framework_ExpectationFailedException $e) {
             $this->assertEquals($expected33[0], $domResponse->getHeader('Set-Cookie'));
         }
         try {
             $this->assertEquals($expected31, $domResponse->getHeader('Set-Cookie', false));
+<<<<<<< HEAD
         } catch (\PHPUnit\Framework\ExpectationFailedException $e) {
             $this->assertEquals($expected33, $domResponse->getHeader('Set-Cookie', false));
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         } catch (\PHPUnit_Framework_ExpectationFailedException $e) {
             $this->assertEquals($expected33, $domResponse->getHeader('Set-Cookie', false));
         }

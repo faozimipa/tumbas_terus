@@ -11,11 +11,18 @@
 
 namespace Symfony\Component\Console\Tests\Command;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Tester\CommandTester;
 use Symfony\Component\Filesystem\LockHandler;
 
 class LockableTraitTest extends TestCase
+=======
+use Symfony\Component\Console\Tester\CommandTester;
+use Symfony\Component\Filesystem\LockHandler;
+
+class LockableTraitTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     protected static $fixturesPath;
 

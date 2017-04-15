@@ -11,10 +11,16 @@
 
 namespace Symfony\Component\Console\Tests\Input;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Input\InputArgument;
 
 class InputArgumentTest extends TestCase
+=======
+use Symfony\Component\Console\Input\InputArgument;
+
+class InputArgumentTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     public function testConstructor()
     {
@@ -42,12 +48,16 @@ class InputArgumentTest extends TestCase
      */
     public function testInvalidModes($mode)
     {
+<<<<<<< HEAD
         if (method_exists($this, 'expectException')) {
             $this->expectException('InvalidArgumentException');
             $this->expectExceptionMessage(sprintf('Argument mode "%s" is not valid.', $mode));
         } else {
             $this->setExpectedException('InvalidArgumentException', sprintf('Argument mode "%s" is not valid.', $mode));
         }
+=======
+        $this->setExpectedException('InvalidArgumentException', sprintf('Argument mode "%s" is not valid.', $mode));
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 
         new InputArgument('foo', $mode);
     }

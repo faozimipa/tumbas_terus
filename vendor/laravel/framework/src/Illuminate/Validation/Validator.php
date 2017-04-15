@@ -417,7 +417,11 @@ class Validator implements ValidatorContract
     {
         return $this->presentOrRuleIsImplicit($rule, $attribute, $value) &&
                $this->passesOptionalCheck($attribute) &&
+<<<<<<< HEAD
                $this->isNotNullIfMarkedAsNullable($rule, $attribute) &&
+=======
+               $this->isNotNullIfMarkedAsNullable($attribute, $value) &&
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
                $this->hasNotFailedPreviousRuleIfPresenceRule($rule, $attribute);
     }
 
@@ -470,6 +474,7 @@ class Validator implements ValidatorContract
     /**
      * Determine if the attribute fails the nullable check.
      *
+<<<<<<< HEAD
      * @param  string  $rule
      * @param  string  $attribute
      * @return bool
@@ -477,6 +482,15 @@ class Validator implements ValidatorContract
     protected function isNotNullIfMarkedAsNullable($rule, $attribute)
     {
         if (in_array($rule, $this->implicitRules) || ! $this->hasRule($attribute, ['Nullable'])) {
+=======
+     * @param  string  $attribute
+     * @param  mixed  $value
+     * @return bool
+     */
+    protected function isNotNullIfMarkedAsNullable($attribute, $value)
+    {
+        if (! $this->hasRule($attribute, ['Nullable'])) {
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
             return true;
         }
 
@@ -1026,7 +1040,11 @@ class Validator implements ValidatorContract
     {
         $callback = $this->extensions[$rule];
 
+<<<<<<< HEAD
         if (is_callable($callback)) {
+=======
+        if ($callback instanceof Closure) {
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
             return call_user_func_array($callback, $parameters);
         } elseif (is_string($callback)) {
             return $this->callClassBasedExtension($callback, $parameters);

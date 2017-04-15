@@ -11,6 +11,11 @@
 /**
  * Constraint that asserts that the Traversable it is applied to contains
  * only values of a given type.
+<<<<<<< HEAD
+=======
+ *
+ * @since Class available since Release 3.1.4
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 class PHPUnit_Framework_Constraint_TraversableContainsOnly extends PHPUnit_Framework_Constraint
 {

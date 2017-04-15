@@ -13,6 +13,10 @@
  * with just a few lines of code.
  *
  * @see PHPUnit_Framework_TestListener for documentation on the API methods.
+<<<<<<< HEAD
+=======
+ * @since Class available since Release 4.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 abstract class PHPUnit_Framework_BaseTestListener implements PHPUnit_Framework_TestListener
 {

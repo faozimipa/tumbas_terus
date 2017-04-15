@@ -40,6 +40,7 @@ class AnnotationDirectoryLoaderTest extends AbstractAnnotationLoaderTest
         $this->loader->load(__DIR__.'/../Fixtures/AnnotatedClasses');
     }
 
+<<<<<<< HEAD
     public function testLoadIgnoresHiddenDirectories()
     {
         $this->expectAnnotationsToBeReadFrom(array(
@@ -56,6 +57,8 @@ class AnnotationDirectoryLoaderTest extends AbstractAnnotationLoaderTest
         $this->loader->load(__DIR__.'/../Fixtures/AnnotatedClasses');
     }
 
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testSupports()
     {
         $fixturesDir = __DIR__.'/../Fixtures';
@@ -66,6 +69,7 @@ class AnnotationDirectoryLoaderTest extends AbstractAnnotationLoaderTest
         $this->assertTrue($this->loader->supports($fixturesDir, 'annotation'), '->supports() checks the resource type if specified');
         $this->assertFalse($this->loader->supports($fixturesDir, 'foo'), '->supports() checks the resource type if specified');
     }
+<<<<<<< HEAD
 
     private function expectAnnotationsToBeReadFrom(array $classes)
     {
@@ -75,4 +79,6 @@ class AnnotationDirectoryLoaderTest extends AbstractAnnotationLoaderTest
                 return in_array($class->getName(), $classes);
             }));
     }
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 }

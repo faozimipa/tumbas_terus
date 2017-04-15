@@ -11,10 +11,16 @@
 
 namespace Symfony\Component\Console\Tests\Formatter;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Formatter\OutputFormatterStyle;
 
 class OutputFormatterStyleTest extends TestCase
+=======
+use Symfony\Component\Console\Formatter\OutputFormatterStyle;
+
+class OutputFormatterStyleTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     public function testConstructor()
     {
@@ -41,7 +47,11 @@ class OutputFormatterStyleTest extends TestCase
         $style->setForeground('default');
         $this->assertEquals("\033[39mfoo\033[39m", $style->apply('foo'));
 
+<<<<<<< HEAD
         $this->{method_exists($this, $_ = 'expectException') ? $_ : 'setExpectedException'}('InvalidArgumentException');
+=======
+        $this->setExpectedException('InvalidArgumentException');
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         $style->setForeground('undefined-color');
     }
 
@@ -58,7 +68,11 @@ class OutputFormatterStyleTest extends TestCase
         $style->setBackground('default');
         $this->assertEquals("\033[49mfoo\033[49m", $style->apply('foo'));
 
+<<<<<<< HEAD
         $this->{method_exists($this, $_ = 'expectException') ? $_ : 'setExpectedException'}('InvalidArgumentException');
+=======
+        $this->setExpectedException('InvalidArgumentException');
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         $style->setBackground('undefined-color');
     }
 

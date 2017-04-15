@@ -11,8 +11,11 @@
 
 namespace Symfony\Component\Translation;
 
+<<<<<<< HEAD
 use Symfony\Component\Translation\Exception\InvalidArgumentException;
 
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 /**
  * TranslatorInterface.
  *

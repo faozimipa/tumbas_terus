@@ -50,11 +50,14 @@ class Ftp extends AbstractFtpAdapter
     ];
 
     /**
+<<<<<<< HEAD
      * @var bool
      */
     protected $isPureFtpd;
 
     /**
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * Set the transfer mode.
      *
      * @param int $mode
@@ -126,7 +129,10 @@ class Ftp extends AbstractFtpAdapter
         $this->login();
         $this->setConnectionPassiveMode();
         $this->setConnectionRoot();
+<<<<<<< HEAD
         $this->isPureFtpd = $this->isPureFtpdServer();
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     }
 
     /**
@@ -173,12 +179,20 @@ class Ftp extends AbstractFtpAdapter
      */
     protected function login()
     {
+<<<<<<< HEAD
         set_error_handler(function () {});
         $isLoggedIn = ftp_login(
             $this->connection,
             $this->getUsername(),
             $this->getPassword()
         );
+=======
+        set_error_handler(
+            function () {
+            }
+        );
+        $isLoggedIn = ftp_login($this->connection, $this->getUsername(), $this->getPassword());
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         restore_error_handler();
 
         if ( ! $isLoggedIn) {
@@ -238,9 +252,13 @@ class Ftp extends AbstractFtpAdapter
             $this->setVisibility($path, $visibility);
         }
 
+<<<<<<< HEAD
         $type = 'file';
 
         return compact('type', 'path', 'visibility');
+=======
+        return compact('path', 'visibility');
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     }
 
     /**
@@ -316,7 +334,11 @@ class Ftp extends AbstractFtpAdapter
 
         $this->setConnectionRoot();
 
+<<<<<<< HEAD
         return ['type' => 'dir', 'path' => $dirname];
+=======
+        return ['path' => $dirname];
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     }
 
     /**
@@ -362,7 +384,11 @@ class Ftp extends AbstractFtpAdapter
             return ['type' => 'dir', 'path' => $path];
         }
 
+<<<<<<< HEAD
         $listing = $this->ftpRawlist('-A', str_replace('*', '\\*', $path));
+=======
+        $listing = ftp_rawlist($connection, '-A ' . str_replace('*', '\\*', $path));
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 
         if (empty($listing)) {
             return false;
@@ -400,7 +426,11 @@ class Ftp extends AbstractFtpAdapter
     {
         $timestamp = ftp_mdtm($this->getConnection(), $path);
 
+<<<<<<< HEAD
         return ($timestamp !== -1) ? ['path' => $path, 'timestamp' => $timestamp] : false;
+=======
+        return ($timestamp !== -1) ? ['timestamp' => $timestamp] : false;
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     }
 
     /**
@@ -434,7 +464,11 @@ class Ftp extends AbstractFtpAdapter
             return false;
         }
 
+<<<<<<< HEAD
         return ['type' => 'file', 'path' => $path, 'stream' => $stream];
+=======
+        return compact('stream');
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     }
 
     /**
@@ -448,7 +482,11 @@ class Ftp extends AbstractFtpAdapter
             return false;
         }
 
+<<<<<<< HEAD
         return compact('path', 'visibility');
+=======
+        return compact('visibility');
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     }
 
     /**
@@ -465,7 +503,11 @@ class Ftp extends AbstractFtpAdapter
         }
 
         $options = $recursive ? '-alnR' : '-aln';
+<<<<<<< HEAD
         $listing = $this->ftpRawlist($options, $directory);
+=======
+        $listing = ftp_rawlist($this->getConnection(), $options . ' ' . $directory);
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 
         return $listing ? $this->normalizeListing($listing, $directory) : [];
     }
@@ -477,7 +519,11 @@ class Ftp extends AbstractFtpAdapter
      */
     protected function listDirectoryContentsRecursive($directory)
     {
+<<<<<<< HEAD
         $listing = $this->normalizeListing($this->ftpRawlist('-aln', $directory) ?: []);
+=======
+        $listing = $this->normalizeListing(ftp_rawlist($this->getConnection(), '-aln' . ' ' . $directory) ?: []);
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         $output = [];
 
         foreach ($listing as $directory) {
@@ -501,7 +547,11 @@ class Ftp extends AbstractFtpAdapter
         try {
             return is_resource($this->connection) && ftp_rawlist($this->connection, '/') !== false;
         } catch (ErrorException $e) {
+<<<<<<< HEAD
             is_resource($this->connection) && fclose($this->connection);
+=======
+            fclose($this->connection);
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
             $this->connection = null;
 
             if (strpos($e->getMessage(), 'ftp_rawlist') === false) {
@@ -511,6 +561,7 @@ class Ftp extends AbstractFtpAdapter
             return false;
         }
     }
+<<<<<<< HEAD
 
     /**
      * @return null|string
@@ -538,4 +589,6 @@ class Ftp extends AbstractFtpAdapter
         }
         return ftp_rawlist($this->getConnection(), $options . ' ' . $path);
     }
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 }

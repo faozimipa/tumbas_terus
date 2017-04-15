@@ -11,7 +11,10 @@
 
 namespace Symfony\Component\Console\Tests;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Helper\HelperSet;
 use Symfony\Component\Console\Helper\FormatterHelper;
@@ -31,7 +34,11 @@ use Symfony\Component\Console\Event\ConsoleExceptionEvent;
 use Symfony\Component\Console\Event\ConsoleTerminateEvent;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 
+<<<<<<< HEAD
 class ApplicationTest extends TestCase
+=======
+class ApplicationTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     protected static $fixturesPath;
 
@@ -266,12 +273,16 @@ class ApplicationTest extends TestCase
      */
     public function testFindWithAmbiguousAbbreviations($abbreviation, $expectedExceptionMessage)
     {
+<<<<<<< HEAD
         if (method_exists($this, 'expectException')) {
             $this->expectException('Symfony\Component\Console\Exception\CommandNotFoundException');
             $this->expectExceptionMessage($expectedExceptionMessage);
         } else {
             $this->setExpectedException('Symfony\Component\Console\Exception\CommandNotFoundException', $expectedExceptionMessage);
         }
+=======
+        $this->setExpectedException('Symfony\Component\Console\Exception\CommandNotFoundException', $expectedExceptionMessage);
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 
         $application = new Application();
         $application->add(new \FooCommand());
@@ -952,12 +963,16 @@ class ApplicationTest extends TestCase
 
     public function testRunWithError()
     {
+<<<<<<< HEAD
         if (method_exists($this, 'expectException')) {
             $this->expectException('Exception');
             $this->expectExceptionMessage('dymerr');
         } else {
             $this->setExpectedException('Exception', 'dymerr');
         }
+=======
+        $this->setExpectedException('Exception', 'dymerr');
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 
         $application = new Application();
         $application->setAutoExit(false);
@@ -1102,6 +1117,7 @@ class ApplicationTest extends TestCase
         $this->assertEquals('some test value', $extraValue);
     }
 
+<<<<<<< HEAD
     public function testUpdateInputFromConsoleCommandEvent()
     {
         $dispatcher = $this->getDispatcher();
@@ -1127,6 +1143,8 @@ class ApplicationTest extends TestCase
         $this->assertEquals('overriden', $tester->getInput()->getOption('extra'));
     }
 
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     /**
      * @group legacy
      */

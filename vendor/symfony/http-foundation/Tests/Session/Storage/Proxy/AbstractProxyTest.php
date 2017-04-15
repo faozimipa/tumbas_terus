@@ -11,7 +11,10 @@
 
 namespace Symfony\Component\HttpFoundation\Tests\Session\Storage\Proxy;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 use Symfony\Component\HttpFoundation\Session\Storage\Proxy\AbstractProxy;
 
 // Note until PHPUnit_Mock_Objects 1.2 is released you cannot mock abstracts due to
@@ -52,7 +55,11 @@ class ConcreteSessionHandlerInterfaceProxy extends AbstractProxy implements \Ses
  *
  * @author Drak <drak@zikula.org>
  */
+<<<<<<< HEAD
 class AbstractProxyTest extends TestCase
+=======
+class AbstractProxyTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     /**
      * @var AbstractProxy

@@ -67,8 +67,11 @@ class ListCommand extends ReflectingCommand implements PresenterAware
                 new InputOption('interfaces',  'I', InputOption::VALUE_NONE,     'Display declared interfaces.'),
                 new InputOption('traits',      't', InputOption::VALUE_NONE,     'Display declared traits.'),
 
+<<<<<<< HEAD
                 new InputOption('no-inherit',  '',  InputOption::VALUE_NONE,     'Exclude inherited methods, properties and constants.'),
 
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
                 new InputOption('properties',  'p', InputOption::VALUE_NONE,     'Display class or object properties (public properties by default).'),
                 new InputOption('methods',     'm', InputOption::VALUE_NONE,     'Display class or object methods (public methods by default).'),
 
@@ -248,7 +251,11 @@ HELP
 
         if (!$input->getArgument('target')) {
             // if no target is passed, there can be no properties or methods
+<<<<<<< HEAD
             foreach (array('properties', 'methods', 'no-inherit') as $option) {
+=======
+            foreach (array('properties', 'methods') as $option) {
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
                 if ($input->getOption($option)) {
                     throw new RuntimeException('--' . $option . ' does not make sense without a specified target.');
                 }

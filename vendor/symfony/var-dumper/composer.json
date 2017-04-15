@@ -22,9 +22,12 @@
     "require-dev": {
         "twig/twig": "~1.20|~2.0"
     },
+<<<<<<< HEAD
     "conflict": {
         "phpunit/phpunit": "<4.8.35|<5.4.3,>=5.0"
     },
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     "suggest": {
         "ext-symfony_debug": ""
     },

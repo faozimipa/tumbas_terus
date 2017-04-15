@@ -10,6 +10,11 @@
 
 /**
  * Prettifies class and method names for use in TestDox documentation.
+<<<<<<< HEAD
+=======
+ *
+ * @since Class available since Release 2.1.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 class PHPUnit_Util_TestDox_NamePrettifier
 {

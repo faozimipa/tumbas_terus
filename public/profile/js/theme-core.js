@@ -210,7 +210,7 @@
 
 
                             $("#headerSearchOpen").css("color", "#444444");
-                            $("header.transparent-header  ul.nav-pills > li.active > a").css("color", "#25CBF5");
+                            $("header.transparent-header  ul.nav-pills > li.active > a").css("color", "#ff8f00");
                         }
                         else if (header.hasClass("semi-transparent-header")) {
                             body.css("padding-top", "0px");
@@ -229,7 +229,7 @@
 
                                                          
                             $("#headerSearchOpen").css("color", "#444444");
-                            $("header.transparent-header  ul.nav-pills > li.active > a").css("color", "#25CBF5");
+                            $("header.transparent-header  ul.nav-pills > li.active > a").css("color", "#ff8f00");
                         }
                     });
 

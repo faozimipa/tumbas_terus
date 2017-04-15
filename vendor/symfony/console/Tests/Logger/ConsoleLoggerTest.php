@@ -11,8 +11,12 @@
 
 namespace Symfony\Component\Console\Tests\Logger;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
+=======
+use Psr\Log\Test\LoggerInterfaceTest;
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 use Psr\Log\LogLevel;
 use Symfony\Component\Console\Logger\ConsoleLogger;
 use Symfony\Component\Console\Output\BufferedOutput;
@@ -23,9 +27,14 @@ use Symfony\Component\Console\Output\OutputInterface;
  * Console logger test.
  *
  * @author Kévin Dunglas <dunglas@gmail.com>
+<<<<<<< HEAD
  * @author Jordi Boggiano <j.boggiano@seld.be>
  */
 class ConsoleLoggerTest extends TestCase
+=======
+ */
+class ConsoleLoggerTest extends LoggerInterfaceTest
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     /**
      * @var DummyOutput
@@ -33,7 +42,11 @@ class ConsoleLoggerTest extends TestCase
     protected $output;
 
     /**
+<<<<<<< HEAD
      * @return LoggerInterface
+=======
+     * {@inheritdoc}
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function getLogger()
     {
@@ -52,9 +65,13 @@ class ConsoleLoggerTest extends TestCase
     }
 
     /**
+<<<<<<< HEAD
      * Return the log messages in order.
      *
      * @return string[]
+=======
+     * {@inheritdoc}
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function getLogs()
     {
@@ -105,6 +122,7 @@ class ConsoleLoggerTest extends TestCase
         $logger->error('bar');
         $this->assertTrue($logger->hasErrored());
     }
+<<<<<<< HEAD
 
     public function testImplements()
     {
@@ -214,4 +232,6 @@ class DummyTest
     public function __toString()
     {
     }
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 }

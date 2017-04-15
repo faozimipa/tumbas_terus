@@ -248,11 +248,19 @@ $foo->
 !!positions
 Syntax error, unexpected ';', expecting T_STRING or T_VARIABLE or '{' or '$' from 3:1 to 3:1
 array(
+<<<<<<< HEAD
     0: Expr_PropertyFetch[2:1 - 2:6](
         var: Expr_Variable[2:1 - 2:4](
             name: foo
         )
         name: Expr_Error[3:1 - 2:6](
+=======
+    0: Expr_PropertyFetch[2:1 - 3:1](
+        var: Expr_Variable[2:1 - 2:4](
+            name: foo
+        )
+        name: Expr_Error[3:1 - 3:1](
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         )
     )
 )
@@ -272,11 +280,19 @@ array(
         )
         returnType: null
         stmts: array(
+<<<<<<< HEAD
             0: Expr_PropertyFetch[3:5 - 3:10](
                 var: Expr_Variable[3:5 - 3:8](
                     name: bar
                 )
                 name: Expr_Error[4:1 - 3:10](
+=======
+            0: Expr_PropertyFetch[3:5 - 4:1](
+                var: Expr_Variable[3:5 - 3:8](
+                    name: bar
+                )
+                name: Expr_Error[4:1 - 4:1](
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
                 )
             )
         )
@@ -305,8 +321,13 @@ new
 !!php7,positions
 Syntax error, unexpected EOF from 2:4 to 2:4
 array(
+<<<<<<< HEAD
     0: Expr_New[2:1 - 2:3](
         class: Expr_Error[2:4 - 2:3](
+=======
+    0: Expr_New[2:1 - 2:4](
+        class: Expr_Error[2:4 - 2:4](
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         )
         args: array(
         )
@@ -834,6 +855,7 @@ array(
         stmts: array(
         )
     )
+<<<<<<< HEAD
 )
 -----
 <?php
@@ -865,4 +887,6 @@ array(
             )
         )
     )
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 )

@@ -12,7 +12,11 @@
 namespace Monolog\Handler\Slack;
 
 use Monolog\Logger;
+<<<<<<< HEAD
 use Monolog\Formatter\NormalizerFormatter;
+=======
+use Monolog\Formatter\LineFormatter;
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 use Monolog\Formatter\FormatterInterface;
 
 /**
@@ -41,15 +45,26 @@ class SlackRecord
 
     /**
      * Name of a bot
+<<<<<<< HEAD
      * @var string|null
+=======
+     * @var string
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     private $username;
 
     /**
+<<<<<<< HEAD
      * User icon e.g. 'ghost', 'http://example.com/user.png'
      * @var string
      */
     private $userIcon;
+=======
+     * Emoji icon name
+     * @var string
+     */
+    private $iconEmoji;
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 
     /**
      * Whether the message should be added to Slack as attachment (plain text otherwise)
@@ -70,17 +85,21 @@ class SlackRecord
     private $includeContextAndExtra;
 
     /**
+<<<<<<< HEAD
      * Dot separated list of fields to exclude from slack message. E.g. ['context.field1', 'extra.field2']
      * @var array
      */
     private $excludeFields;
 
     /**
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @var FormatterInterface
      */
     private $formatter;
 
     /**
+<<<<<<< HEAD
      * @var NormalizerFormatter
      */
     private $normalizerFormatter;
@@ -98,23 +117,52 @@ class SlackRecord
 
         if ($this->includeContextAndExtra) {
             $this->normalizerFormatter = new NormalizerFormatter();
+=======
+     * @var LineFormatter
+     */
+    private $lineFormatter;
+
+    public function __construct($channel = null, $username = 'Monolog', $useAttachment = true, $iconEmoji = null, $useShortAttachment = false, $includeContextAndExtra = false, FormatterInterface $formatter = null)
+    {
+        $this->channel = $channel;
+        $this->username = $username;
+        $this->iconEmoji = trim($iconEmoji, ':');
+        $this->useAttachment = $useAttachment;
+        $this->useShortAttachment = $useShortAttachment;
+        $this->includeContextAndExtra = $includeContextAndExtra;
+        $this->formatter = $formatter;
+
+        if ($this->includeContextAndExtra) {
+            $this->lineFormatter = new LineFormatter();
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         }
     }
 
     public function getSlackData(array $record)
     {
+<<<<<<< HEAD
         $dataArray = array();
         $record = $this->excludeFields($record);
 
         if ($this->username) {
             $dataArray['username'] = $this->username;
         }
+=======
+        $dataArray = array(
+            'username'    => $this->username,
+            'text'        => '',
+        );
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 
         if ($this->channel) {
             $dataArray['channel'] = $this->channel;
         }
 
+<<<<<<< HEAD
         if ($this->formatter && !$this->useAttachment) {
+=======
+        if ($this->formatter) {
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
             $message = $this->formatter->format($record);
         } else {
             $message = $record['message'];
@@ -122,22 +170,35 @@ class SlackRecord
 
         if ($this->useAttachment) {
             $attachment = array(
+<<<<<<< HEAD
                 'fallback'  => $message,
                 'text'      => $message,
                 'color'     => $this->getAttachmentColor($record['level']),
                 'fields'    => array(),
                 'mrkdwn_in' => array('fields'),
                 'ts'        => $record['datetime']->getTimestamp()
+=======
+                'fallback' => $message,
+                'text'     => $message,
+                'color'    => $this->getAttachmentColor($record['level']),
+                'fields'   => array(),
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
             );
 
             if ($this->useShortAttachment) {
                 $attachment['title'] = $record['level_name'];
             } else {
                 $attachment['title'] = 'Message';
+<<<<<<< HEAD
                 $attachment['fields'][] = $this->generateAttachmentField('Level', $record['level_name']);
             }
 
 
+=======
+                $attachment['fields'][] = $this->generateAttachmentField('Level', $record['level_name'], true);
+            }
+
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
             if ($this->includeContextAndExtra) {
                 foreach (array('extra', 'context') as $key) {
                     if (empty($record[$key])) {
@@ -147,7 +208,12 @@ class SlackRecord
                     if ($this->useShortAttachment) {
                         $attachment['fields'][] = $this->generateAttachmentField(
                             ucfirst($key),
+<<<<<<< HEAD
                             $record[$key]
+=======
+                            $this->stringify($record[$key]),
+                            true
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
                         );
                     } else {
                         // Add all extra fields as individual fields in attachment
@@ -164,12 +230,17 @@ class SlackRecord
             $dataArray['text'] = $message;
         }
 
+<<<<<<< HEAD
         if ($this->userIcon) {
             if (filter_var($this->userIcon, FILTER_VALIDATE_URL)) {
                 $dataArray['icon_url'] = $this->userIcon;
             } else {
                 $dataArray['icon_emoji'] = ":{$this->userIcon}:";
             }
+=======
+        if ($this->iconEmoji) {
+            $dataArray['icon_emoji'] = ":{$this->iconEmoji}:";
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         }
 
         return $dataArray;
@@ -199,6 +270,7 @@ class SlackRecord
     /**
      * Stringifies an array of key/value pairs to be used in attachment fields
      *
+<<<<<<< HEAD
      * @param array $fields
      *
      * @return string
@@ -214,6 +286,25 @@ class SlackRecord
         return $hasSecondDimension || $hasNonNumericKeys
             ? json_encode($normalized, $prettyPrintFlag)
             : json_encode($normalized);
+=======
+     * @param  array  $fields
+     * @return string|null
+     */
+    public function stringify($fields)
+    {
+        if (!$this->lineFormatter) {
+            return null;
+        }
+
+        $string = '';
+        foreach ($fields as $var => $val) {
+            $string .= $var.': '.$this->lineFormatter->stringify($val)." | ";
+        }
+
+        $string = rtrim($string, " |");
+
+        return $string;
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     }
 
     /**
@@ -230,6 +321,7 @@ class SlackRecord
      * Generates attachment field
      *
      * @param string $title
+<<<<<<< HEAD
      * @param string|array $value\
      *
      * @return array
@@ -244,6 +336,18 @@ class SlackRecord
             'title' => $title,
             'value' => $value,
             'short' => false
+=======
+     * @param string|array $value
+     * @param bool $short
+     * @return array
+     */
+    private function generateAttachmentField($title, $value, $short)
+    {
+        return array(
+            'title' => $title,
+            'value' => is_array($value) ? $this->lineFormatter->stringify($value) : $value,
+            'short' => $short
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         );
     }
 
@@ -251,18 +355,26 @@ class SlackRecord
      * Generates a collection of attachment fields from array
      *
      * @param array $data
+<<<<<<< HEAD
      *
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @return array
      */
     private function generateAttachmentFields(array $data)
     {
         $fields = array();
         foreach ($data as $key => $value) {
+<<<<<<< HEAD
             $fields[] = $this->generateAttachmentField($key, $value);
+=======
+            $fields[] = $this->generateAttachmentField($key, $value, false);
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         }
 
         return $fields;
     }
+<<<<<<< HEAD
 
     /**
      * Get a copy of record with fields excluded according to $this->excludeFields
@@ -291,4 +403,6 @@ class SlackRecord
 
         return $record;
     }
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 }

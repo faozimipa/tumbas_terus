@@ -8,10 +8,22 @@
  * file that was distributed with this source code.
  */
 
+<<<<<<< HEAD
+=======
+/**
+ * @since      File available since Release 3.7.0
+ */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 class Framework_Constraint_JsonMatchesTest extends PHPUnit_Framework_TestCase
 {
     /**
      * @dataProvider evaluateDataprovider
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Constraint_JsonMatches::evaluate
+     * @covers PHPUnit_Framework_Constraint_JsonMatches::matches
+     * @covers PHPUnit_Framework_Constraint_JsonMatches::__construct
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function testEvaluate($expected, $jsonOther, $jsonValue)
     {
@@ -19,6 +31,12 @@ class Framework_Constraint_JsonMatchesTest extends PHPUnit_Framework_TestCase
         $this->assertEquals($expected, $constraint->evaluate($jsonOther, '', true));
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Constraint_JsonMatches::toString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testToString()
     {
         $jsonValue  = json_encode(['Mascott' => 'Tux']);

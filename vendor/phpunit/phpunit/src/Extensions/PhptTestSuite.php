@@ -10,6 +10,11 @@
 
 /**
  * Suite for .phpt test cases.
+<<<<<<< HEAD
+=======
+ *
+ * @since Class available since Release 3.1.4
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 class PHPUnit_Extensions_PhptTestSuite extends PHPUnit_Framework_TestSuite
 {

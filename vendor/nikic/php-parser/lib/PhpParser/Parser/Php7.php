@@ -2483,7 +2483,11 @@ class Php7 extends \PhpParser\ParserAbstract
     }
 
     protected function reduceRule416() {
+<<<<<<< HEAD
          $this->semValue = new Expr\ClassConstFetch($this->semStack[$this->stackPos-(3-1)], new Expr\Error($this->startAttributeStack[$this->stackPos-(3-3)] + $this->endAttributeStack[$this->stackPos-(3-3)]), $this->startAttributeStack[$this->stackPos-(3-1)] + $this->endAttributes); $this->errorState = 2;
+=======
+         $this->semValue = new Expr\ClassConstFetch($this->semStack[$this->stackPos-(3-1)], new Expr\Error($this->startAttributeStack[$this->stackPos-(3-1)] + $this->endAttributes), $this->startAttributeStack[$this->stackPos-(3-1)] + $this->endAttributes); $this->errorState = 2;
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     }
 
     protected function reduceRule417() {

@@ -139,6 +139,7 @@ class Factory implements FactoryContract
     }
 
     /**
+<<<<<<< HEAD
      * Get the rendered content of the view based on a given condition.
      *
      * @param  bool  $condition
@@ -157,6 +158,8 @@ class Factory implements FactoryContract
     }
 
     /**
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * Get the rendered contents of a partial from a loop.
      *
      * @param  string  $view

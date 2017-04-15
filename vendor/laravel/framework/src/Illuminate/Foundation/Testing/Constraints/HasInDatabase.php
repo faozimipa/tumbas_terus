@@ -63,7 +63,11 @@ class HasInDatabase extends PHPUnit_Framework_Constraint
     {
         return sprintf(
             "a row in the table [%s] matches the attributes %s.\n\n%s",
+<<<<<<< HEAD
             $table, $this->toString(JSON_PRETTY_PRINT), $this->getAdditionalInfo($table)
+=======
+            $table, $this->toString(), $this->getAdditionalInfo($table)
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         );
     }
 
@@ -93,11 +97,19 @@ class HasInDatabase extends PHPUnit_Framework_Constraint
     /**
      * Get a string representation of the object.
      *
+<<<<<<< HEAD
      * @param  int  $options
      * @return string
      */
     public function toString($options = 0)
     {
         return json_encode($this->data, $options);
+=======
+     * @return string
+     */
+    public function toString()
+    {
+        return json_encode($this->data);
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     }
 }

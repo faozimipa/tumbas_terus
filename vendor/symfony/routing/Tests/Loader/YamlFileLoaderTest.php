@@ -11,12 +11,19 @@
 
 namespace Symfony\Component\Routing\Tests\Loader;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\Routing\Loader\YamlFileLoader;
 use Symfony\Component\Config\Resource\FileResource;
 
+<<<<<<< HEAD
 class YamlFileLoaderTest extends TestCase
+=======
+class YamlFileLoaderTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     public function testSupports()
     {

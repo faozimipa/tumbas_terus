@@ -13,6 +13,11 @@
  * zero or more times.
  *
  * @return PHPUnit_Framework_MockObject_Matcher_AnyInvokedCount
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function any()
 {
@@ -26,6 +31,11 @@ function any()
  * Returns a PHPUnit_Framework_Constraint_IsAnything matcher object.
  *
  * @return PHPUnit_Framework_Constraint_IsAnything
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function anything()
 {
@@ -41,6 +51,11 @@ function anything()
  * @param mixed $key
  *
  * @return PHPUnit_Framework_Constraint_ArrayHasKey
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function arrayHasKey($key)
 {
@@ -56,6 +71,11 @@ function arrayHasKey($key)
  * @param mixed             $key
  * @param array|ArrayAccess $array
  * @param string            $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertArrayHasKey($key, $array, $message = '')
 {
@@ -72,6 +92,11 @@ function assertArrayHasKey($key, $array, $message = '')
  * @param array|ArrayAccess $array
  * @param bool              $strict  Check for object identity
  * @param string            $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 4.4.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertArraySubset($subset, $array, $strict = false, $message = '')
 {
@@ -87,6 +112,11 @@ function assertArraySubset($subset, $array, $strict = false, $message = '')
  * @param mixed             $key
  * @param array|ArrayAccess $array
  * @param string            $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertArrayNotHasKey($key, $array, $message = '')
 {
@@ -107,6 +137,11 @@ function assertArrayNotHasKey($key, $array, $message = '')
  * @param bool   $ignoreCase
  * @param bool   $checkForObjectIdentity
  * @param bool   $checkForNonObjectIdentity
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertAttributeContains($needle, $haystackAttributeName, $haystackClassOrObject, $message = '', $ignoreCase = false, $checkForObjectIdentity = true, $checkForNonObjectIdentity = false)
 {
@@ -125,6 +160,11 @@ function assertAttributeContains($needle, $haystackAttributeName, $haystackClass
  * @param mixed  $haystackClassOrObject
  * @param bool   $isNativeType
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.1.4
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertAttributeContainsOnly($type, $haystackAttributeName, $haystackClassOrObject, $isNativeType = null, $message = '')
 {
@@ -142,6 +182,11 @@ function assertAttributeContainsOnly($type, $haystackAttributeName, $haystackCla
  * @param string $haystackAttributeName
  * @param mixed  $haystackClassOrObject
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.6.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertAttributeCount($expectedCount, $haystackAttributeName, $haystackClassOrObject, $message = '')
 {
@@ -158,6 +203,11 @@ function assertAttributeCount($expectedCount, $haystackAttributeName, $haystackC
  * @param string $haystackAttributeName
  * @param mixed  $haystackClassOrObject
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.5.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertAttributeEmpty($haystackAttributeName, $haystackClassOrObject, $message = '')
 {
@@ -194,6 +244,11 @@ function assertAttributeEquals($expected, $actualAttributeName, $actualClassOrOb
  * @param string $actualAttributeName
  * @param string $actualClassOrObject
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.1.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertAttributeGreaterThan($expected, $actualAttributeName, $actualClassOrObject, $message = '')
 {
@@ -210,6 +265,11 @@ function assertAttributeGreaterThan($expected, $actualAttributeName, $actualClas
  * @param string $actualAttributeName
  * @param string $actualClassOrObject
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.1.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertAttributeGreaterThanOrEqual($expected, $actualAttributeName, $actualClassOrObject, $message = '')
 {
@@ -226,6 +286,11 @@ function assertAttributeGreaterThanOrEqual($expected, $actualAttributeName, $act
  * @param string $attributeName
  * @param mixed  $classOrObject
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.5.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertAttributeInstanceOf($expected, $attributeName, $classOrObject, $message = '')
 {
@@ -242,6 +307,11 @@ function assertAttributeInstanceOf($expected, $attributeName, $classOrObject, $m
  * @param string $attributeName
  * @param mixed  $classOrObject
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.5.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertAttributeInternalType($expected, $attributeName, $classOrObject, $message = '')
 {
@@ -258,6 +328,11 @@ function assertAttributeInternalType($expected, $attributeName, $classOrObject, 
  * @param string $actualAttributeName
  * @param string $actualClassOrObject
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.1.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertAttributeLessThan($expected, $actualAttributeName, $actualClassOrObject, $message = '')
 {
@@ -274,6 +349,11 @@ function assertAttributeLessThan($expected, $actualAttributeName, $actualClassOr
  * @param string $actualAttributeName
  * @param string $actualClassOrObject
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.1.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertAttributeLessThanOrEqual($expected, $actualAttributeName, $actualClassOrObject, $message = '')
 {
@@ -294,6 +374,11 @@ function assertAttributeLessThanOrEqual($expected, $actualAttributeName, $actual
  * @param bool   $ignoreCase
  * @param bool   $checkForObjectIdentity
  * @param bool   $checkForNonObjectIdentity
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertAttributeNotContains($needle, $haystackAttributeName, $haystackClassOrObject, $message = '', $ignoreCase = false, $checkForObjectIdentity = true, $checkForNonObjectIdentity = false)
 {
@@ -313,6 +398,11 @@ function assertAttributeNotContains($needle, $haystackAttributeName, $haystackCl
  * @param mixed  $haystackClassOrObject
  * @param bool   $isNativeType
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.1.4
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertAttributeNotContainsOnly($type, $haystackAttributeName, $haystackClassOrObject, $isNativeType = null, $message = '')
 {
@@ -330,6 +420,11 @@ function assertAttributeNotContainsOnly($type, $haystackAttributeName, $haystack
  * @param string $haystackAttributeName
  * @param mixed  $haystackClassOrObject
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.6.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertAttributeNotCount($expectedCount, $haystackAttributeName, $haystackClassOrObject, $message = '')
 {
@@ -346,6 +441,11 @@ function assertAttributeNotCount($expectedCount, $haystackAttributeName, $haysta
  * @param string $haystackAttributeName
  * @param mixed  $haystackClassOrObject
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.5.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertAttributeNotEmpty($haystackAttributeName, $haystackClassOrObject, $message = '')
 {
@@ -382,6 +482,11 @@ function assertAttributeNotEquals($expected, $actualAttributeName, $actualClassO
  * @param string $attributeName
  * @param mixed  $classOrObject
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.5.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertAttributeNotInstanceOf($expected, $attributeName, $classOrObject, $message = '')
 {
@@ -398,6 +503,11 @@ function assertAttributeNotInstanceOf($expected, $attributeName, $classOrObject,
  * @param string $attributeName
  * @param mixed  $classOrObject
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.5.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertAttributeNotInternalType($expected, $attributeName, $classOrObject, $message = '')
 {
@@ -447,6 +557,11 @@ function assertAttributeSame($expected, $actualAttributeName, $actualClassOrObje
  * @param string $attributeName
  * @param string $className
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.1.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertClassHasAttribute($attributeName, $className, $message = '')
 {
@@ -462,6 +577,11 @@ function assertClassHasAttribute($attributeName, $className, $message = '')
  * @param string $attributeName
  * @param string $className
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.1.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertClassHasStaticAttribute($attributeName, $className, $message = '')
 {
@@ -477,6 +597,11 @@ function assertClassHasStaticAttribute($attributeName, $className, $message = ''
  * @param string $attributeName
  * @param string $className
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.1.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertClassNotHasAttribute($attributeName, $className, $message = '')
 {
@@ -492,6 +617,11 @@ function assertClassNotHasAttribute($attributeName, $className, $message = '')
  * @param string $attributeName
  * @param string $className
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.1.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertClassNotHasStaticAttribute($attributeName, $className, $message = '')
 {
@@ -510,6 +640,11 @@ function assertClassNotHasStaticAttribute($attributeName, $className, $message =
  * @param bool   $ignoreCase
  * @param bool   $checkForObjectIdentity
  * @param bool   $checkForNonObjectIdentity
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 2.1.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertContains($needle, $haystack, $message = '', $ignoreCase = false, $checkForObjectIdentity = true, $checkForNonObjectIdentity = false)
 {
@@ -526,6 +661,11 @@ function assertContains($needle, $haystack, $message = '', $ignoreCase = false, 
  * @param mixed  $haystack
  * @param bool   $isNativeType
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.1.4
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertContainsOnly($type, $haystack, $isNativeType = null, $message = '')
 {
@@ -588,6 +728,11 @@ function assertEmpty($actual, $message = '')
  * @param DOMElement $actualElement
  * @param bool       $checkAttributes
  * @param string     $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.3.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertEqualXMLStructure(DOMElement $expectedElement, DOMElement $actualElement, $checkAttributes = false, $message = '')
 {
@@ -657,6 +802,11 @@ function assertFalse($condition, $message = '')
  * @param string $message
  * @param bool   $canonicalize
  * @param bool   $ignoreCase
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.2.14
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertFileEquals($expected, $actual, $message = '', $canonicalize = false, $ignoreCase = false)
 {
@@ -671,6 +821,11 @@ function assertFileEquals($expected, $actual, $message = '', $canonicalize = fal
  *
  * @param string $filename
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertFileExists($filename, $message = '')
 {
@@ -689,6 +844,11 @@ function assertFileExists($filename, $message = '')
  * @param string $message
  * @param bool   $canonicalize
  * @param bool   $ignoreCase
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.2.14
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertFileNotEquals($expected, $actual, $message = '', $canonicalize = false, $ignoreCase = false)
 {
@@ -703,6 +863,11 @@ function assertFileNotEquals($expected, $actual, $message = '', $canonicalize = 
  *
  * @param string $filename
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertFileNotExists($filename, $message = '')
 {
@@ -718,6 +883,11 @@ function assertFileNotExists($filename, $message = '')
  * @param mixed  $expected
  * @param mixed  $actual
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.1.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertGreaterThan($expected, $actual, $message = '')
 {
@@ -733,6 +903,11 @@ function assertGreaterThan($expected, $actual, $message = '')
  * @param mixed  $expected
  * @param mixed  $actual
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.1.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertGreaterThanOrEqual($expected, $actual, $message = '')
 {
@@ -748,6 +923,11 @@ function assertGreaterThanOrEqual($expected, $actual, $message = '')
  * @param string $expected
  * @param mixed  $actual
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.5.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertInstanceOf($expected, $actual, $message = '')
 {
@@ -763,6 +943,11 @@ function assertInstanceOf($expected, $actual, $message = '')
  * @param string $expected
  * @param mixed  $actual
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.5.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertInternalType($expected, $actual, $message = '')
 {
@@ -777,6 +962,11 @@ function assertInternalType($expected, $actual, $message = '')
  *
  * @param string $actualJson
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.7.20
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertJson($actualJson, $message = '')
 {
@@ -882,6 +1072,11 @@ function assertJsonStringNotEqualsJsonString($expectedJson, $actualJson, $messag
  * @param mixed  $expected
  * @param mixed  $actual
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.1.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertLessThan($expected, $actual, $message = '')
 {
@@ -897,6 +1092,11 @@ function assertLessThan($expected, $actual, $message = '')
  * @param mixed  $expected
  * @param mixed  $actual
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.1.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertLessThanOrEqual($expected, $actual, $message = '')
 {
@@ -957,6 +1157,11 @@ function assertNan($actual, $message = '')
  * @param bool   $ignoreCase
  * @param bool   $checkForObjectIdentity
  * @param bool   $checkForNonObjectIdentity
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 2.1.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertNotContains($needle, $haystack, $message = '', $ignoreCase = false, $checkForObjectIdentity = true, $checkForNonObjectIdentity = false)
 {
@@ -973,6 +1178,11 @@ function assertNotContains($needle, $haystack, $message = '', $ignoreCase = fals
  * @param mixed  $haystack
  * @param bool   $isNativeType
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.1.4
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertNotContainsOnly($type, $haystack, $isNativeType = null, $message = '')
 {
@@ -1023,6 +1233,11 @@ function assertNotEmpty($actual, $message = '')
  * @param int    $maxDepth
  * @param bool   $canonicalize
  * @param bool   $ignoreCase
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 2.3.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertNotEquals($expected, $actual, $message = '', $delta = 0.0, $maxDepth = 10, $canonicalize = false, $ignoreCase = false)
 {
@@ -1038,6 +1253,11 @@ function assertNotEquals($expected, $actual, $message = '', $delta = 0.0, $maxDe
  * @param string $expected
  * @param mixed  $actual
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.5.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertNotInstanceOf($expected, $actual, $message = '')
 {
@@ -1053,6 +1273,11 @@ function assertNotInstanceOf($expected, $actual, $message = '')
  * @param string $expected
  * @param mixed  $actual
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.5.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertNotInternalType($expected, $actual, $message = '')
 {
@@ -1098,6 +1323,11 @@ function assertNotNull($actual, $message = '')
  * @param string $pattern
  * @param string $string
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 2.1.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertNotRegExp($pattern, $string, $message = '')
 {
@@ -1160,6 +1390,11 @@ function assertNull($actual, $message = '')
  * @param string $attributeName
  * @param object $object
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertObjectHasAttribute($attributeName, $object, $message = '')
 {
@@ -1175,6 +1410,11 @@ function assertObjectHasAttribute($attributeName, $object, $message = '')
  * @param string $attributeName
  * @param object $object
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertObjectNotHasAttribute($attributeName, $object, $message = '')
 {
@@ -1238,6 +1478,11 @@ function assertSameSize($expected, $actual, $message = '')
  * @param string $suffix
  * @param string $string
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.4.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertStringEndsNotWith($suffix, $string, $message = '')
 {
@@ -1253,6 +1498,11 @@ function assertStringEndsNotWith($suffix, $string, $message = '')
  * @param string $suffix
  * @param string $string
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.4.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertStringEndsWith($suffix, $string, $message = '')
 {
@@ -1271,6 +1521,11 @@ function assertStringEndsWith($suffix, $string, $message = '')
  * @param string $message
  * @param bool   $canonicalize
  * @param bool   $ignoreCase
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.3.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertStringEqualsFile($expectedFile, $actualString, $message = '', $canonicalize = false, $ignoreCase = false)
 {
@@ -1286,6 +1541,11 @@ function assertStringEqualsFile($expectedFile, $actualString, $message = '', $ca
  * @param string $format
  * @param string $string
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.5.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertStringMatchesFormat($format, $string, $message = '')
 {
@@ -1301,6 +1561,11 @@ function assertStringMatchesFormat($format, $string, $message = '')
  * @param string $formatFile
  * @param string $string
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.5.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertStringMatchesFormatFile($formatFile, $string, $message = '')
 {
@@ -1319,6 +1584,11 @@ function assertStringMatchesFormatFile($formatFile, $string, $message = '')
  * @param string $message
  * @param bool   $canonicalize
  * @param bool   $ignoreCase
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.3.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertStringNotEqualsFile($expectedFile, $actualString, $message = '', $canonicalize = false, $ignoreCase = false)
 {
@@ -1334,6 +1604,11 @@ function assertStringNotEqualsFile($expectedFile, $actualString, $message = '', 
  * @param string $format
  * @param string $string
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.5.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertStringNotMatchesFormat($format, $string, $message = '')
 {
@@ -1349,6 +1624,11 @@ function assertStringNotMatchesFormat($format, $string, $message = '')
  * @param string $formatFile
  * @param string $string
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.5.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertStringNotMatchesFormatFile($formatFile, $string, $message = '')
 {
@@ -1364,6 +1644,11 @@ function assertStringNotMatchesFormatFile($formatFile, $string, $message = '')
  * @param string $prefix
  * @param string $string
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.4.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertStringStartsNotWith($prefix, $string, $message = '')
 {
@@ -1379,6 +1664,11 @@ function assertStringStartsNotWith($prefix, $string, $message = '')
  * @param string $prefix
  * @param string $string
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.4.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertStringStartsWith($prefix, $string, $message = '')
 {
@@ -1394,6 +1684,11 @@ function assertStringStartsWith($prefix, $string, $message = '')
  * @param mixed                        $value
  * @param PHPUnit_Framework_Constraint $constraint
  * @param string                       $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertThat($value, PHPUnit_Framework_Constraint $constraint, $message = '')
 {
@@ -1425,6 +1720,11 @@ function assertTrue($condition, $message = '')
  * @param string $expectedFile
  * @param string $actualFile
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.1.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertXmlFileEqualsXmlFile($expectedFile, $actualFile, $message = '')
 {
@@ -1440,6 +1740,11 @@ function assertXmlFileEqualsXmlFile($expectedFile, $actualFile, $message = '')
  * @param string $expectedFile
  * @param string $actualFile
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.1.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertXmlFileNotEqualsXmlFile($expectedFile, $actualFile, $message = '')
 {
@@ -1455,6 +1760,11 @@ function assertXmlFileNotEqualsXmlFile($expectedFile, $actualFile, $message = ''
  * @param string $expectedFile
  * @param string $actualXml
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.3.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertXmlStringEqualsXmlFile($expectedFile, $actualXml, $message = '')
 {
@@ -1470,6 +1780,11 @@ function assertXmlStringEqualsXmlFile($expectedFile, $actualXml, $message = '')
  * @param string $expectedXml
  * @param string $actualXml
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.1.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertXmlStringEqualsXmlString($expectedXml, $actualXml, $message = '')
 {
@@ -1485,6 +1800,11 @@ function assertXmlStringEqualsXmlString($expectedXml, $actualXml, $message = '')
  * @param string $expectedFile
  * @param string $actualXml
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.3.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertXmlStringNotEqualsXmlFile($expectedFile, $actualXml, $message = '')
 {
@@ -1500,6 +1820,11 @@ function assertXmlStringNotEqualsXmlFile($expectedFile, $actualXml, $message = '
  * @param string $expectedXml
  * @param string $actualXml
  * @param string $message
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.1.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function assertXmlStringNotEqualsXmlString($expectedXml, $actualXml, $message = '')
 {
@@ -1516,6 +1841,11 @@ function assertXmlStringNotEqualsXmlString($expectedXml, $actualXml, $message = 
  * @param int $index
  *
  * @return PHPUnit_Framework_MockObject_Matcher_InvokedAtIndex
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function at($index)
 {
@@ -1529,6 +1859,11 @@ function at($index)
  * Returns a matcher that matches when the method is executed at least once.
  *
  * @return PHPUnit_Framework_MockObject_Matcher_InvokedAtLeastOnce
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function atLeastOnce()
 {
@@ -1545,6 +1880,11 @@ function atLeastOnce()
  * @param string                       $attributeName
  *
  * @return PHPUnit_Framework_Constraint_Attribute
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.1.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function attribute(PHPUnit_Framework_Constraint $constraint, $attributeName)
 {
@@ -1567,6 +1907,11 @@ function attribute(PHPUnit_Framework_Constraint $constraint, $attributeName)
  * @param bool   $ignoreCase
  *
  * @return PHPUnit_Framework_Constraint_Attribute
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.1.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function attributeEqualTo($attributeName, $value, $delta = 0.0, $maxDepth = 10, $canonicalize = false, $ignoreCase = false)
 {
@@ -1597,6 +1942,11 @@ function callback($callback)
  * @param string $attributeName
  *
  * @return PHPUnit_Framework_Constraint_ClassHasAttribute
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.1.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function classHasAttribute($attributeName)
 {
@@ -1613,6 +1963,11 @@ function classHasAttribute($attributeName)
  * @param string $attributeName
  *
  * @return PHPUnit_Framework_Constraint_ClassHasStaticAttribute
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.1.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function classHasStaticAttribute($attributeName)
 {
@@ -1631,6 +1986,11 @@ function classHasStaticAttribute($attributeName)
  * @param bool  $checkForNonObjectIdentity
  *
  * @return PHPUnit_Framework_Constraint_TraversableContains
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function contains($value, $checkForObjectIdentity = true, $checkForNonObjectIdentity = false)
 {
@@ -1647,6 +2007,11 @@ function contains($value, $checkForObjectIdentity = true, $checkForNonObjectIden
  * @param string $type
  *
  * @return PHPUnit_Framework_Constraint_TraversableContainsOnly
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.1.4
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function containsOnly($type)
 {
@@ -1673,6 +2038,7 @@ function containsOnlyInstancesOf($classname)
 }
 
 /**
+<<<<<<< HEAD
  * Returns a PHPUnit_Framework_Constraint_Count matcher object.
  *
  * @param int $count
@@ -1688,6 +2054,8 @@ function countOf($count)
 }
 
 /**
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  * Returns a PHPUnit_Framework_Constraint_IsEqual matcher object.
  *
  * @param mixed $value
@@ -1697,6 +2065,11 @@ function countOf($count)
  * @param bool  $ignoreCase
  *
  * @return PHPUnit_Framework_Constraint_IsEqual
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function equalTo($value, $delta = 0.0, $maxDepth = 10, $canonicalize = false, $ignoreCase = false)
 {
@@ -1713,6 +2086,11 @@ function equalTo($value, $delta = 0.0, $maxDepth = 10, $canonicalize = false, $i
  * @param int $count
  *
  * @return PHPUnit_Framework_MockObject_Matcher_InvokedCount
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function exactly($count)
 {
@@ -1726,6 +2104,11 @@ function exactly($count)
  * Returns a PHPUnit_Framework_Constraint_FileExists matcher object.
  *
  * @return PHPUnit_Framework_Constraint_FileExists
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function fileExists()
 {
@@ -1741,6 +2124,11 @@ function fileExists()
  * @param mixed $value
  *
  * @return PHPUnit_Framework_Constraint_GreaterThan
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function greaterThan($value)
 {
@@ -1758,6 +2146,11 @@ function greaterThan($value)
  * @param mixed $value
  *
  * @return PHPUnit_Framework_Constraint_Or
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.1.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function greaterThanOrEqual($value)
 {
@@ -1773,6 +2166,11 @@ function greaterThanOrEqual($value)
  * @param mixed $value
  *
  * @return PHPUnit_Framework_Constraint_IsIdentical
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function identicalTo($value)
 {
@@ -1786,6 +2184,11 @@ function identicalTo($value)
  * Returns a PHPUnit_Framework_Constraint_IsEmpty matcher object.
  *
  * @return PHPUnit_Framework_Constraint_IsEmpty
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.5.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function isEmpty()
 {
@@ -1799,6 +2202,11 @@ function isEmpty()
  * Returns a PHPUnit_Framework_Constraint_IsFalse matcher object.
  *
  * @return PHPUnit_Framework_Constraint_IsFalse
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.3.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function isFalse()
 {
@@ -1814,6 +2222,11 @@ function isFalse()
  * @param string $className
  *
  * @return PHPUnit_Framework_Constraint_IsInstanceOf
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function isInstanceOf($className)
 {
@@ -1827,6 +2240,11 @@ function isInstanceOf($className)
  * Returns a PHPUnit_Framework_Constraint_IsJson matcher object.
  *
  * @return PHPUnit_Framework_Constraint_IsJson
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.7.20
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function isJson()
 {
@@ -1840,6 +2258,11 @@ function isJson()
  * Returns a PHPUnit_Framework_Constraint_IsNull matcher object.
  *
  * @return PHPUnit_Framework_Constraint_IsNull
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.3.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function isNull()
 {
@@ -1853,6 +2276,11 @@ function isNull()
  * Returns a PHPUnit_Framework_Constraint_IsTrue matcher object.
  *
  * @return PHPUnit_Framework_Constraint_IsTrue
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.3.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function isTrue()
 {
@@ -1868,6 +2296,11 @@ function isTrue()
  * @param string $type
  *
  * @return PHPUnit_Framework_Constraint_IsType
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function isType($type)
 {
@@ -1883,6 +2316,11 @@ function isType($type)
  * @param mixed $value
  *
  * @return PHPUnit_Framework_Constraint_LessThan
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function lessThan($value)
 {
@@ -1900,6 +2338,11 @@ function lessThan($value)
  * @param mixed $value
  *
  * @return PHPUnit_Framework_Constraint_Or
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.1.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function lessThanOrEqual($value)
 {
@@ -1913,6 +2356,11 @@ function lessThanOrEqual($value)
  * Returns a PHPUnit_Framework_Constraint_And matcher object.
  *
  * @return PHPUnit_Framework_Constraint_And
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function logicalAnd()
 {
@@ -1928,6 +2376,11 @@ function logicalAnd()
  * @param PHPUnit_Framework_Constraint $constraint
  *
  * @return PHPUnit_Framework_Constraint_Not
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function logicalNot(PHPUnit_Framework_Constraint $constraint)
 {
@@ -1941,6 +2394,11 @@ function logicalNot(PHPUnit_Framework_Constraint $constraint)
  * Returns a PHPUnit_Framework_Constraint_Or matcher object.
  *
  * @return PHPUnit_Framework_Constraint_Or
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function logicalOr()
 {
@@ -1954,6 +2412,11 @@ function logicalOr()
  * Returns a PHPUnit_Framework_Constraint_Xor matcher object.
  *
  * @return PHPUnit_Framework_Constraint_Xor
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function logicalXor()
 {
@@ -1969,6 +2432,11 @@ function logicalXor()
  * @param string $string
  *
  * @return PHPUnit_Framework_Constraint_StringMatches
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.5.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function matches($string)
 {
@@ -1984,6 +2452,11 @@ function matches($string)
  * @param string $pattern
  *
  * @return PHPUnit_Framework_Constraint_PCREMatch
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function matchesRegularExpression($pattern)
 {
@@ -1997,6 +2470,11 @@ function matchesRegularExpression($pattern)
  * Returns a matcher that matches when the method is never executed.
  *
  * @return PHPUnit_Framework_MockObject_Matcher_InvokedCount
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function never()
 {
@@ -2012,6 +2490,11 @@ function never()
  * @param string $attributeName
  *
  * @return PHPUnit_Framework_Constraint_ObjectHasAttribute
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function objectHasAttribute($attributeName)
 {
@@ -2025,6 +2508,11 @@ function objectHasAttribute($attributeName)
  * @param mixed $value, ...
  *
  * @return PHPUnit_Framework_MockObject_Stub_ConsecutiveCalls
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function onConsecutiveCalls()
 {
@@ -2038,6 +2526,11 @@ function onConsecutiveCalls()
  * Returns a matcher that matches when the method is executed exactly once.
  *
  * @return PHPUnit_Framework_MockObject_Matcher_InvokedCount
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function once()
 {
@@ -2051,6 +2544,11 @@ function once()
  * @param int $argumentIndex
  *
  * @return PHPUnit_Framework_MockObject_Stub_ReturnArgument
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.3.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function returnArgument($argumentIndex)
 {
@@ -2064,6 +2562,11 @@ function returnArgument($argumentIndex)
  * @param mixed $callback
  *
  * @return PHPUnit_Framework_MockObject_Stub_ReturnCallback
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.3.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function returnCallback($callback)
 {
@@ -2079,6 +2582,11 @@ function returnCallback($callback)
  * This method is useful when mocking a fluent interface.
  *
  * @return PHPUnit_Framework_MockObject_Stub_ReturnSelf
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.6.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function returnSelf()
 {
@@ -2092,6 +2600,11 @@ function returnSelf()
  * @param mixed $value
  *
  * @return PHPUnit_Framework_MockObject_Stub_Return
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function returnValue($value)
 {
@@ -2105,6 +2618,11 @@ function returnValue($value)
  * @param array $valueMap
  *
  * @return PHPUnit_Framework_MockObject_Stub_ReturnValueMap
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.6.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function returnValueMap(array $valueMap)
 {
@@ -2121,6 +2639,11 @@ function returnValueMap(array $valueMap)
  * @param bool   $case
  *
  * @return PHPUnit_Framework_Constraint_StringContains
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function stringContains($string, $case = true)
 {
@@ -2136,6 +2659,11 @@ function stringContains($string, $case = true)
  * @param mixed $suffix
  *
  * @return PHPUnit_Framework_Constraint_StringEndsWith
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.4.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function stringEndsWith($suffix)
 {
@@ -2151,6 +2679,11 @@ function stringEndsWith($suffix)
  * @param mixed $prefix
  *
  * @return PHPUnit_Framework_Constraint_StringStartsWith
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.4.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function stringStartsWith($prefix)
 {
@@ -2164,6 +2697,11 @@ function stringStartsWith($prefix)
  * @param Exception $exception
  *
  * @return PHPUnit_Framework_MockObject_Stub_Exception
+<<<<<<< HEAD
+=======
+ *
+ * @since Method available since Release 3.1.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 function throwException(Exception $exception)
 {

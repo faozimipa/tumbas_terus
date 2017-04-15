@@ -11,6 +11,11 @@
 /**
  * A marker interface for marking any exception/error as result of an unit
  * test as incomplete implementation or currently not implemented.
+<<<<<<< HEAD
+=======
+ *
+ * @since Interface available since Release 2.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 interface PHPUnit_Framework_IncompleteTest
 {

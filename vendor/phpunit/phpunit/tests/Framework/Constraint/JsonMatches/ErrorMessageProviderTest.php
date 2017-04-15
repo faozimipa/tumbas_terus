@@ -8,10 +8,20 @@
  * file that was distributed with this source code.
  */
 
+<<<<<<< HEAD
+=======
+/**
+ * @since      File available since Release 3.7.0
+ */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 class Framework_Constraint_JsonMatches_ErrorMessageProviderTest extends PHPUnit_Framework_TestCase
 {
     /**
      * @dataProvider translateTypeToPrefixDataprovider
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Constraint_JsonMatches_ErrorMessageProvider::translateTypeToPrefix
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function testTranslateTypeToPrefix($expected, $type)
     {
@@ -23,6 +33,10 @@ class Framework_Constraint_JsonMatches_ErrorMessageProviderTest extends PHPUnit_
 
     /**
      * @dataProvider determineJsonErrorDataprovider
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Constraint_JsonMatches_ErrorMessageProvider::determineJsonError
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function testDetermineJsonError($expected, $error, $prefix)
     {

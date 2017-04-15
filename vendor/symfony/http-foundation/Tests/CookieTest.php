@@ -11,7 +11,10 @@
 
 namespace Symfony\Component\HttpFoundation\Tests;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 use Symfony\Component\HttpFoundation\Cookie;
 
 /**
@@ -22,7 +25,11 @@ use Symfony\Component\HttpFoundation\Cookie;
  *
  * @group time-sensitive
  */
+<<<<<<< HEAD
 class CookieTest extends TestCase
+=======
+class CookieTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     public function invalidNames()
     {

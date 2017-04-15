@@ -8,6 +8,12 @@
  * file that was distributed with this source code.
  */
 
+<<<<<<< HEAD
+=======
+/**
+ * @since      Class available since Release 2.1.0
+ */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 class Util_TestDox_NamePrettifierTest extends PHPUnit_Framework_TestCase
 {
     protected $namePrettifier;
@@ -17,6 +23,12 @@ class Util_TestDox_NamePrettifierTest extends PHPUnit_Framework_TestCase
         $this->namePrettifier = new PHPUnit_Util_TestDox_NamePrettifier;
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Util_TestDox_NamePrettifier::prettifyTestClass
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testTitleHasSensibleDefaults()
     {
         $this->assertEquals('Foo', $this->namePrettifier->prettifyTestClass('FooTest'));
@@ -25,6 +37,12 @@ class Util_TestDox_NamePrettifierTest extends PHPUnit_Framework_TestCase
         $this->assertEquals('Foo', $this->namePrettifier->prettifyTestClass('Test\FooTest'));
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Util_TestDox_NamePrettifier::prettifyTestClass
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testCaterForUserDefinedSuffix()
     {
         $this->namePrettifier->setSuffix('TestCase');
@@ -35,6 +53,12 @@ class Util_TestDox_NamePrettifierTest extends PHPUnit_Framework_TestCase
         $this->assertEquals('FooTest', $this->namePrettifier->prettifyTestClass('FooTest'));
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Util_TestDox_NamePrettifier::prettifyTestClass
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testCaterForUserDefinedPrefix()
     {
         $this->namePrettifier->setSuffix(null);
@@ -45,6 +69,12 @@ class Util_TestDox_NamePrettifierTest extends PHPUnit_Framework_TestCase
         $this->assertEquals('XXX', $this->namePrettifier->prettifyTestClass('XXXXXX'));
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Util_TestDox_NamePrettifier::prettifyTestMethod
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testTestNameIsConvertedToASentence()
     {
         $this->assertEquals('This is a test', $this->namePrettifier->prettifyTestMethod('testThisIsATest'));
@@ -56,6 +86,10 @@ class Util_TestDox_NamePrettifierTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Util_TestDox_NamePrettifier::prettifyTestMethod
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @ticket 224
      */
     public function testTestNameIsNotGroupedWhenNotInSequence()

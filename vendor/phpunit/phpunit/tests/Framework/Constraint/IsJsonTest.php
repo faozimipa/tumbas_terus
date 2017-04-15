@@ -12,6 +12,12 @@ class Framework_Constraint_IsJsonTest extends PHPUnit_Framework_TestCase
 {
     /**
      * @dataProvider evaluateDataprovider
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Constraint_IsJson::evaluate
+     * @covers PHPUnit_Framework_Constraint_IsJson::matches
+     * @covers PHPUnit_Framework_Constraint_IsJson::__construct
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function testEvaluate($expected, $jsonOther)
     {

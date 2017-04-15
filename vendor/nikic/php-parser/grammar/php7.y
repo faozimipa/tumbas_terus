@@ -763,7 +763,11 @@ constant:
     /* We interpret and isolated FOO:: as an unfinished class constant fetch. It could also be
        an unfinished static property fetch or unfinished scoped call. */
     | class_name_or_var T_PAAMAYIM_NEKUDOTAYIM error
+<<<<<<< HEAD
           { $$ = Expr\ClassConstFetch[$1, new Expr\Error(stackAttributes(#3))]; $this->errorState = 2; }
+=======
+          { $$ = Expr\ClassConstFetch[$1, Expr\Error[]]; $this->errorState = 2; }
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 ;
 
 array_short_syntax:

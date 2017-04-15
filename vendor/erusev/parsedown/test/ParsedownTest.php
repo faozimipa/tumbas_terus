@@ -1,6 +1,10 @@
 <?php
 
+<<<<<<< HEAD
 class ParsedownTest extends \PHPUnit\Framework\TestCase
+=======
+class ParsedownTest extends PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     final function __construct($name = null, array $data = array(), $dataName = '')
     {

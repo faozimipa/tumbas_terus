@@ -8,6 +8,12 @@
  * file that was distributed with this source code.
  */
 
+<<<<<<< HEAD
+=======
+/**
+ * @since      Class available since Release 2.0.0
+ */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 class Framework_AssertTest extends PHPUnit_Framework_TestCase
 {
     /**
@@ -20,6 +26,12 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->filesDirectory = dirname(__DIR__) . DIRECTORY_SEPARATOR . '_files' . DIRECTORY_SEPARATOR;
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::fail
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testFail()
     {
         try {
@@ -31,6 +43,12 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         throw new PHPUnit_Framework_AssertionFailedError('Fail did not throw fail exception');
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertContains
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertSplObjectStorageContainsObject()
     {
         $a = new stdClass;
@@ -49,6 +67,12 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertContains
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertArrayContainsObject()
     {
         $a = new stdClass;
@@ -65,6 +89,12 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertContains
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertArrayContainsString()
     {
         $this->assertContains('foo', ['foo']);
@@ -78,6 +108,12 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertContains
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertArrayContainsNonObject()
     {
         $this->assertContains('foo', [true]);
@@ -91,6 +127,12 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertContainsOnlyInstancesOf
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertContainsOnlyInstancesOf()
     {
         $test = [
@@ -112,6 +154,10 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertArrayHasKey
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertArrayHasKeyThrowsExceptionForInvalidFirstArgument()
@@ -120,6 +166,10 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertArrayHasKey
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertArrayHasKeyThrowsExceptionForInvalidSecondArgument()
@@ -127,6 +177,12 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->assertArrayHasKey(0, null);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertArrayHasKey
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertArrayHasIntegerKey()
     {
         $this->assertArrayHasKey(0, ['foo']);
@@ -140,6 +196,13 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertArraySubset
+     * @covers PHPUnit_Framework_Constraint_ArraySubset
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertArraySubset()
     {
         $array = [
@@ -171,6 +234,13 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertArraySubset
+     * @covers PHPUnit_Framework_Constraint_ArraySubset
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertArraySubsetWithDeepNestedArrays()
     {
         $array = [
@@ -197,6 +267,13 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertArraySubset
+     * @covers PHPUnit_Framework_Constraint_ArraySubset
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertArraySubsetWithNoStrictCheckAndObjects()
     {
         $obj       = new \stdClass;
@@ -207,6 +284,13 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->assertArraySubset(['a' => new \stdClass], $array);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertArraySubset
+     * @covers PHPUnit_Framework_Constraint_ArraySubset
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertArraySubsetWithStrictCheckAndObjects()
     {
         $obj       = new \stdClass;
@@ -225,6 +309,11 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::assertArraySubset
+     * @covers PHPUnit_Framework_Constraint_ArraySubset
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      * @expectedExceptionMessage array or ArrayAccess
      * @dataProvider assertArraySubsetInvalidArgumentProvider
@@ -246,6 +335,10 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertArrayNotHasKey
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertArrayNotHasKeyThrowsExceptionForInvalidFirstArgument()
@@ -254,6 +347,10 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertArrayNotHasKey
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertArrayNotHasKeyThrowsExceptionForInvalidSecondArgument()
@@ -261,6 +358,12 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->assertArrayNotHasKey(0, null);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertArrayNotHasKey
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertArrayNotHasIntegerKey()
     {
         $this->assertArrayNotHasKey(1, ['foo']);
@@ -274,6 +377,12 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertArrayHasKey
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertArrayHasStringKey()
     {
         $this->assertArrayHasKey('foo', ['foo' => 'bar']);
@@ -287,6 +396,12 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertArrayNotHasKey
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertArrayNotHasStringKey()
     {
         $this->assertArrayNotHasKey('bar', ['foo' => 'bar']);
@@ -300,6 +415,12 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertArrayHasKey
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertArrayHasKeyAcceptsArrayObjectValue()
     {
         $array        = new ArrayObject();
@@ -308,6 +429,10 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::assertArrayHasKey
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_AssertionFailedError
      */
     public function testAssertArrayHasKeyProperlyFailsWithArrayObjectValue()
@@ -317,6 +442,12 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->assertArrayHasKey('foo', $array);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertArrayHasKey
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertArrayHasKeyAcceptsArrayAccessValue()
     {
         $array        = new SampleArrayAccess();
@@ -325,6 +456,10 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::assertArrayHasKey
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_AssertionFailedError
      */
     public function testAssertArrayHasKeyProperlyFailsWithArrayAccessValue()
@@ -334,6 +469,12 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->assertArrayHasKey('foo', $array);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertArrayNotHasKey
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertArrayNotHasKeyAcceptsArrayAccessValue()
     {
         $array        = new ArrayObject();
@@ -342,6 +483,10 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::assertArrayNotHasKey
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_AssertionFailedError
      */
     public function testAssertArrayNotHasKeyPropertlyFailsWithArrayAccessValue()
@@ -352,6 +497,10 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertContains
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertContainsThrowsException()
@@ -359,6 +508,12 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->assertContains(null, null);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertContains
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertIteratorContainsObject()
     {
         $foo = new stdClass;
@@ -374,6 +529,12 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertContains
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertIteratorContainsString()
     {
         $this->assertContains('foo', new TestIterator(['foo']));
@@ -387,6 +548,12 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertContains
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertStringContainsString()
     {
         $this->assertContains('foo', 'foobar');
@@ -400,6 +567,12 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertContains
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertStringContainsStringForUtf8()
     {
         $this->assertContains('oryginał', 'oryginał');
@@ -413,6 +586,12 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertContains
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertStringContainsStringForUtf8WhenIgnoreCase()
     {
         $this->assertContains('oryginał', 'oryginał', '', true);
@@ -428,6 +607,10 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertNotContains
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertNotContainsThrowsException()
@@ -435,6 +618,12 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->assertNotContains(null, null);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertNotContains
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertSplObjectStorageNotContainsObject()
     {
         $a = new stdClass;
@@ -453,6 +642,12 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertNotContains
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertArrayNotContainsObject()
     {
         $a = new stdClass;
@@ -469,6 +664,12 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertNotContains
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertArrayNotContainsString()
     {
         $this->assertNotContains('foo', ['bar']);
@@ -482,6 +683,12 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertNotContains
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertArrayNotContainsNonObject()
     {
         $this->assertNotContains('foo', [true], '', false, true, true);
@@ -495,6 +702,12 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertNotContains
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertStringNotContainsString()
     {
         $this->assertNotContains('foo', 'bar');
@@ -508,6 +721,12 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertNotContains
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertStringNotContainsStringForUtf8()
     {
         $this->assertNotContains('ORYGINAŁ', 'oryginał');
@@ -521,6 +740,12 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertNotContains
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertStringNotContainsStringForUtf8WhenIgnoreCase()
     {
         try {
@@ -533,6 +758,10 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertContainsOnly
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertContainsOnlyThrowsException()
@@ -541,6 +770,10 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertNotContainsOnly
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertNotContainsOnlyThrowsException()
@@ -549,6 +782,10 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertContainsOnlyInstancesOf
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertContainsOnlyInstancesOfThrowsException()
@@ -556,6 +793,12 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->assertContainsOnlyInstancesOf(null, null);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertContainsOnly
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertArrayContainsOnlyIntegers()
     {
         $this->assertContainsOnly('integer', [1, 2, 3]);
@@ -569,6 +812,12 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertNotContainsOnly
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertArrayNotContainsOnlyIntegers()
     {
         $this->assertNotContainsOnly('integer', ['1', 2, 3]);
@@ -582,6 +831,12 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertContainsOnly
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertArrayContainsOnlyStdClass()
     {
         $this->assertContainsOnly('StdClass', [new stdClass]);
@@ -595,6 +850,12 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertNotContainsOnly
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertArrayNotContainsOnlyStdClass()
     {
         $this->assertNotContainsOnly('StdClass', ['StdClass']);
@@ -625,7 +886,11 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
             [0, 0],
             // floats
             [2.3, 2.3],
+<<<<<<< HEAD
             [1 / 3, 1 - 2 / 3],
+=======
+            [1/3, 1 - 2/3],
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
             [log(0), log(0)],
             // arrays
             [[], []],
@@ -887,8 +1152,13 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
             ['0', 0],
             [2.3, '2.3'],
             ['2.3', 2.3],
+<<<<<<< HEAD
             [(string) (1 / 3), 1 - 2 / 3],
             [1 / 3, (string) (1 - 2 / 3)],
+=======
+            [(string) (1/3), 1 - 2/3],
+            [1/3, (string) (1 - 2/3)],
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
             ['string representation', new ClassWithToString],
             [new ClassWithToString, 'string representation'],
         ];
@@ -918,6 +1188,10 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::assertEquals
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @dataProvider equalProvider
      */
     public function testAssertEqualsSucceeds($a, $b, $delta = 0.0, $canonicalize = false, $ignoreCase = false)
@@ -926,6 +1200,10 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::assertEquals
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @dataProvider notEqualProvider
      */
     public function testAssertEqualsFails($a, $b, $delta = 0.0, $canonicalize = false, $ignoreCase = false)
@@ -940,6 +1218,10 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::assertNotEquals
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @dataProvider notEqualProvider
      */
     public function testAssertNotEqualsSucceeds($a, $b, $delta = 0.0, $canonicalize = false, $ignoreCase = false)
@@ -948,6 +1230,10 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::assertNotEquals
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @dataProvider equalProvider
      */
     public function testAssertNotEqualsFails($a, $b, $delta = 0.0, $canonicalize = false, $ignoreCase = false)
@@ -962,6 +1248,10 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::assertSame
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @dataProvider sameProvider
      */
     public function testAssertSameSucceeds($a, $b)
@@ -970,6 +1260,10 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::assertSame
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @dataProvider notSameProvider
      */
     public function testAssertSameFails($a, $b)
@@ -984,6 +1278,10 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::assertNotSame
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @dataProvider notSameProvider
      */
     public function testAssertNotSameSucceeds($a, $b)
@@ -992,6 +1290,10 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::assertNotSame
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @dataProvider sameProvider
      */
     public function testAssertNotSameFails($a, $b)
@@ -1005,6 +1307,12 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertXmlFileEqualsXmlFile
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertXmlFileEqualsXmlFile()
     {
         $this->assertXmlFileEqualsXmlFile(
@@ -1024,6 +1332,12 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertXmlFileNotEqualsXmlFile
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertXmlFileNotEqualsXmlFile()
     {
         $this->assertXmlFileNotEqualsXmlFile(
@@ -1043,6 +1357,12 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertXmlStringEqualsXmlFile
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertXmlStringEqualsXmlFile()
     {
         $this->assertXmlStringEqualsXmlFile(
@@ -1062,6 +1382,12 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertXmlStringNotEqualsXmlFile
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testXmlStringNotEqualsXmlFile()
     {
         $this->assertXmlStringNotEqualsXmlFile(
@@ -1081,6 +1407,12 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertXmlStringEqualsXmlString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertXmlStringEqualsXmlString()
     {
         $this->assertXmlStringEqualsXmlString('<root/>', '<root/>');
@@ -1096,6 +1428,10 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
 
     /**
      * @expectedException PHPUnit_Framework_Exception
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertXmlStringEqualsXmlString
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @ticket            1860
      */
     public function testAssertXmlStringEqualsXmlString2()
@@ -1104,6 +1440,10 @@ class Framework_AssertTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::assertXmlStringEqualsXmlString
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @ticket 1860
      */
     public function testAssertXmlStringEqualsXmlString3()
@@ -1125,6 +1465,12 @@ XML;
         $this->assertXmlStringEqualsXmlString($expected, $actual);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertXmlStringNotEqualsXmlString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertXmlStringNotEqualsXmlString()
     {
         $this->assertXmlStringNotEqualsXmlString('<foo/>', '<bar/>');
@@ -1138,6 +1484,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertEqualXMLStructure
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testXMLStructureIsSame()
     {
         $expected = new DOMDocument;
@@ -1152,6 +1504,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertEqualXMLStructure
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_ExpectationFailedException
      */
     public function testXMLStructureWrongNumberOfAttributes()
@@ -1168,6 +1524,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertEqualXMLStructure
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_ExpectationFailedException
      */
     public function testXMLStructureWrongNumberOfNodes()
@@ -1183,6 +1543,12 @@ XML;
         );
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertEqualXMLStructure
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testXMLStructureIsSameButDataIsNot()
     {
         $expected = new DOMDocument;
@@ -1196,6 +1562,12 @@ XML;
         );
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertEqualXMLStructure
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testXMLStructureAttributesAreSameButValuesAreNot()
     {
         $expected = new DOMDocument;
@@ -1209,6 +1581,12 @@ XML;
         );
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertEqualXMLStructure
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testXMLStructureIgnoreTextNodes()
     {
         $expected = new DOMDocument;
@@ -1222,6 +1600,12 @@ XML;
         );
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertEquals
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertStringEqualsNumeric()
     {
         $this->assertEquals('0', 0);
@@ -1235,12 +1619,22 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertNotEquals
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertStringEqualsNumeric2()
     {
         $this->assertNotEquals('A', 0);
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertIsReadable
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertIsReadableThrowsException()
@@ -1248,6 +1642,12 @@ XML;
         $this->assertIsReadable(null);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertIsReadable
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertIsReadable()
     {
         $this->assertIsReadable(__FILE__);
@@ -1262,6 +1662,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertNotIsReadable
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertNotIsReadableThrowsException()
@@ -1269,6 +1673,12 @@ XML;
         $this->assertNotIsReadable(null);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertNotIsReadable
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertNotIsReadable()
     {
         try {
@@ -1281,6 +1691,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertIsWritable
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertIsWritableThrowsException()
@@ -1288,6 +1702,12 @@ XML;
         $this->assertIsWritable(null);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertIsWritable
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertIsWritable()
     {
         $this->assertIsWritable(__FILE__);
@@ -1302,6 +1722,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertNotIsWritable
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertNotIsWritableThrowsException()
@@ -1309,6 +1733,12 @@ XML;
         $this->assertNotIsWritable(null);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertNotIsWritable
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertNotIsWritable()
     {
         try {
@@ -1321,6 +1751,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertDirectoryExists
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertDirectoryExistsThrowsException()
@@ -1328,6 +1762,12 @@ XML;
         $this->assertDirectoryExists(null);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertDirectoryExists
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertDirectoryExists()
     {
         $this->assertDirectoryExists(__DIR__);
@@ -1342,6 +1782,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertDirectoryNotExists
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertDirectoryNotExistsThrowsException()
@@ -1349,6 +1793,12 @@ XML;
         $this->assertDirectoryNotExists(null);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertDirectoryNotExists
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertDirectoryNotExists()
     {
         $this->assertDirectoryNotExists(__DIR__ . DIRECTORY_SEPARATOR . 'NotExisting');
@@ -1363,6 +1813,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertDirectoryIsReadable
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertDirectoryIsReadableThrowsException()
@@ -1370,6 +1824,12 @@ XML;
         $this->assertDirectoryIsReadable(null);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertDirectoryIsReadable
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertDirectoryIsReadable()
     {
         $this->assertDirectoryIsReadable(__DIR__);
@@ -1384,6 +1844,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertDirectoryNotIsReadable
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertDirectoryNotIsReadableThrowsException()
@@ -1392,6 +1856,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertDirectoryIsWritable
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertDirectoryIsWritableThrowsException()
@@ -1399,6 +1867,12 @@ XML;
         $this->assertDirectoryIsWritable(null);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertDirectoryIsWritable
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertDirectoryIsWritable()
     {
         $this->assertDirectoryIsWritable(__DIR__);
@@ -1413,6 +1887,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertDirectoryNotIsWritable
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertDirectoryNotIsWritableThrowsException()
@@ -1421,6 +1899,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertFileExists
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertFileExistsThrowsException()
@@ -1428,6 +1910,12 @@ XML;
         $this->assertFileExists(null);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertFileExists
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertFileExists()
     {
         $this->assertFileExists(__FILE__);
@@ -1442,6 +1930,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertFileNotExists
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertFileNotExistsThrowsException()
@@ -1449,6 +1941,12 @@ XML;
         $this->assertFileNotExists(null);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertFileNotExists
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertFileNotExists()
     {
         $this->assertFileNotExists(__DIR__ . DIRECTORY_SEPARATOR . 'NotExisting');
@@ -1463,6 +1961,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertFileIsReadable
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertFileIsReadableThrowsException()
@@ -1470,6 +1972,12 @@ XML;
         $this->assertFileIsReadable(null);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertFileIsReadable
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertFileIsReadable()
     {
         $this->assertFileIsReadable(__FILE__);
@@ -1484,6 +1992,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertFileNotIsReadable
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertFileNotIsReadableThrowsException()
@@ -1492,6 +2004,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertFileIsWritable
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertFileIsWritableThrowsException()
@@ -1499,6 +2015,12 @@ XML;
         $this->assertFileIsWritable(null);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertFileIsWritable
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertFileIsWritable()
     {
         $this->assertFileIsWritable(__FILE__);
@@ -1513,6 +2035,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertFileNotIsWritable
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertFileNotIsWritableThrowsException()
@@ -1520,6 +2046,12 @@ XML;
         $this->assertFileNotIsWritable(null);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertObjectHasAttribute
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertObjectHasAttribute()
     {
         $o = new Author('Terry Pratchett');
@@ -1535,6 +2067,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertObjectNotHasAttribute
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertObjectNotHasAttribute()
     {
         $o = new Author('Terry Pratchett');
@@ -1550,6 +2088,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertFinite
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertFinite()
     {
         $this->assertFinite(1);
@@ -1563,6 +2107,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertInfinite
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertInfinite()
     {
         $this->assertInfinite(INF);
@@ -1576,6 +2126,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertNan
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertNan()
     {
         $this->assertNan(NAN);
@@ -1589,6 +2145,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertNull
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertNull()
     {
         $this->assertNull(null);
@@ -1602,6 +2164,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertNotNull
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertNotNull()
     {
         $this->assertNotNull(new stdClass);
@@ -1615,6 +2183,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertTrue
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertTrue()
     {
         $this->assertTrue(true);
@@ -1628,6 +2202,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertNotTrue
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertNotTrue()
     {
         $this->assertNotTrue(false);
@@ -1643,6 +2223,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertFalse
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertFalse()
     {
         $this->assertFalse(false);
@@ -1656,6 +2242,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertNotFalse
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertNotFalse()
     {
         $this->assertNotFalse(true);
@@ -1672,6 +2264,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertRegExp
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertRegExpThrowsException()
@@ -1680,6 +2276,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertRegExp
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertRegExpThrowsException2()
@@ -1688,6 +2288,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertNotRegExp
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertNotRegExpThrowsException()
@@ -1696,6 +2300,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertNotRegExp
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertNotRegExpThrowsException2()
@@ -1703,6 +2311,12 @@ XML;
         $this->assertNotRegExp('', null);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertRegExp
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertRegExp()
     {
         $this->assertRegExp('/foo/', 'foobar');
@@ -1716,6 +2330,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertNotRegExp
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertNotRegExp()
     {
         $this->assertNotRegExp('/foo/', 'bar');
@@ -1729,6 +2349,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertSame
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertSame()
     {
         $o = new stdClass;
@@ -1747,6 +2373,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertSame
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertSame2()
     {
         $this->assertSame(true, true);
@@ -1761,6 +2393,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertNotSame
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertNotSame()
     {
         $this->assertNotSame(
@@ -1789,6 +2427,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertNotSame
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertNotSame2()
     {
         $this->assertNotSame(true, false);
@@ -1803,6 +2447,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertNotSame
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertNotSameFailsNull()
     {
         try {
@@ -1814,6 +2464,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertGreaterThan
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testGreaterThan()
     {
         $this->assertGreaterThan(1, 2);
@@ -1827,6 +2483,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeGreaterThan
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAttributeGreaterThan()
     {
         $this->assertAttributeGreaterThan(
@@ -1844,6 +2506,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertGreaterThanOrEqual
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testGreaterThanOrEqual()
     {
         $this->assertGreaterThanOrEqual(1, 2);
@@ -1857,6 +2525,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeGreaterThanOrEqual
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAttributeGreaterThanOrEqual()
     {
         $this->assertAttributeGreaterThanOrEqual(
@@ -1874,6 +2548,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertLessThan
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testLessThan()
     {
         $this->assertLessThan(2, 1);
@@ -1887,6 +2567,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeLessThan
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAttributeLessThan()
     {
         $this->assertAttributeLessThan(
@@ -1904,6 +2590,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertLessThanOrEqual
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testLessThanOrEqual()
     {
         $this->assertLessThanOrEqual(2, 1);
@@ -1917,6 +2609,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeLessThanOrEqual
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAttributeLessThanOrEqual()
     {
         $this->assertAttributeLessThanOrEqual(
@@ -1934,6 +2632,14 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::readAttribute
+     * @covers PHPUnit_Framework_Assert::getStaticAttribute
+     * @covers PHPUnit_Framework_Assert::getObjectAttribute
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testReadAttribute()
     {
         $obj = new ClassWithNonPublicAttributes;
@@ -1945,6 +2651,14 @@ XML;
         //$this->assertEquals('bar', $this->readAttribute($obj, 'privateParentAttribute'));
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::readAttribute
+     * @covers PHPUnit_Framework_Assert::getStaticAttribute
+     * @covers PHPUnit_Framework_Assert::getObjectAttribute
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testReadAttribute2()
     {
         $this->assertEquals('foo', $this->readAttribute('ClassWithNonPublicAttributes', 'publicStaticAttribute'));
@@ -1955,6 +2669,12 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::readAttribute
+     * @covers            PHPUnit_Framework_Assert::getStaticAttribute
+     * @covers            PHPUnit_Framework_Assert::getObjectAttribute
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testReadAttribute3()
@@ -1963,6 +2683,12 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::readAttribute
+     * @covers            PHPUnit_Framework_Assert::getStaticAttribute
+     * @covers            PHPUnit_Framework_Assert::getObjectAttribute
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testReadAttribute4()
@@ -1971,6 +2697,12 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::readAttribute
+     * @covers            PHPUnit_Framework_Assert::getStaticAttribute
+     * @covers            PHPUnit_Framework_Assert::getObjectAttribute
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testReadAttribute5()
@@ -1979,6 +2711,12 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::readAttribute
+     * @covers            PHPUnit_Framework_Assert::getStaticAttribute
+     * @covers            PHPUnit_Framework_Assert::getObjectAttribute
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testReadAttributeIfAttributeNameIsNotValid()
@@ -1987,6 +2725,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::getStaticAttribute
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testGetStaticAttributeRaisesExceptionForInvalidFirstArgument()
@@ -1995,6 +2737,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::getStaticAttribute
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testGetStaticAttributeRaisesExceptionForInvalidFirstArgument2()
@@ -2003,6 +2749,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::getStaticAttribute
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testGetStaticAttributeRaisesExceptionForInvalidSecondArgument()
@@ -2011,6 +2761,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::getStaticAttribute
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testGetStaticAttributeRaisesExceptionForInvalidSecondArgument2()
@@ -2019,6 +2773,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::getStaticAttribute
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testGetStaticAttributeRaisesExceptionForInvalidSecondArgument3()
@@ -2027,6 +2785,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::getObjectAttribute
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testGetObjectAttributeRaisesExceptionForInvalidFirstArgument()
@@ -2035,6 +2797,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::getObjectAttribute
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testGetObjectAttributeRaisesExceptionForInvalidSecondArgument()
@@ -2043,6 +2809,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::getObjectAttribute
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testGetObjectAttributeRaisesExceptionForInvalidSecondArgument2()
@@ -2051,6 +2821,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::getObjectAttribute
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testGetObjectAttributeRaisesExceptionForInvalidSecondArgument3()
@@ -2058,6 +2832,12 @@ XML;
         $this->getObjectAttribute(new stdClass, 'foo');
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::getObjectAttribute
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testGetObjectAttributeWorksForInheritedAttributes()
     {
         $this->assertEquals(
@@ -2066,6 +2846,12 @@ XML;
         );
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeContains
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertPublicAttributeContains()
     {
         $obj = new ClassWithNonPublicAttributes;
@@ -2081,6 +2867,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeContainsOnly
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertPublicAttributeContainsOnly()
     {
         $obj = new ClassWithNonPublicAttributes;
@@ -2096,6 +2888,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeNotContains
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertPublicAttributeNotContains()
     {
         $obj = new ClassWithNonPublicAttributes;
@@ -2111,6 +2909,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeNotContainsOnly
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertPublicAttributeNotContainsOnly()
     {
         $obj = new ClassWithNonPublicAttributes;
@@ -2126,6 +2930,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeContains
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertProtectedAttributeContains()
     {
         $obj = new ClassWithNonPublicAttributes;
@@ -2141,6 +2951,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeNotContains
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertProtectedAttributeNotContains()
     {
         $obj = new ClassWithNonPublicAttributes;
@@ -2156,6 +2972,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeContains
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertPrivateAttributeContains()
     {
         $obj = new ClassWithNonPublicAttributes;
@@ -2171,6 +2993,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeNotContains
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertPrivateAttributeNotContains()
     {
         $obj = new ClassWithNonPublicAttributes;
@@ -2186,6 +3014,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeContains
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertAttributeContainsNonObject()
     {
         $obj = new ClassWithNonPublicAttributes;
@@ -2201,6 +3035,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeNotContains
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertAttributeNotContainsNonObject()
     {
         $obj = new ClassWithNonPublicAttributes;
@@ -2216,6 +3056,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeEquals
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertPublicAttributeEquals()
     {
         $obj = new ClassWithNonPublicAttributes;
@@ -2231,6 +3077,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeNotEquals
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertPublicAttributeNotEquals()
     {
         $obj = new ClassWithNonPublicAttributes;
@@ -2246,6 +3098,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeSame
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertPublicAttributeSame()
     {
         $obj = new ClassWithNonPublicAttributes;
@@ -2261,6 +3119,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeNotSame
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertPublicAttributeNotSame()
     {
         $obj = new ClassWithNonPublicAttributes;
@@ -2276,6 +3140,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeEquals
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertProtectedAttributeEquals()
     {
         $obj = new ClassWithNonPublicAttributes;
@@ -2291,6 +3161,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeNotEquals
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertProtectedAttributeNotEquals()
     {
         $obj = new ClassWithNonPublicAttributes;
@@ -2306,6 +3182,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeEquals
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertPrivateAttributeEquals()
     {
         $obj = new ClassWithNonPublicAttributes;
@@ -2321,6 +3203,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeNotEquals
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertPrivateAttributeNotEquals()
     {
         $obj = new ClassWithNonPublicAttributes;
@@ -2336,6 +3224,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeEquals
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertPublicStaticAttributeEquals()
     {
         $this->assertAttributeEquals('foo', 'publicStaticAttribute', 'ClassWithNonPublicAttributes');
@@ -2349,6 +3243,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeNotEquals
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertPublicStaticAttributeNotEquals()
     {
         $this->assertAttributeNotEquals('bar', 'publicStaticAttribute', 'ClassWithNonPublicAttributes');
@@ -2362,6 +3262,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeEquals
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertProtectedStaticAttributeEquals()
     {
         $this->assertAttributeEquals('bar', 'protectedStaticAttribute', 'ClassWithNonPublicAttributes');
@@ -2375,6 +3281,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeNotEquals
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertProtectedStaticAttributeNotEquals()
     {
         $this->assertAttributeNotEquals('foo', 'protectedStaticAttribute', 'ClassWithNonPublicAttributes');
@@ -2388,6 +3300,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeEquals
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertPrivateStaticAttributeEquals()
     {
         $this->assertAttributeEquals('baz', 'privateStaticAttribute', 'ClassWithNonPublicAttributes');
@@ -2401,6 +3319,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeNotEquals
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertPrivateStaticAttributeNotEquals()
     {
         $this->assertAttributeNotEquals('foo', 'privateStaticAttribute', 'ClassWithNonPublicAttributes');
@@ -2415,6 +3339,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertClassHasAttribute
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertClassHasAttributeThrowsException()
@@ -2423,6 +3351,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertClassHasAttribute
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertClassHasAttributeThrowsException2()
@@ -2431,6 +3363,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertClassHasAttribute
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertClassHasAttributeThrowsExceptionIfAttributeNameIsNotValid()
@@ -2439,6 +3375,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertClassNotHasAttribute
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertClassNotHasAttributeThrowsException()
@@ -2447,6 +3387,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertClassNotHasAttribute
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertClassNotHasAttributeThrowsException2()
@@ -2455,6 +3399,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertClassNotHasAttribute
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertClassNotHasAttributeThrowsExceptionIfAttributeNameIsNotValid()
@@ -2463,6 +3411,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertClassHasStaticAttribute
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertClassHasStaticAttributeThrowsException()
@@ -2471,6 +3423,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertClassHasStaticAttribute
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertClassHasStaticAttributeThrowsException2()
@@ -2479,6 +3435,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertClassHasStaticAttribute
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertClassHasStaticAttributeThrowsExceptionIfAttributeNameIsNotValid()
@@ -2487,6 +3447,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertClassNotHasStaticAttribute
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertClassNotHasStaticAttributeThrowsException()
@@ -2495,6 +3459,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertClassNotHasStaticAttribute
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertClassNotHasStaticAttributeThrowsException2()
@@ -2503,6 +3471,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertClassNotHasStaticAttribute
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertClassNotHasStaticAttributeThrowsExceptionIfAttributeNameIsNotValid()
@@ -2511,6 +3483,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertObjectHasAttribute
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertObjectHasAttributeThrowsException()
@@ -2519,6 +3495,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertObjectHasAttribute
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertObjectHasAttributeThrowsException2()
@@ -2527,6 +3507,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertObjectHasAttribute
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertObjectHasAttributeThrowsExceptionIfAttributeNameIsNotValid()
@@ -2535,6 +3519,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertObjectNotHasAttribute
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertObjectNotHasAttributeThrowsException()
@@ -2543,6 +3531,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertObjectNotHasAttribute
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertObjectNotHasAttributeThrowsException2()
@@ -2551,6 +3543,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertObjectNotHasAttribute
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertObjectNotHasAttributeThrowsExceptionIfAttributeNameIsNotValid()
@@ -2558,6 +3554,12 @@ XML;
         $this->assertObjectNotHasAttribute('1', 'ClassWithNonPublicAttributes');
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertClassHasAttribute
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testClassHasPublicAttribute()
     {
         $this->assertClassHasAttribute('publicAttribute', 'ClassWithNonPublicAttributes');
@@ -2571,6 +3573,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertClassNotHasAttribute
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testClassNotHasPublicAttribute()
     {
         $this->assertClassNotHasAttribute('attribute', 'ClassWithNonPublicAttributes');
@@ -2584,6 +3592,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertClassHasStaticAttribute
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testClassHasPublicStaticAttribute()
     {
         $this->assertClassHasStaticAttribute('publicStaticAttribute', 'ClassWithNonPublicAttributes');
@@ -2597,6 +3611,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertClassNotHasStaticAttribute
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testClassNotHasPublicStaticAttribute()
     {
         $this->assertClassNotHasStaticAttribute('attribute', 'ClassWithNonPublicAttributes');
@@ -2610,6 +3630,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertObjectHasAttribute
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testObjectHasPublicAttribute()
     {
         $obj = new ClassWithNonPublicAttributes;
@@ -2625,6 +3651,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertObjectNotHasAttribute
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testObjectNotHasPublicAttribute()
     {
         $obj = new ClassWithNonPublicAttributes;
@@ -2640,6 +3672,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertObjectHasAttribute
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testObjectHasOnTheFlyAttribute()
     {
         $obj      = new stdClass;
@@ -2656,6 +3694,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertObjectNotHasAttribute
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testObjectNotHasOnTheFlyAttribute()
     {
         $obj      = new stdClass;
@@ -2672,6 +3716,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertObjectHasAttribute
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testObjectHasProtectedAttribute()
     {
         $obj = new ClassWithNonPublicAttributes;
@@ -2687,6 +3737,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertObjectNotHasAttribute
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testObjectNotHasProtectedAttribute()
     {
         $obj = new ClassWithNonPublicAttributes;
@@ -2702,6 +3758,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertObjectHasAttribute
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testObjectHasPrivateAttribute()
     {
         $obj = new ClassWithNonPublicAttributes;
@@ -2717,6 +3779,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertObjectNotHasAttribute
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testObjectNotHasPrivateAttribute()
     {
         $obj = new ClassWithNonPublicAttributes;
@@ -2732,6 +3800,14 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertThat
+     * @covers PHPUnit_Framework_Assert::attribute
+     * @covers PHPUnit_Framework_Assert::equalTo
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertThatAttributeEquals()
     {
         $this->assertThat(
@@ -2744,6 +3820,12 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertThat
+     * @covers            PHPUnit_Framework_Assert::attribute
+     * @covers            PHPUnit_Framework_Assert::equalTo
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_AssertionFailedError
      */
     public function testAssertThatAttributeEquals2()
@@ -2757,6 +3839,14 @@ XML;
         );
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertThat
+     * @covers PHPUnit_Framework_Assert::attribute
+     * @covers PHPUnit_Framework_Assert::equalTo
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertThatAttributeEqualTo()
     {
         $this->assertThat(
@@ -2765,26 +3855,62 @@ XML;
         );
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertThat
+     * @covers PHPUnit_Framework_Assert::anything
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertThatAnything()
     {
         $this->assertThat('anything', $this->anything());
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertThat
+     * @covers PHPUnit_Framework_Assert::isTrue
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertThatIsTrue()
     {
         $this->assertThat(true, $this->isTrue());
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertThat
+     * @covers PHPUnit_Framework_Assert::isFalse
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertThatIsFalse()
     {
         $this->assertThat(false, $this->isFalse());
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertThat
+     * @covers PHPUnit_Framework_Assert::isJson
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertThatIsJson()
     {
         $this->assertThat('{}', $this->isJson());
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertThat
+     * @covers PHPUnit_Framework_Assert::anything
+     * @covers PHPUnit_Framework_Assert::logicalAnd
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertThatAnythingAndAnything()
     {
         $this->assertThat(
@@ -2795,6 +3921,14 @@ XML;
         );
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertThat
+     * @covers PHPUnit_Framework_Assert::anything
+     * @covers PHPUnit_Framework_Assert::logicalOr
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertThatAnythingOrAnything()
     {
         $this->assertThat(
@@ -2805,6 +3939,15 @@ XML;
         );
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertThat
+     * @covers PHPUnit_Framework_Assert::anything
+     * @covers PHPUnit_Framework_Assert::logicalNot
+     * @covers PHPUnit_Framework_Assert::logicalXor
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertThatAnythingXorNotAnything()
     {
         $this->assertThat(
@@ -2816,31 +3959,73 @@ XML;
         );
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertThat
+     * @covers PHPUnit_Framework_Assert::contains
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertThatContains()
     {
         $this->assertThat(['foo'], $this->contains('foo'));
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertThat
+     * @covers PHPUnit_Framework_Assert::stringContains
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertThatStringContains()
     {
         $this->assertThat('barfoobar', $this->stringContains('foo'));
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertThat
+     * @covers PHPUnit_Framework_Assert::containsOnly
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertThatContainsOnly()
     {
         $this->assertThat(['foo'], $this->containsOnly('string'));
     }
+<<<<<<< HEAD
 
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertThat
+     * @covers PHPUnit_Framework_Assert::containsOnlyInstancesOf
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertThatContainsOnlyInstancesOf()
     {
         $this->assertThat([new Book], $this->containsOnlyInstancesOf('Book'));
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertThat
+     * @covers PHPUnit_Framework_Assert::arrayHasKey
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertThatArrayHasKey()
     {
         $this->assertThat(['foo' => 'bar'], $this->arrayHasKey('foo'));
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertThat
+     * @covers PHPUnit_Framework_Assert::classHasAttribute
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertThatClassHasAttribute()
     {
         $this->assertThat(
@@ -2849,6 +4034,13 @@ XML;
         );
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertThat
+     * @covers PHPUnit_Framework_Assert::classHasStaticAttribute
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertThatClassHasStaticAttribute()
     {
         $this->assertThat(
@@ -2857,6 +4049,13 @@ XML;
         );
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertThat
+     * @covers PHPUnit_Framework_Assert::objectHasAttribute
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertThatObjectHasAttribute()
     {
         $this->assertThat(
@@ -2865,11 +4064,25 @@ XML;
         );
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertThat
+     * @covers PHPUnit_Framework_Assert::equalTo
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertThatEqualTo()
     {
         $this->assertThat('foo', $this->equalTo('foo'));
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertThat
+     * @covers PHPUnit_Framework_Assert::identicalTo
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertThatIdenticalTo()
     {
         $value      = new stdClass;
@@ -2878,51 +4091,121 @@ XML;
         $this->assertThat($value, $constraint);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertThat
+     * @covers PHPUnit_Framework_Assert::isInstanceOf
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertThatIsInstanceOf()
     {
         $this->assertThat(new stdClass, $this->isInstanceOf('StdClass'));
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertThat
+     * @covers PHPUnit_Framework_Assert::isType
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertThatIsType()
     {
         $this->assertThat('string', $this->isType('string'));
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertThat
+     * @covers PHPUnit_Framework_Assert::isEmpty
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertThatIsEmpty()
     {
         $this->assertThat([], $this->isEmpty());
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertThat
+     * @covers PHPUnit_Framework_Assert::fileExists
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertThatFileExists()
     {
         $this->assertThat(__FILE__, $this->fileExists());
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertThat
+     * @covers PHPUnit_Framework_Assert::greaterThan
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertThatGreaterThan()
     {
         $this->assertThat(2, $this->greaterThan(1));
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertThat
+     * @covers PHPUnit_Framework_Assert::greaterThanOrEqual
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertThatGreaterThanOrEqual()
     {
         $this->assertThat(2, $this->greaterThanOrEqual(1));
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertThat
+     * @covers PHPUnit_Framework_Assert::lessThan
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertThatLessThan()
     {
         $this->assertThat(1, $this->lessThan(2));
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertThat
+     * @covers PHPUnit_Framework_Assert::lessThanOrEqual
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertThatLessThanOrEqual()
     {
         $this->assertThat(1, $this->lessThanOrEqual(2));
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertThat
+     * @covers PHPUnit_Framework_Assert::matchesRegularExpression
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertThatMatchesRegularExpression()
     {
         $this->assertThat('foobar', $this->matchesRegularExpression('/foo/'));
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertThat
+     * @covers PHPUnit_Framework_Assert::callback
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertThatCallback()
     {
         $this->assertThat(
@@ -2933,11 +4216,24 @@ XML;
         );
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertThat
+     * @covers PHPUnit_Framework_Assert::countOf
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertThatCountOf()
     {
         $this->assertThat([1], $this->countOf(1));
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertFileEquals
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertFileEquals()
     {
         $this->assertFileEquals(
@@ -2957,6 +4253,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertFileNotEquals
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertFileNotEquals()
     {
         $this->assertFileNotEquals(
@@ -2976,6 +4278,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertStringEqualsFile
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertStringEqualsFile()
     {
         $this->assertStringEqualsFile(
@@ -2995,6 +4303,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertStringNotEqualsFile
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertStringNotEqualsFile()
     {
         $this->assertStringNotEqualsFile(
@@ -3015,6 +4329,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertStringStartsWith
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertStringStartsWithThrowsException()
@@ -3023,6 +4341,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertStringStartsWith
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertStringStartsWithThrowsException2()
@@ -3031,6 +4353,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertStringStartsNotWith
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertStringStartsNotWithThrowsException()
@@ -3039,6 +4365,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertStringStartsNotWith
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertStringStartsNotWithThrowsException2()
@@ -3047,6 +4377,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertStringEndsWith
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertStringEndsWithThrowsException()
@@ -3055,6 +4389,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertStringEndsWith
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertStringEndsWithThrowsException2()
@@ -3063,6 +4401,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertStringEndsNotWith
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertStringEndsNotWithThrowsException()
@@ -3071,6 +4413,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers            PHPUnit_Framework_Assert::assertStringEndsNotWith
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertStringEndsNotWithThrowsException2()
@@ -3078,6 +4424,12 @@ XML;
         $this->assertStringEndsNotWith('', null);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertStringStartsWith
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertStringStartsWith()
     {
         $this->assertStringStartsWith('prefix', 'prefixfoo');
@@ -3091,6 +4443,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertStringStartsNotWith
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertStringStartsNotWith()
     {
         $this->assertStringStartsNotWith('prefix', 'foo');
@@ -3104,6 +4462,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertStringEndsWith
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertStringEndsWith()
     {
         $this->assertStringEndsWith('suffix', 'foosuffix');
@@ -3117,6 +4481,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertStringEndsNotWith
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertStringEndsNotWith()
     {
         $this->assertStringEndsNotWith('suffix', 'foo');
@@ -3131,6 +4501,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::assertStringMatchesFormat
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertStringMatchesFormatRaisesExceptionForInvalidFirstArgument()
@@ -3139,6 +4513,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::assertStringMatchesFormat
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertStringMatchesFormatRaisesExceptionForInvalidSecondArgument()
@@ -3146,12 +4524,22 @@ XML;
         $this->assertStringMatchesFormat('', null);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertStringMatchesFormat
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertStringMatchesFormat()
     {
         $this->assertStringMatchesFormat('*%s*', '***');
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::assertStringMatchesFormat
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_AssertionFailedError
      */
     public function testAssertStringMatchesFormatFailure()
@@ -3160,6 +4548,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::assertStringNotMatchesFormat
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertStringNotMatchesFormatRaisesExceptionForInvalidFirstArgument()
@@ -3168,6 +4560,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::assertStringNotMatchesFormat
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertStringNotMatchesFormatRaisesExceptionForInvalidSecondArgument()
@@ -3175,6 +4571,12 @@ XML;
         $this->assertStringNotMatchesFormat('', null);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertStringNotMatchesFormat
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertStringNotMatchesFormat()
     {
         $this->assertStringNotMatchesFormat('*%s*', '**');
@@ -3188,6 +4590,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertEmpty
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertEmpty()
     {
         $this->assertEmpty([]);
@@ -3201,6 +4609,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertNotEmpty
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertNotEmpty()
     {
         $this->assertNotEmpty(['foo']);
@@ -3214,6 +4628,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeEmpty
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertAttributeEmpty()
     {
         $o    = new stdClass;
@@ -3231,6 +4651,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeNotEmpty
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertAttributeNotEmpty()
     {
         $o    = new stdClass;
@@ -3248,6 +4674,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::markTestIncomplete
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testMarkTestIncomplete()
     {
         try {
@@ -3261,6 +4693,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::markTestSkipped
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testMarkTestSkipped()
     {
         try {
@@ -3274,6 +4712,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertCount
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertCount()
     {
         $this->assertCount(2, [1, 2]);
@@ -3287,6 +4731,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertCount
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertCountTraversable()
     {
         $this->assertCount(2, new ArrayIterator([1, 2]));
@@ -3300,6 +4750,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertCount
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertCountThrowsExceptionIfExpectedCountIsNoInteger()
     {
         try {
@@ -3313,6 +4769,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertCount
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertCountThrowsExceptionIfElementIsNotCountable()
     {
         try {
@@ -3326,6 +4788,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeCount
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertAttributeCount()
     {
         $o    = new stdClass;
@@ -3334,6 +4802,12 @@ XML;
         $this->assertAttributeCount(0, 'a', $o);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertNotCount
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertNotCount()
     {
         $this->assertNotCount(2, [1, 2, 3]);
@@ -3348,6 +4822,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::assertNotCount
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertNotCountThrowsExceptionIfExpectedCountIsNoInteger()
@@ -3356,6 +4834,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::assertNotCount
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertNotCountThrowsExceptionIfElementIsNotCountable()
@@ -3363,6 +4845,12 @@ XML;
         $this->assertNotCount(2, '');
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeNotCount
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertAttributeNotCount()
     {
         $o    = new stdClass;
@@ -3371,6 +4859,12 @@ XML;
         $this->assertAttributeNotCount(1, 'a', $o);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertSameSize
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertSameSize()
     {
         $this->assertSameSize([1, 2], [3, 4]);
@@ -3384,6 +4878,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertSameSize
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertSameSizeThrowsExceptionIfExpectedIsNotCountable()
     {
         try {
@@ -3397,6 +4897,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertSameSize
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertSameSizeThrowsExceptionIfActualIsNotCountable()
     {
         try {
@@ -3410,6 +4916,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertNotSameSize
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertNotSameSize()
     {
         $this->assertNotSameSize([1, 2], [1, 2, 3]);
@@ -3424,6 +4936,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::assertNotSameSize
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertNotSameSizeThrowsExceptionIfExpectedIsNotCountable()
@@ -3432,6 +4948,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::assertNotSameSize
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertNotSameSizeThrowsExceptionIfActualIsNotCountable()
@@ -3440,6 +4960,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::assertJson
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertJsonRaisesExceptionForInvalidArgument()
@@ -3447,11 +4971,23 @@ XML;
         $this->assertJson(null);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertJson
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertJson()
     {
         $this->assertJson('{}');
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertJsonStringEqualsJsonString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertJsonStringEqualsJsonString()
     {
         $expected = '{"Mascott" : "Tux"}';
@@ -3463,6 +4999,10 @@ XML;
 
     /**
      * @dataProvider validInvalidJsonDataprovider
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::assertJsonStringEqualsJsonString
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function testAssertJsonStringEqualsJsonStringErrorRaised($expected, $actual)
     {
@@ -3474,6 +5014,12 @@ XML;
         $this->fail('Expected exception not found');
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertJsonStringNotEqualsJsonString
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertJsonStringNotEqualsJsonString()
     {
         $expected = '{"Mascott" : "Beastie"}';
@@ -3485,6 +5031,10 @@ XML;
 
     /**
      * @dataProvider validInvalidJsonDataprovider
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::assertJsonStringNotEqualsJsonString
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function testAssertJsonStringNotEqualsJsonStringErrorRaised($expected, $actual)
     {
@@ -3496,6 +5046,12 @@ XML;
         $this->fail('Expected exception not found');
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertJsonStringEqualsJsonFile
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertJsonStringEqualsJsonFile()
     {
         $file    = __DIR__ . '/../_files/JsonData/simpleObject.json';
@@ -3504,6 +5060,12 @@ XML;
         $this->assertJsonStringEqualsJsonFile($file, $actual, $message);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertJsonStringEqualsJsonFile
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertJsonStringEqualsJsonFileExpectingExpectationFailedException()
     {
         $file    = __DIR__ . '/../_files/JsonData/simpleObject.json';
@@ -3523,6 +5085,12 @@ XML;
         $this->fail('Expected Exception not thrown.');
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertJsonStringEqualsJsonFile
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertJsonStringEqualsJsonFileExpectingException()
     {
         $file = __DIR__ . '/../_files/JsonData/simpleObject.json';
@@ -3534,6 +5102,12 @@ XML;
         $this->fail('Expected Exception not thrown.');
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertJsonStringNotEqualsJsonFile
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertJsonStringNotEqualsJsonFile()
     {
         $file    = __DIR__ . '/../_files/JsonData/simpleObject.json';
@@ -3542,6 +5116,12 @@ XML;
         $this->assertJsonStringNotEqualsJsonFile($file, $actual, $message);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertJsonStringNotEqualsJsonFile
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertJsonStringNotEqualsJsonFileExpectingException()
     {
         $file = __DIR__ . '/../_files/JsonData/simpleObject.json';
@@ -3553,6 +5133,12 @@ XML;
         $this->fail('Expected exception not found.');
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertJsonFileNotEqualsJsonFile
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertJsonFileNotEqualsJsonFile()
     {
         $fileExpected = __DIR__ . '/../_files/JsonData/simpleObject.json';
@@ -3561,6 +5147,12 @@ XML;
         $this->assertJsonFileNotEqualsJsonFile($fileExpected, $fileActual, $message);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertJsonFileEqualsJsonFile
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertJsonFileEqualsJsonFile()
     {
         $file    = __DIR__ . '/../_files/JsonData/simpleObject.json';
@@ -3568,6 +5160,12 @@ XML;
         $this->assertJsonFileEqualsJsonFile($file, $file, $message);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertInstanceOf
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertInstanceOf()
     {
         $this->assertInstanceOf('stdClass', new stdClass);
@@ -3582,6 +5180,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::assertInstanceOf
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertInstanceOfThrowsExceptionForInvalidArgument()
@@ -3589,6 +5191,12 @@ XML;
         $this->assertInstanceOf(null, new stdClass);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeInstanceOf
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertAttributeInstanceOf()
     {
         $o    = new stdClass;
@@ -3597,6 +5205,12 @@ XML;
         $this->assertAttributeInstanceOf('stdClass', 'a', $o);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertNotInstanceOf
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertNotInstanceOf()
     {
         $this->assertNotInstanceOf('Exception', new stdClass);
@@ -3611,6 +5225,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::assertNotInstanceOf
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertNotInstanceOfThrowsExceptionForInvalidArgument()
@@ -3618,6 +5236,12 @@ XML;
         $this->assertNotInstanceOf(null, new stdClass);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeNotInstanceOf
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertAttributeNotInstanceOf()
     {
         $o    = new stdClass;
@@ -3626,6 +5250,12 @@ XML;
         $this->assertAttributeNotInstanceOf('Exception', 'a', $o);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertInternalType
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertInternalType()
     {
         $this->assertInternalType('integer', 1);
@@ -3639,6 +5269,12 @@ XML;
         $this->fail();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertInternalType
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertInternalTypeDouble()
     {
         $this->assertInternalType('double', 1.0);
@@ -3653,6 +5289,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::assertInternalType
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertInternalTypeThrowsExceptionForInvalidArgument()
@@ -3660,6 +5300,12 @@ XML;
         $this->assertInternalType(null, 1);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeInternalType
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertAttributeInternalType()
     {
         $o    = new stdClass;
@@ -3668,6 +5314,12 @@ XML;
         $this->assertAttributeInternalType('integer', 'a', $o);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertNotInternalType
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertNotInternalType()
     {
         $this->assertNotInternalType('string', 1);
@@ -3682,6 +5334,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::assertNotInternalType
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertNotInternalTypeThrowsExceptionForInvalidArgument()
@@ -3689,6 +5345,12 @@ XML;
         $this->assertNotInternalType(null, 1);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertAttributeNotInternalType
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertAttributeNotInternalType()
     {
         $o    = new stdClass;
@@ -3698,6 +5360,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::assertStringMatchesFormatFile
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertStringMatchesFormatFileThrowsExceptionForInvalidArgument()
@@ -3706,6 +5372,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::assertStringMatchesFormatFile
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertStringMatchesFormatFileThrowsExceptionForInvalidArgument2()
@@ -3713,6 +5383,12 @@ XML;
         $this->assertStringMatchesFormatFile($this->filesDirectory . 'expectedFileFormat.txt', null);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertStringMatchesFormatFile
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertStringMatchesFormatFile()
     {
         $this->assertStringMatchesFormatFile($this->filesDirectory . 'expectedFileFormat.txt', "FOO\n");
@@ -3727,6 +5403,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::assertStringNotMatchesFormatFile
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertStringNotMatchesFormatFileThrowsExceptionForInvalidArgument()
@@ -3735,6 +5415,10 @@ XML;
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @covers PHPUnit_Framework_Assert::assertStringNotMatchesFormatFile
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @expectedException PHPUnit_Framework_Exception
      */
     public function testAssertStringNotMatchesFormatFileThrowsExceptionForInvalidArgument2()
@@ -3742,6 +5426,12 @@ XML;
         $this->assertStringNotMatchesFormatFile($this->filesDirectory . 'expectedFileFormat.txt', null);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @covers PHPUnit_Framework_Assert::assertStringNotMatchesFormatFile
+     */
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     public function testAssertStringNotMatchesFormatFile()
     {
         $this->assertStringNotMatchesFormatFile($this->filesDirectory . 'expectedFileFormat.txt', "BAR\n");

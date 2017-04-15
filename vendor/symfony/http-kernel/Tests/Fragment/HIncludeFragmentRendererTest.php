@@ -11,13 +11,20 @@
 
 namespace Symfony\Component\HttpKernel\Tests\Fragment;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 use Symfony\Component\HttpKernel\Controller\ControllerReference;
 use Symfony\Component\HttpKernel\Fragment\HIncludeFragmentRenderer;
 use Symfony\Component\HttpKernel\UriSigner;
 use Symfony\Component\HttpFoundation\Request;
 
+<<<<<<< HEAD
 class HIncludeFragmentRendererTest extends TestCase
+=======
+class HIncludeFragmentRendererTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     /**
      * @expectedException \LogicException

@@ -11,14 +11,21 @@
 
 namespace Symfony\Component\CssSelector\Tests\Parser;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 use Symfony\Component\CssSelector\Exception\SyntaxErrorException;
 use Symfony\Component\CssSelector\Node\FunctionNode;
 use Symfony\Component\CssSelector\Node\SelectorNode;
 use Symfony\Component\CssSelector\Parser\Parser;
 use Symfony\Component\CssSelector\Parser\Token;
 
+<<<<<<< HEAD
 class ParserTest extends TestCase
+=======
+class ParserTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     /** @dataProvider getParserTestData */
     public function testParser($source, $representation)
@@ -89,7 +96,11 @@ class ParserTest extends TestCase
 
         /** @var FunctionNode $function */
         $function = $selectors[0]->getTree();
+<<<<<<< HEAD
         $this->{method_exists($this, $_ = 'expectException') ? $_ : 'setExpectedException'}('Symfony\Component\CssSelector\Exception\SyntaxErrorException');
+=======
+        $this->setExpectedException('Symfony\Component\CssSelector\Exception\SyntaxErrorException');
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         Parser::parseSeries($function->getArguments());
     }
 

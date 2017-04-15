@@ -406,6 +406,7 @@ class Blueprint
     }
 
     /**
+<<<<<<< HEAD
      * Create a new auto-incrementing tiny integer (1-byte) column on the table.
      *
      * @param  string  $column
@@ -417,6 +418,8 @@ class Blueprint
     }
 
     /**
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * Create a new auto-incrementing small integer (2-byte) column on the table.
      *
      * @param  string  $column

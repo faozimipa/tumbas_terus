@@ -10,6 +10,11 @@
 
 /**
  * A marker interface for marking a unit test as being skipped.
+<<<<<<< HEAD
+=======
+ *
+ * @since Interface available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 interface PHPUnit_Framework_SkippedTest
 {

@@ -11,7 +11,10 @@
 
 namespace Symfony\Component\Debug\Tests;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 use Symfony\Component\Debug\ExceptionHandler;
 use Symfony\Component\Debug\Exception\OutOfMemoryException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
@@ -19,7 +22,11 @@ use Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException;
 
 require_once __DIR__.'/HeaderMock.php';
 
+<<<<<<< HEAD
 class ExceptionHandlerTest extends TestCase
+=======
+class ExceptionHandlerTest extends \PHPUnit_Framework_TestCase
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 {
     protected function setUp()
     {

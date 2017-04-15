@@ -10,6 +10,11 @@
 
 /**
  * A TestFailure collects a failed test together with the caught exception.
+<<<<<<< HEAD
+=======
+ *
+ * @since Class available since Release 2.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 class PHPUnit_Framework_TestFailure
 {
@@ -67,6 +72,11 @@ class PHPUnit_Framework_TestFailure
      * Returns a description for the thrown exception.
      *
      * @return string
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.4.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function getExceptionAsString()
     {
@@ -79,6 +89,11 @@ class PHPUnit_Framework_TestFailure
      * @param Exception $e
      *
      * @return string
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.2.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public static function exceptionToString(Exception $e)
     {
@@ -107,6 +122,11 @@ class PHPUnit_Framework_TestFailure
      * Returns the name of the failing test (including data set, if any).
      *
      * @return string
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 4.3.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function getTestName()
     {

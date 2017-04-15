@@ -12,6 +12,11 @@ use SebastianBergmann\Environment\Runtime;
 
 /**
  * Utility methods for PHP sub-processes.
+<<<<<<< HEAD
+=======
+ *
+ * @since Class available since Release 3.4.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 abstract class PHPUnit_Util_PHP
 {
@@ -163,6 +168,11 @@ abstract class PHPUnit_Util_PHP
 
     /**
      * @return PHPUnit_Util_PHP
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.5.12
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public static function factory()
     {
@@ -248,6 +258,11 @@ abstract class PHPUnit_Util_PHP
      * @param array $settings
      *
      * @return string
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 4.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     protected function settingsToParameters(array $settings)
     {
@@ -267,6 +282,11 @@ abstract class PHPUnit_Util_PHP
      * @param PHPUnit_Framework_TestResult $result
      * @param string                       $stdout
      * @param string                       $stderr
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.5.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     private function processChildResult(PHPUnit_Framework_Test $test, PHPUnit_Framework_TestResult $result, $stdout, $stderr)
     {
@@ -379,6 +399,10 @@ abstract class PHPUnit_Util_PHP
      *
      * @return Exception
      *
+<<<<<<< HEAD
+=======
+     * @since Method available since Release 3.6.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * @see    https://github.com/sebastianbergmann/phpunit/issues/74
      */
     private function getException(PHPUnit_Framework_TestFailure $error)

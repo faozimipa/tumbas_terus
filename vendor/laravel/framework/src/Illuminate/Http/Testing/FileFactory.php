@@ -41,11 +41,15 @@ class FileFactory
     protected function generateImage($width, $height)
     {
         return tap(tmpfile(), function ($temp) use ($width, $height) {
+<<<<<<< HEAD
             ob_start();
 
             imagepng(imagecreatetruecolor($width, $height));
 
             fwrite($temp, ob_get_clean());
+=======
+            imagepng(imagecreatetruecolor($width, $height), $temp);
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         });
     }
 }

@@ -4,7 +4,11 @@ PHPUnit is a programmer-oriented testing framework for PHP. It is an instance of
 
 [![Latest Stable Version](https://img.shields.io/packagist/v/phpunit/phpunit.svg?style=flat-square)](https://packagist.org/packages/phpunit/phpunit)
 [![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%205.6-8892BF.svg?style=flat-square)](https://php.net/)
+<<<<<<< HEAD
 [![Build Status](https://img.shields.io/travis/sebastianbergmann/phpunit/5.7.svg?style=flat-square)](https://phpunit.de/build-status.html)
+=======
+[![Build Status](https://img.shields.io/travis/sebastianbergmann/phpunit/5.7.svg?style=flat-square)](https://travis-ci.org/sebastianbergmann/phpunit)
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 
 ## Installation
 
@@ -30,7 +34,11 @@ Alternatively, you may use [Composer](https://getcomposer.org/) to download and 
 
 ## Contribute
 
+<<<<<<< HEAD
 Please refer to [CONTRIBUTING.md](https://github.com/sebastianbergmann/phpunit/blob/master/.github/CONTRIBUTING.md) for information on how to contribute to PHPUnit and its related projects.
+=======
+Please refer to [CONTRIBUTING.md](https://github.com/sebastianbergmann/phpunit/blob/master/CONTRIBUTING.md) for information on how to contribute to PHPUnit and its related projects.
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 
 ## List of Contributors
 

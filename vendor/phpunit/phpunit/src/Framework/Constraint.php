@@ -12,6 +12,11 @@ use SebastianBergmann\Exporter\Exporter;
 
 /**
  * Abstract base class for constraints which can be applied to any value.
+<<<<<<< HEAD
+=======
+ *
+ * @since Interface available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 abstract class PHPUnit_Framework_Constraint implements Countable, PHPUnit_Framework_SelfDescribing
 {
@@ -76,6 +81,11 @@ abstract class PHPUnit_Framework_Constraint implements Countable, PHPUnit_Framew
      * Counts the number of constraint elements.
      *
      * @return int
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.4.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function count()
     {

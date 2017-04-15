@@ -476,6 +476,7 @@ class Command extends SymfonyCommand
     }
 
     /**
+<<<<<<< HEAD
      * Write a string in an alert box.
      *
      * @param  string  $string
@@ -491,6 +492,8 @@ class Command extends SymfonyCommand
     }
 
     /**
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      * Set the verbosity level.
      *
      * @param  string|int  $level

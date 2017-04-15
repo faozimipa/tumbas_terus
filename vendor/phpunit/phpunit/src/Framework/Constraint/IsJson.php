@@ -10,6 +10,11 @@
 
 /**
  * Constraint that asserts that a string is valid JSON.
+<<<<<<< HEAD
+=======
+ *
+ * @since Class available since Release 3.7.20
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 class PHPUnit_Framework_Constraint_IsJson extends PHPUnit_Framework_Constraint
 {

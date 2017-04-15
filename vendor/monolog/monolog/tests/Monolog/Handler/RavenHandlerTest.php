@@ -92,13 +92,20 @@ class RavenHandlerTest extends TestCase
 
         $checksum = '098f6bcd4621d373cade4e832627b4f6';
         $release = '05a671c66aefea124cc08b76ea6d30bb';
+<<<<<<< HEAD
         $eventId = '31423';
         $record = $this->getRecord(Logger::INFO, 'test', array('checksum' => $checksum, 'release' => $release, 'event_id' => $eventId));
+=======
+        $record = $this->getRecord(Logger::INFO, 'test', array('checksum' => $checksum, 'release' => $release));
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         $handler->handle($record);
 
         $this->assertEquals($checksum, $ravenClient->lastData['checksum']);
         $this->assertEquals($release, $ravenClient->lastData['release']);
+<<<<<<< HEAD
         $this->assertEquals($eventId, $ravenClient->lastData['event_id']);
+=======
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
     }
 
     public function testFingerprint()

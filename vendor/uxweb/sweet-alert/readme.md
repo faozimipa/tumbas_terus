@@ -11,7 +11,11 @@ First, pull in the package through Composer.
 
 ```javascript
 "require": {
+<<<<<<< HEAD
     "uxweb/sweet-alert": "~1.4"
+=======
+    "uxweb/sweet-alert": "~1.1"
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 }
 ```
 
@@ -24,7 +28,11 @@ If using Laravel 5, include the service provider within `config/app.php`.
 
 ```php
 'providers' => [
+<<<<<<< HEAD
     UxWeb\SweetAlert\SweetAlertServiceProvider::class,
+=======
+    UxWeb\SweetAlert\SweetAlertServiceProvider::class
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 ];
 ```
 
@@ -32,7 +40,11 @@ And, for convenience, add a facade alias to this same file at the bottom:
 
 ```php
 'aliases' => [
+<<<<<<< HEAD
     'Alert' => UxWeb\SweetAlert\SweetAlert::class,
+=======
+    'Alert' => UxWeb\SweetAlert\SweetAlert::class
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 ];
 ```
 
@@ -121,14 +133,22 @@ For a general information alert, just do: `alert('Some message');` (same as `ale
 
 ### With the Middleware 
 #### Using middleware groups
+<<<<<<< HEAD
 First register the middleware in web middleware groups by simply add the middleware class `UxWeb\SweetAlert\ConvertMessagesIntoSweetAlert::class` into the $middlewareGroups of your app/Http/Kernel.php class:
+=======
+First register the middleware in web middleware groups by simply add the middleware class `UxWeb\SweetAlert\ConvertMessagesIntoSweatAlert::class` into the $middlewareGroups of your app/Http/Kernel.php class:
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 
 ```php
     protected $middlewareGroups = [
         'web' => [
             \App\Http\Middleware\EncryptCookies::class,
             ...
+<<<<<<< HEAD
             \UxWeb\SweetAlert\ConvertMessagesIntoSwetAlert::class,
+=======
+            \UxWeb\SweetAlert\ConvertMessagesIntoSweatAlert::class,
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
         ],
 
         'api' => [
@@ -147,7 +167,11 @@ Or if you would like to assign the middleware to specific routes only, you shoul
 protected $routeMiddleware = [
     'auth' => \App\Http\Middleware\Authenticate::class,
     ....
+<<<<<<< HEAD
     'sweetalert' => \UxWeb\SweetAlert\ConvertMessagesIntoSweetAlert::class,
+=======
+    'sweetalert' => \UxWeb\SweetAlert\ConvertMessagesIntoSweatAlert::class,
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 ];
 ```
 
@@ -223,7 +247,11 @@ You can render html in your message with the html() method like this:
 If you need to customize the alert message partial, run:
 
 ```bash
+<<<<<<< HEAD
     php artisan vendor:publish --provider "UxWeb\SweetAlert\SweetAlertServiceProvider"
+=======
+    php artisan vendor:publish
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 ```
 
 The package view is located in the `resources/views/vendor/sweet/` directory.

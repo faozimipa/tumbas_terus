@@ -10,6 +10,11 @@
 
 /**
  * Base class for test listeners that interact with an issue tracker.
+<<<<<<< HEAD
+=======
+ *
+ * @since Class available since Release 3.4.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
  */
 abstract class PHPUnit_Extensions_TicketListener implements PHPUnit_Framework_TestListener
 {
@@ -62,6 +67,11 @@ abstract class PHPUnit_Extensions_TicketListener implements PHPUnit_Framework_Te
      * @param PHPUnit_Framework_Test $test
      * @param Exception              $e
      * @param float                  $time
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 4.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function addRiskyTest(PHPUnit_Framework_Test $test, Exception $e, $time)
     {
@@ -73,6 +83,11 @@ abstract class PHPUnit_Extensions_TicketListener implements PHPUnit_Framework_Te
      * @param PHPUnit_Framework_Test $test
      * @param Exception              $e
      * @param float                  $time
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 3.0.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function addSkippedTest(PHPUnit_Framework_Test $test, Exception $e, $time)
     {
@@ -82,6 +97,11 @@ abstract class PHPUnit_Extensions_TicketListener implements PHPUnit_Framework_Te
      * A test suite started.
      *
      * @param PHPUnit_Framework_TestSuite $suite
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 2.2.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function startTestSuite(PHPUnit_Framework_TestSuite $suite)
     {
@@ -91,6 +111,11 @@ abstract class PHPUnit_Extensions_TicketListener implements PHPUnit_Framework_Te
      * A test suite ended.
      *
      * @param PHPUnit_Framework_TestSuite $suite
+<<<<<<< HEAD
+=======
+     *
+     * @since Method available since Release 2.2.0
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
      */
     public function endTestSuite(PHPUnit_Framework_TestSuite $suite)
     {

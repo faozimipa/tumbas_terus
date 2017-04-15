@@ -520,7 +520,11 @@ class Mailable implements MailableContract
     public function markdown($view, array $data = [])
     {
         $this->markdown = $view;
+<<<<<<< HEAD
         $this->viewData = array_merge($this->viewData, $data);
+=======
+        $this->viewData = $data;
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 
         return $this;
     }
@@ -535,7 +539,11 @@ class Mailable implements MailableContract
     public function view($view, array $data = [])
     {
         $this->view = $view;
+<<<<<<< HEAD
         $this->viewData = array_merge($this->viewData, $data);
+=======
+        $this->viewData = $data;
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 
         return $this;
     }
@@ -550,7 +558,11 @@ class Mailable implements MailableContract
     public function text($textView, array $data = [])
     {
         $this->textView = $textView;
+<<<<<<< HEAD
         $this->viewData = array_merge($this->viewData, $data);
+=======
+        $this->viewData = $data;
+>>>>>>> 8dce932f80edbf7a24cd32751d8144be0fd3a02b
 
         return $this;
     }
