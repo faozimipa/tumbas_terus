@@ -130,7 +130,7 @@ mixpanel.init("bfe3a1f807b80b1f269d83b4e7a062a7");</script>
                         <a class="dropdown-toggle menu-icon" href="#"><i class="fa fa-users"></i>GABUNG KAMI<i class="fa fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">SEBAGAI MITRA</a></li>
-                            <li><a href="#">SEBAGAI AGEN/SHOPPER</a></li>
+                            <li><a href="#">SEBAGAI SHOPPER</a></li>
                             <li><a href="#">SEBAGAI KURIR</a></li>
                             <!--<li class="dropdown-submenu">
                                 <a href="#">Blog Posts</a>
@@ -505,7 +505,7 @@ mixpanel.init("bfe3a1f807b80b1f269d83b4e7a062a7");</script>
                         </p>
                         <div class="horizontal-break"></div>
                         <p class="lead" style="color: #999;">
-                            Mudah dipahami oleh pengguna
+                            Mudah digunakan oleh pengguna
                         </p>
                     </div>
                     <div class="v-spacer col-sm-12 v-height-standard"></div>
@@ -799,14 +799,16 @@ mixpanel.init("bfe3a1f807b80b1f269d83b4e7a062a7");</script>
                                         <div class="item">
                                             <!--<div class="profile-circle" style="background-color: rgba(0,0,0,.2);"></div>-->
                                                 <blockquote>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-                                                    <p>"Tri Asworo MS"</p>
+                                                    <p>Alhamdulillah tumbas.in sangat membantu, soalnya di rumah saya tukang sayur kadang datang dan kadang tidak. 
+                                                    Kalaupun datang jam 10.30 dengan kondisi barang tinggal sisa.</p>
+                                                    <p>"Victa"</p>
+                                                    <p>Ibu Rumah Tangga</p>
                                                 </blockquote>
                                         </div>
                                         <div class="item">
                                             <!--<div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>-->
                                                 <blockquote>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                                                    <p>.</p>
                                                 </blockquote>
                                         </div>
                                         <div class="active item">
