@@ -61,7 +61,6 @@
 
     <div class="copyright">
         <div class="container">
-            <!--<p>© Copyright 2014 by Venue. All Rights Reserved.</p>-->
             <p>© Copyright 2017 by tumbas.in  All Rights Reserved.</p>
             <nav class="footer-menu std-menu">
                 <ul class="menu">
