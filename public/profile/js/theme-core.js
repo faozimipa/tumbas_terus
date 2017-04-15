@@ -1140,7 +1140,7 @@
 
             if (scrollPosition > 500) {
                 jQuery('#back-to-top').stop().animate({
-                    'bottom': '62px',
+                    'bottom': '90x',
                     'opacity': 1
                 }, 300, "easeOutQuart");
             } else if (scrollPosition < 500) {
