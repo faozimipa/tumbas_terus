@@ -12,7 +12,7 @@ class WebProfileController extends Controller
 {
     public function index ()
     {
-        return view('themes.profile.master');
+        return view('themes.profile.spa.spa');
 
     }
 
