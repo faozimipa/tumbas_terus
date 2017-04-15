@@ -25,7 +25,7 @@
                             <br>Jadi Mudah Dengan Tumbas.in.
                         </div>
 
-                        <div class="tp-caption v-caption-h1 sfl stl"
+                        <!--<div class="tp-caption v-caption-h1 sfl stl"
                              data-x="450"
                              data-y="350"
                              data-speed="700"
@@ -41,7 +41,7 @@
                             <br>sampai di depan rumah. Dengan produk
                             <br>yang masih segar dan harga sesuai pasar tradisional.
                             <i class="fa fa-quote-right"></i>
-                        </div>
+                        </div>-->
 
                         <!--<div class="tp-caption sfl stl"
                             data-x="600"
@@ -59,9 +59,9 @@
 
                         <div class="tp-caption sfl stl"
                              data-x="450"
-                             data-y="500"
+                             data-y="400"
                              data-speed="600"
-                             data-start="2400"
+                             data-start="1200"
                              data-easing="Power1.easeInOut"
                              data-splitin="none"
                              data-splitout="none"
@@ -204,10 +204,10 @@
                         <div class="v-spacer col-sm-12 v-height-small"></div>
 
                         <ul class="v-list-v2">
-                            <li class="v-animation" data-animation="fade-from-right" data-delay="150"><i class="fa fa-check"></i><span class="v-lead">Pengambilan belanjaan langsung dari pasar tradisional.</span></li>
+                            <li class="v-animation" data-animation="fade-from-right" data-delay="150"><i class="fa fa-check"></i><span class="v-lead">Barang belanjaan langsung dari pasar tradisional.</span></li>
                             <li class="v-animation" data-animation="fade-from-right" data-delay="300"><i class="fa fa-check"></i><span class="v-lead">Belanjaan masih segar/fresh dan tanpa bahan kimia.</span></li>
                             <li class="v-animation" data-animation="fade-from-right" data-delay="450"><i class="fa fa-check"></i><span class="v-lead">Harga yang sesuai dengan harga pasar tradisional.</span></li>
-                            <li class="v-animation" data-animation="fade-from-right" data-delay="600"><i class="fa fa-check"></i><span class="v-lead">Pengiriman belanjaan kurang dari 2 jam setelah order.</span></li>
+                            <li class="v-animation" data-animation="fade-from-right" data-delay="600"><i class="fa fa-check"></i><span class="v-lead">Pengiriman belanjaan kurang dari 2 jam setelah pemesanan.</span></li>
                             <li class="v-animation" data-animation="fade-from-right" data-delay="750"><i class="fa fa-check"></i><span class="v-lead">Belanjaan terbungkus dengan rapi.</span></li>
                             <li class="v-animation" data-animation="fade-from-right" data-delay="900"><i class="fa fa-check"></i><span class="v-lead">Kurir yang sopan dan ramah ke pelanggan.</span></li>
                             <li class="v-animation" data-animation="fade-from-right" data-delay="1050"><i class="fa fa-check"></i><span class="v-lead">Pemesanan dari jam 3.00 - 15.00 WIB, diatas itu akan dikirim di hari selanjutnya.</span></li>
@@ -328,7 +328,7 @@
                                 <i class="fa fa-map-marker v-icon"></i>
                             </div>
                             <div class="feature-box-text">
-                                <h3>Transaksi tidak ribet</h3>
+                                <h3>Transaksi mudah</h3>
                                 <div class="feature-box-text-inner">
                                     Transaksi yang sangat mudah, Anda tinggal membayar setelah belanjaan sampai di
                                     depan rumah Anda.
@@ -350,7 +350,7 @@
                             </p>
                             <div class="horizontal-break"></div>
                             <p class="lead" style="color: #999;">
-                                Mudah dipahami oleh pengguna
+                                Mudah digunakan oleh pengguna
                             </p>
                         </div>
                         <div class="v-spacer col-sm-12 v-height-standard"></div>
@@ -486,8 +486,8 @@
                                     <div class="feature-box-text-inner">
                                         <p>
                                             Shopper/Agen di setiap pasar akan langsung membelanjakan
-                                            produk yang di pesan dengan harga sesuai pasar dan kualitas
-                                            produk sesuai pasar modern.
+                                            produk yang di pesan dengan harga sesuai pasar dan kualitas 
+                                            sesuai pasar modern.
                                             <br />
                                         </p>
                                         <!--<a href="#" class="read-more">Read More</a>-->
@@ -633,44 +633,39 @@
                             <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
                                 <!-- Carousel indicators-->
                                 <ol class="carousel-indicators">
-                                    <li data-target="#fade-quote-carousel" data-slide-to="0"></li>
+                                    <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
                                     <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
-                                    <li data-target="#fade-quote-carousel" data-slide-to="2" class="active"></li>
-                                    <li data-target="#fade-quote-carousel" data-slide-to="3"></li>
-                                    <li data-target="#fade-quote-carousel" data-slide-to="4"></li>
+                                    <li data-target="#fade-quote-carousel" data-slide-to="2"></li>
                                 </ol>
                                 <!-- Carousel items-->
                                 <div class="carousel-inner">
                                     <div class="item">
                                         <!--<div class="profile-circle" style="background-color: rgba(0,0,0,.2);"></div>-->
                                         <blockquote>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-                                            <p>"Tri Asworo MS"</p>
+                                            <p>Alhamdulillah tumbas.in sangat membantu, soalnya di rumah saya tukang sayur kadang datang dan kadang tidak. Setiap datangpun jam setengah
+                                            sebelas siang dengan kondisi barang tinggal sisa.</p>
+                                            <p>"Victa"</p>
+                                            <p>"Ibu Rumah Tangga"</p>
                                         </blockquote>
                                     </div>
                                     <div class="item">
                                         <!--<div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>-->
                                         <blockquote>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                                            <p>Pelayanan tumbas.in ramah dan barang yang dikirim masih segar sesuai yang ada di aplikasi. Soal hargapun tidak diragukan lagi, sesuai dengan
+                                            harga pasar tradisional. Membantu sekali saat masih bekerja, jadi gak perlu mampir ke pasar waktu pulang kerja.</p>
+                                            <p>"Benita"</p>
+                                            <p>"Pegawai Kantoran"</p>
                                         </blockquote>
                                     </div>
                                     <div class="active item">
                                         <!--<div class="profile-circle" style="background-color: rgba(145,169,216,.2);"></div>-->
                                         <blockquote>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                                            <p>Terima Kasih tumbas.in sudah dibelanjain. Cepet banget pelayanannya padahal sudah sore orderannya, barangnya juga bagus-bagus dan masih segar.
+                                            Murah lagi, kalau saya yang belanja sendiri mungkin tidak sampai dapat harga yang murah segini. Bakalan sering belanja di tumbas.in nih, 
+                                            walaupun sudah tidak free ongkir tidak apa-apa. Sekali lagi terima kasih ya.</p>
                                         </blockquote>
-                                    </div>
-                                    <div class="item">
-                                        <!--<div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>-->
-                                        <blockquote>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-                                        </blockquote>
-                                    </div>
-                                    <div class="item">
-                                        <!--<div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>-->
-                                        <blockquote>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-                                        </blockquote>
+                                        <p>"Nina"</p>
+                                        <p>"Dokter"</p>
                                     </div>
                                 </div>
                             </div>
