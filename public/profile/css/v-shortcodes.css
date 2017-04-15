@@ -1323,7 +1323,7 @@ button.btn:not(.v-btn.v-second-dark):not(.v-btn.v-third-dark) {
 }
 
 .v-btn.v-second-light,.v-third-light {
-    background: transparent!important;
+    background: #ff8f00!important;
     border: solid 2px #FFF;
     border-color: rgba(255,255,255,.6);
     color: #FFF!important;
